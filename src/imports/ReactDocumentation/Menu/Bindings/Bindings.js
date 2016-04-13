@@ -6,12 +6,12 @@ Bindings({
         <b>Bindings</b>
       </a>
       <div class="content menu">
-        <a class="item" href="#bindingsDescription">Description</a>
-        <a class="item" href="#bindingsDeclaring">Declaring</a>
+        <a class="item" href="#BindingsDescription">Description</a>
+        <a class="item" href="#BindingsDeclaring">Declaring</a>
         <hr />
-        <a class="item" href="#bindingsValue">value</a>
-        <a class="item" href="#bindingsText">text</a>
-        <a class="item" href="#bindingsHtml">html</a>
+        <a class="item" href="#BindingsValue">value</a>
+        <a class="item" href="#BindingsText">text</a>
+        <a class="item" href="#BindingsHtml">html</a>
       </div>
     </div>
   }

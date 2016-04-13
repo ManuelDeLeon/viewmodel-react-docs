@@ -2,7 +2,7 @@ Value({
   render(){
     <div class="ui segment">
       <h2 class="ui header">value</h2>
-      <a class="anchor active" id="bindingsValue"></a>
+      <a class="anchor active" id="BindingsValue"></a>
       <p>
         The value binding links the associated DOM element’s value with a property on your view model. This is typically useful with form elements such as input, select and textarea.
       </p>

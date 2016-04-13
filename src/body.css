@@ -14,6 +14,8 @@ body {
 
 #react-menu .ui.vertical.text.menu .item {
     margin: 0;
+    padding-top: 0;
+    color: #676767;
 }
 
 #react-menu .react-menu-item {

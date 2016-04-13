@@ -3,7 +3,7 @@ Html({
   render(){
     <div class="ui segment">
       <h2 class="ui header">html</h2>
-      <a class="anchor active" id="bindingsHtml"></a>
+      <a class="anchor active" id="BindingsHtml"></a>
       <p>
         The text binding causes the html element to display the html returned by the given function/property.
       </p>

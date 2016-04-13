@@ -14,6 +14,10 @@ module.exports = {
     publicPath: '/static/'
   },
   plugins: [
+    // new webpack.DefinePlugin({
+    //   // A common mistake is not stringifying the "production" string.
+    //   'process.env.NODE_ENV': JSON.stringify('production')
+    // }),
     new webpack.HotModuleReplacementPlugin()
   ],
   module: {

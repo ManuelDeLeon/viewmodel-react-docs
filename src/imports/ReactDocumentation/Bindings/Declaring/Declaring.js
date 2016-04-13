@@ -2,7 +2,7 @@ Declaring({
   render(){
     <div class="ui segment">
       <h2 class="ui header">Declaring</h2>
-      <a class="anchor active" id="bindingsDeclaring"></a>
+      <a class="anchor active" id="BindingsDeclaring"></a>
       <p>
         Bindings are declared with the template helper `b`. It is the generic flavor which you will use almost all the time. It allows you to access all bindings and events available to the element. Here are a few examples:
       </p>
