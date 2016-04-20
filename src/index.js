@@ -6,6 +6,6 @@ import ViewModel from 'viewmodel-react';
 window.ViewModel = ViewModel;
 
 ReactDOM.render(
-  <App />, 
+  <App />,
   document.getElementById('root')
 );

@@ -13,6 +13,7 @@ Global({
       <p>
         Except for rare cases the use of globals should be reserved for logging and debugging. In most cases you should use a <a href="#AdvancedMixin">mixin</a> or a <a href="#AdvancedShare">share</a> instead.
       </p>
+
     </div>
   }
 });
