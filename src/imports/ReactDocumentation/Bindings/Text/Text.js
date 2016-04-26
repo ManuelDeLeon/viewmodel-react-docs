@@ -23,8 +23,10 @@ Text({
 <pre><code>Example({
   message: 'Can it be <b>bold</b>?',
   render() {
-    <input b="value: message" placeholder="Type something" />
-    <label b="text: message" />
+    <div>
+      <input b="value: message" placeholder="Type something" />
+      <label b="text: message" />
+    </div>
   }
 })</code></pre>
     </div>

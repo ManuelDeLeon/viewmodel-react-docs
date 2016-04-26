@@ -21,8 +21,10 @@ Value({
 
 <pre><code>Example({
   render() {
-    <input b="value: message" placeholder="Type something" />
-    <label b="text: message" />
+    <div>
+      <input b="value: message" placeholder="Type something" />
+      <label b="text: message" />
+    </div>
   }
 })</code></pre>
     </div>

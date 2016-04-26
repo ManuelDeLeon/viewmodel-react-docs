@@ -23,8 +23,10 @@ Html({
 <pre><code>Example({
   message: 'Can it be a <strike>strike</strike>?',
   render() {
-    <input b="value: message" placeholder="Type something" />
-    <label b="html: message" />
+    <div>
+      <input b="value: message" placeholder="Type something" />
+      <label b="html: message" />
+    </div>
   }
 })</code></pre>
     </div>

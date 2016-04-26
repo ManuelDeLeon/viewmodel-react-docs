@@ -9,15 +9,33 @@ var replaceInFile = function(file) {
       '&': '&amp;',
       '<': '&lt;',
       '>': '&gt;',
-      '[{}]': "{'$3'}"
+      //'[{}]': "{'$3'}"
+      '{': '{"{"}',
+      '}': '{"}"}',
+      '\n': "{'\\n'}"
     };
 
-    var result = data;
-    for(var key in replacements) {
-      var value = replacements[key];
-      var regex = new RegExp("(<pre><code>)([\\s\\S]*?)(" + key + ")([\\s\\S]*?)(<\\/code><\\/pre>)", "g");
-      result = result.replace(regex, '$1$2' + value + '$4$5')
+    var result = "";
+    var inBlock = false;
+    var openTag ="<pre><code>";
+    var endTag = "</code></pre>";
+    for (var i = 0; i < data.length; i++) {
+      var char = data[i];
+      if (!inBlock && result.endsWith(openTag)) inBlock = true;
+      if (inBlock && (data.length - i > endTag.length) && data.substr(i, endTag.length) === endTag) inBlock = false;
+      if (inBlock && replacements[char]) {
+        result += replacements[char];
+      } else {
+        result += char;
+      }
     }
+
+    //
+    // for(var key in replacements) {
+    //   var value = replacements[key];
+    //   var regex = new RegExp("(<pre><code>)([\\s\\S]*?)(" + key + ")([\\s\\S]*?)(<\\/code><\\/pre>)", "g");
+    //   result = result.replace(regex, '$1$2' + value + '$4$5')
+    // }
 
     fs.writeFile(file, result, 'utf8', function (err) {
       if (err) return console.log(err);
