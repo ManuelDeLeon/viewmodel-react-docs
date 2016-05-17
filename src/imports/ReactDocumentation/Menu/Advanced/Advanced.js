@@ -13,6 +13,7 @@ Advanced({
         <a class="item" href="#AdvancedRendered">rendered</a>
         <a class="item" href="#AdvancedDestroyed">destroyed</a>
         <a class="item" href="#AdvancedFind">find/findOne</a>
+        <a class="item" href="#AdvancedValidation">Validation</a>
         <a class="item" href="#AdvancedGlobal">global</a>
       </div>
     </div>

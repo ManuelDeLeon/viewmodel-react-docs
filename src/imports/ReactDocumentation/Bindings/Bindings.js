@@ -7,6 +7,7 @@ Bindings({
       <Value />
       <Text />
       <Html />
+      <Class />
     </div>
   }
 });

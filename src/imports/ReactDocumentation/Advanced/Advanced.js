@@ -9,6 +9,7 @@ Advanced({
       <Rendered />
       <Destroyed />
       <Find />
+      <Validation />
       <Global />
     </div>
   }

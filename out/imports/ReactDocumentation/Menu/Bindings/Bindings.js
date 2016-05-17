@@ -70,6 +70,11 @@ var Bindings = exports.Bindings = function (_React$Component) {
             "a",
             { className: "item", href: "#BindingsHtml" },
             "html"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#BindingsClass" },
+            "class"
           )
         )
       );

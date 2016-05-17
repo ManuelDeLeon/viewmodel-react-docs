@@ -9,6 +9,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _Global = require("./Global/Global");
 
+var _Validation = require("./Validation/Validation");
+
 var _Find = require("./Find/Find");
 
 var _Destroyed = require("./Destroyed/Destroyed");
@@ -72,6 +74,9 @@ var Advanced = exports.Advanced = function (_React$Component) {
           parent: this
         }),
         _react2.default.createElement(_Find.Find, {
+          parent: this
+        }),
+        _react2.default.createElement(_Validation.Validation, {
           parent: this
         }),
         _react2.default.createElement(_Global.Global, {
