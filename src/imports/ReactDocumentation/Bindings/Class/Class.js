@@ -45,6 +45,33 @@ Class({
     </div>
   }
 })</code></pre>
+
+      <hr />
+        <h3>class - with property</h3>
+
+        <div class="ui segment">
+
+          <form class="ui form">
+            <div class="field">
+              <label>Button Class</label>
+              <input type="text" b="value: buttonCss" />
+            </div>
+            <a class="ui button" b="class: buttonCss">The Button</a>
+          </form>
+
+        </div>
+
+<pre><code>Example({
+  buttonCss: 'basic red',
+  render() {
+    <div>
+      <label>Button Class</label>
+      <input type="text" b="value: buttonCss" />
+      <button b="class: { basic: showBasic, red: showRed }" >The Button</button>
+    </div>
+  }
+})</code></pre>
+
     </div>
   }
 });
