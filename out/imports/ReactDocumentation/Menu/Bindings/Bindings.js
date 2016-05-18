@@ -75,6 +75,11 @@ var Bindings = exports.Bindings = function (_React$Component) {
             "a",
             { className: "item", href: "#BindingsClass" },
             "class"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#BindingsCheck" },
+            "check"
           )
         )
       );

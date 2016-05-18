@@ -13,6 +13,7 @@ Bindings({
         <a class="item" href="#BindingsText">text</a>
         <a class="item" href="#BindingsHtml">html</a>
         <a class="item" href="#BindingsClass">class</a>
+        <a class="item" href="#BindingsCheck">check</a>
       </div>
     </div>
   }

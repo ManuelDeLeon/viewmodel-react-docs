@@ -8,6 +8,7 @@ Bindings({
       <Text />
       <Html />
       <Class />
+      <Check />
     </div>
   }
 });

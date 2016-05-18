@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Class = undefined;
+exports.Check = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -23,10 +23,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Class = exports.Class = function (_React$Component) {
-  _inherits(Class, _React$Component);
+var Check = exports.Check = function (_React$Component) {
+  _inherits(Check, _React$Component);
 
-  _createClass(Class, [{
+  _createClass(Check, [{
     key: "render",
     value: function render() {
       return _react2.default.createElement(
@@ -35,13 +35,13 @@ var Class = exports.Class = function (_React$Component) {
         _react2.default.createElement(
           "h2",
           { className: "ui header" },
-          "class"
+          "check"
         ),
-        _react2.default.createElement("a", { className: "anchor active", id: "BindingsClass" }),
+        _react2.default.createElement("a", { className: "anchor active", id: "BindingsCheck" }),
         _react2.default.createElement(
           "p",
           null,
-          "The class binding allows you to change the class attribute of an element. It can apply a single class or multiple ones."
+          "The check binding links a check'able form control - i.e., a checkbox (input type='checkbox') or a radio button (input type='radio') - with a property on your component."
         ),
         _react2.default.createElement(
           "pre",
@@ -49,27 +49,28 @@ var Class = exports.Class = function (_React$Component) {
           _react2.default.createElement(
             "code",
             null,
-            "b=\"class: ",
-            "{",
-            " cssClass: property ",
-            "}",
-            "\""
+            "b=\"check: property\""
           )
         ),
         _react2.default.createElement(
+          "p",
+          null,
+          "The value of a group of checkboxes or radios can be obtained/set with the group binding:"
+        ),
+        _react2.default.createElement(
           "pre",
           null,
           _react2.default.createElement(
             "code",
             null,
-            "b=\"class: property\""
+            "b=\"group: property\""
           )
         ),
         _react2.default.createElement("hr", null),
         _react2.default.createElement(
           "h3",
           null,
-          "class - with object"
+          "Checkboxes - single"
         ),
         _react2.default.createElement(
           "div",
@@ -77,23 +78,6 @@ var Class = exports.Class = function (_React$Component) {
           _react2.default.createElement(
             "form",
             { className: "ui form" },
-            _react2.default.createElement(
-              "div",
-              { className: "field" },
-              _react2.default.createElement(
-                "div",
-                { className: "ui checkbox" },
-                _react2.default.createElement("input", { type: "checkbox", b: "check: showBasic", defaultChecked: _viewmodelReact2.default.getValue(this, "showBasic"),
-                  onClick: _viewmodelReact2.default.setInputCheck(this, "showBasic"),
-                  ref: _viewmodelReact2.default.getCheckRef(this, "showBasic")
-                }),
-                _react2.default.createElement(
-                  "label",
-                  null,
-                  "Basic"
-                )
-              )
-            ),
             _react2.default.createElement(
               "div",
               { className: "field" },
@@ -113,7 +97,7 @@ var Class = exports.Class = function (_React$Component) {
             ),
             _react2.default.createElement(
               "a",
-              { b: "class: { basic: showBasic, red: showRed }", className: _viewmodelReact2.default.getClass(this, "ui button", "{\"basic\":\"showBasic\",\"red\":\"showRed\"}")
+              { b: "class: { red: showRed }", className: _viewmodelReact2.default.getClass(this, "ui button", "{\"red\":\"showRed\"}")
               },
               "The Button"
             )
@@ -128,8 +112,6 @@ var Class = exports.Class = function (_React$Component) {
             "Example(",
             "{",
             '\n',
-            "  showBasic: false,",
-            '\n',
             "  showRed: false,",
             '\n',
             "  render() ",
@@ -137,13 +119,11 @@ var Class = exports.Class = function (_React$Component) {
             '\n',
             "    <div>",
             '\n',
-            "      <input b=\"check: showBasic\" type=\"checkbox\" /> <label>Basic</label>",
-            '\n',
             "      <input b=\"check: showRed\" type=\"checkbox\" /> <label>Red</label>",
             '\n',
             "      <button b=\"class: ",
             "{",
-            " basic: showBasic, red: showRed ",
+            " red: showRed ",
             "}",
             "\" >The Button</button>",
             '\n',
@@ -160,7 +140,7 @@ var Class = exports.Class = function (_React$Component) {
         _react2.default.createElement(
           "h3",
           null,
-          "class - with property"
+          "Checkboxes - Multiple"
         ),
         _react2.default.createElement(
           "div",
@@ -172,20 +152,60 @@ var Class = exports.Class = function (_React$Component) {
               "div",
               { className: "field" },
               _react2.default.createElement(
-                "label",
-                null,
-                "Button Class"
-              ),
-              _react2.default.createElement("input", { type: "text", b: "value: buttonCss", defaultValue: _viewmodelReact2.default.getValue(this, "buttonCss"),
-                onChange: _viewmodelReact2.default.setInputValue(this, "buttonCss"),
-                ref: _viewmodelReact2.default.getValueRef(this, "buttonCss")
-              })
+                "div",
+                { className: "ui checkbox" },
+                _react2.default.createElement("input", { type: "checkbox", b: "group: states, check: coloradoChecked", defaultValue: "Colorado", defaultChecked: _viewmodelReact2.default.getValue(this, "states"),
+                  onClick: _viewmodelReact2.default.setInputGroup(this, "states"),
+                  ref: _viewmodelReact2.default.getGroupRef(this, "states")
+                }),
+                _react2.default.createElement(
+                  "label",
+                  null,
+                  "Colorado"
+                )
+              )
             ),
             _react2.default.createElement(
-              "a",
-              { b: "class: buttonCss", className: _viewmodelReact2.default.getClass(this, "ui button", "buttonCss")
+              "div",
+              { className: "field" },
+              _react2.default.createElement(
+                "div",
+                { className: "ui checkbox" },
+                _react2.default.createElement("input", { type: "checkbox", b: "group: states", defaultValue: "New York", defaultChecked: _viewmodelReact2.default.getValue(this, "states"),
+                  onClick: _viewmodelReact2.default.setInputGroup(this, "states"),
+                  ref: _viewmodelReact2.default.getGroupRef(this, "states")
+                }),
+                _react2.default.createElement(
+                  "label",
+                  null,
+                  "New York"
+                )
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "field" },
+              _react2.default.createElement(
+                "div",
+                { className: "ui checkbox" },
+                _react2.default.createElement("input", { type: "checkbox", b: "group: states", defaultValue: "Florida", defaultChecked: _viewmodelReact2.default.getValue(this, "states"),
+                  onClick: _viewmodelReact2.default.setInputGroup(this, "states"),
+                  ref: _viewmodelReact2.default.getGroupRef(this, "states")
+                }),
+                _react2.default.createElement(
+                  "label",
+                  null,
+                  "Florida"
+                )
+              )
+            ),
+            "Selected: ",
+            _react2.default.createElement(
+              "label",
+              {
+                className: _viewmodelReact2.default.getClass(this, "", "{\"red\":\"coloradoChecked\"}")
               },
-              "The Button"
+              _viewmodelReact2.default.getValue(this, "states.join(' - ')")
             )
           )
         ),
@@ -198,20 +218,32 @@ var Class = exports.Class = function (_React$Component) {
             "Example(",
             "{",
             '\n',
-            "  buttonCss: 'basic red',",
+            "  showRed: false,",
             '\n',
             "  render() ",
             "{",
             '\n',
             "    <div>",
             '\n',
-            "      <label>Button Class</label>",
             '\n',
-            "      <input type=\"text\" b=\"value: buttonCss\" />",
+            "  <input type=\"checkbox\" b=\"group: states, check: coloradoChecked\" value=\"Colorado\" />",
+            '\n',
+            "  <label>Colorado</label>",
+            '\n',
+            '\n',
+            "  <input type=\"checkbox\" b=\"group: states\" value=\"New York\" />",
+            '\n',
+            "  <label>New York</label>",
+            '\n',
+            '\n',
+            "  <input type=\"checkbox\" b=\"group: states\" value=\"Florida\" />",
+            '\n',
+            "  <label>Florida</label>",
+            '\n',
             '\n',
             "      <button b=\"class: ",
             "{",
-            " basic: showBasic, red: showRed ",
+            " red: showRed ",
             "}",
             "\" >The Button</button>",
             '\n',
@@ -228,19 +260,18 @@ var Class = exports.Class = function (_React$Component) {
     }
   }]);
 
-  function Class(props) {
-    _classCallCheck(this, Class);
+  function Check(props) {
+    _classCallCheck(this, Check);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Class).call(this, props));
+    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Check).call(this, props));
 
-    _viewmodelReact2.default.prepareComponent("Class", _this, {
-      showBasic: false,
+    _viewmodelReact2.default.prepareComponent("Check", _this, {
       showRed: false,
-      buttonCss: 'basic red'
+      states: []
     });
 
     return _this;
   }
 
-  return Class;
+  return Check;
 }(_react2.default.Component);
