@@ -83,9 +83,7 @@ var Class = exports.Class = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", { type: "checkbox", b: "check: showBasic", defaultChecked: _viewmodelReact2.default.getValue(this, "showBasic"),
-                  onClick: _viewmodelReact2.default.setInputCheck(this, "showBasic"),
-                  ref: _viewmodelReact2.default.getCheckRef(this, "showBasic")
+                _react2.default.createElement("input", { type: "checkbox", b: "check: showBasic", ref: _viewmodelReact2.default.getCheckHook(this, "showBasic")
                 }),
                 _react2.default.createElement(
                   "label",
@@ -100,9 +98,7 @@ var Class = exports.Class = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", { type: "checkbox", b: "check: showRed", defaultChecked: _viewmodelReact2.default.getValue(this, "showRed"),
-                  onClick: _viewmodelReact2.default.setInputCheck(this, "showRed"),
-                  ref: _viewmodelReact2.default.getCheckRef(this, "showRed")
+                _react2.default.createElement("input", { type: "checkbox", b: "check: showRed", ref: _viewmodelReact2.default.getCheckHook(this, "showRed")
                 }),
                 _react2.default.createElement(
                   "label",

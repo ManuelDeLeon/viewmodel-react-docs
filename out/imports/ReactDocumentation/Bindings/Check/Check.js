@@ -84,9 +84,7 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", { type: "checkbox", b: "check: showRed", defaultChecked: _viewmodelReact2.default.getValue(this, "showRed"),
-                  onClick: _viewmodelReact2.default.setInputCheck(this, "showRed"),
-                  ref: _viewmodelReact2.default.getCheckRef(this, "showRed")
+                _react2.default.createElement("input", { type: "checkbox", b: "check: showRed", ref: _viewmodelReact2.default.getCheckHook(this, "showRed")
                 }),
                 _react2.default.createElement(
                   "label",
@@ -154,9 +152,7 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", { type: "checkbox", b: "group: states, check: coloradoChecked", defaultValue: "Colorado", defaultChecked: _viewmodelReact2.default.getValue(this, "states"),
-                  onClick: _viewmodelReact2.default.setInputGroup(this, "states"),
-                  ref: _viewmodelReact2.default.getGroupRef(this, "states")
+                _react2.default.createElement("input", { id: "XXX", type: "checkbox", b: "group: states, check: coloradoChecked", defaultValue: "Colorado", ref: _viewmodelReact2.default.getGroupHook(this, "states", true, "coloradoChecked")
                 }),
                 _react2.default.createElement(
                   "label",
@@ -171,9 +167,7 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", { type: "checkbox", b: "group: states", defaultValue: "New York", defaultChecked: _viewmodelReact2.default.getValue(this, "states"),
-                  onClick: _viewmodelReact2.default.setInputGroup(this, "states"),
-                  ref: _viewmodelReact2.default.getGroupRef(this, "states")
+                _react2.default.createElement("input", { type: "checkbox", b: "group: states", defaultValue: "New York", ref: _viewmodelReact2.default.getGroupHook(this, "states", false, "")
                 }),
                 _react2.default.createElement(
                   "label",
@@ -188,9 +182,7 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", { type: "checkbox", b: "group: states", defaultValue: "Florida", defaultChecked: _viewmodelReact2.default.getValue(this, "states"),
-                  onClick: _viewmodelReact2.default.setInputGroup(this, "states"),
-                  ref: _viewmodelReact2.default.getGroupRef(this, "states")
+                _react2.default.createElement("input", { type: "checkbox", b: "group: states", defaultValue: "Florida", ref: _viewmodelReact2.default.getGroupHook(this, "states", false, "")
                 }),
                 _react2.default.createElement(
                   "label",
@@ -202,8 +194,7 @@ var Check = exports.Check = function (_React$Component) {
             "Selected: ",
             _react2.default.createElement(
               "label",
-              {
-                className: _viewmodelReact2.default.getClass(this, "", "{\"red\":\"coloradoChecked\"}")
+              { b: "text: states.join(' - '), class: { red: coloradoChecked }", className: _viewmodelReact2.default.getClass(this, "ui label", "{\"red\":\"coloradoChecked\"}")
               },
               _viewmodelReact2.default.getValue(this, "states.join(' - ')")
             )
@@ -218,34 +209,35 @@ var Check = exports.Check = function (_React$Component) {
             "Example(",
             "{",
             '\n',
-            "  showRed: false,",
+            "  coloradoChecked: false,",
+            '\n',
+            "  states: [],",
             '\n',
             "  render() ",
             "{",
             '\n',
             "    <div>",
             '\n',
+            "      <input b=\"group: states, check: coloradoChecked\" value=\"Colorado\" type=\"checkbox\" />",
             '\n',
-            "  <input type=\"checkbox\" b=\"group: states, check: coloradoChecked\" value=\"Colorado\" />",
-            '\n',
-            "  <label>Colorado</label>",
-            '\n',
-            '\n',
-            "  <input type=\"checkbox\" b=\"group: states\" value=\"New York\" />",
-            '\n',
-            "  <label>New York</label>",
+            "      <label>Colorado</label>",
             '\n',
             '\n',
-            "  <input type=\"checkbox\" b=\"group: states\" value=\"Florida\" />",
+            "      <input type=\"checkbox\" b=\"group: states\" value=\"New York\" />",
             '\n',
-            "  <label>Florida</label>",
+            "      <label>New York</label>",
             '\n',
             '\n',
-            "      <button b=\"class: ",
+            "      <input type=\"checkbox\" b=\"group: states\" value=\"Florida\" />",
+            '\n',
+            "      <label>Florida</label>",
+            '\n',
+            '\n',
+            "      Selected: <label b=\"text: states.join(' - '), class: ",
             "{",
-            " red: showRed ",
+            " red: coloradoChecked ",
             "}",
-            "\" >The Button</button>",
+            "\" />",
             '\n',
             "    </div>",
             '\n',
@@ -267,6 +259,7 @@ var Check = exports.Check = function (_React$Component) {
 
     _viewmodelReact2.default.prepareComponent("Check", _this, {
       showRed: false,
+      coloradoChecked: false,
       states: []
     });
 

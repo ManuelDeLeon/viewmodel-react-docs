@@ -1,5 +1,6 @@
 Check({
   showRed: false,
+  coloradoChecked: false,
   states: [],
   render(){
     <div class="ui segment">
@@ -49,7 +50,7 @@ Check({
           <form class="ui form">
             <div class="field">
               <div class="ui checkbox">
-                <input type="checkbox" b="group: states, check: coloradoChecked" value="Colorado" />
+                <input id="XXX" type="checkbox" b="group: states, check: coloradoChecked" value="Colorado" />
                 <label>Colorado</label>
               </div>
             </div>
@@ -65,13 +66,14 @@ Check({
                 <label>Florida</label>
               </div>
             </div>
-            Selected: <label b="text: states.join(' - '), class: { red: coloradoChecked }" />
+            Selected: <label class="ui label" b="text: states.join(' - '), class: { red: coloradoChecked }" />
           </form>
 
         </div>
 
 <pre><code>Example({
-  showRed: false,
+  coloradoChecked: false,
+  states: [],
   render() {
     <div>
       <input b="group: states, check: coloradoChecked" value="Colorado" type="checkbox" />
