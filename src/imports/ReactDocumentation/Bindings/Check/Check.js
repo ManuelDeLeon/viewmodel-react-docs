@@ -2,6 +2,9 @@ Check({
   showRed: false,
   coloradoChecked: false,
   states: [],
+  colorSelected: '',
+  blueSelected: false,
+
   render(){
     <div class="ui segment">
       <h2 class="ui header">check</h2>
@@ -50,7 +53,7 @@ Check({
           <form class="ui form">
             <div class="field">
               <div class="ui checkbox">
-                <input id="XXX" type="checkbox" b="group: states, check: coloradoChecked" value="Colorado" />
+                <input type="checkbox" b="group: states, check: coloradoChecked" value="Colorado" />
                 <label>Colorado</label>
               </div>
             </div>
@@ -86,6 +89,50 @@ Check({
       <label>Florida</label>
 
       Selected: <label b="text: states.join(' - '), class: { red: coloradoChecked }" />
+    </div>
+  }
+})</code></pre>
+
+      <hr />
+        <h3>Radios</h3>
+
+        <div class="ui segment">
+
+          <form class="ui form">
+            <div class="field">
+              <div class="ui radio">
+                <input value="red" name="color" b="group: colorSelected" type="radio" />
+                <label>Red</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio">
+                <input value="blue" name="color" b="group: colorSelected, check: blueSelected" type="radio" />
+                <label>Blue</label>
+              </div>
+            </div>
+            <label>The color is: <span b="text: colorSelected, style: { color: colorSelected }" ></span></label>
+            {this.blueSelected() ?
+              <label b="if: blueSelected"> - Blue Selected</label>
+              : null
+            }
+          </form>
+
+        </div>
+
+<pre><code>Example({
+  colorSelected: '',
+  blueSelected: false,
+  render() {
+    <div>
+      <input value="red" b="group: colorSelected" name="color" type="radio" />
+      <label>Red</label>
+
+      <input value="blue" b="group: colorSelected, check: blueSelected" name="color" type="radio" />
+      <label>Blue</label>
+
+      <label>The color is: <span b="text: colorSelected, style: { color: colorSelected }" ></span></label>
+      <label b="if: blueSelected"> - Blue Selected</label>
     </div>
   }
 })</code></pre>
