@@ -67,12 +67,12 @@ var Text = exports.Text = function (_React$Component) {
               "div",
               { className: "inline field" },
               _react2.default.createElement("input", { b: "value: message", type: "text", placeholder: "Type something", defaultValue: _viewmodelReact2.default.getValue(this, "message"),
-                onChange: _viewmodelReact2.default.setInputValue(this, "message"),
-                ref: _viewmodelReact2.default.getValueRef(this, "message")
+                ref: _viewmodelReact2.default.bindElement(this, "value: message")
               }),
               _react2.default.createElement(
                 "label",
-                { b: "text: message", className: "ui label" },
+                { b: "text: message", className: "ui label", ref: _viewmodelReact2.default.bindElement(this, "text: message")
+                },
                 _viewmodelReact2.default.getValue(this, "message")
               )
             )

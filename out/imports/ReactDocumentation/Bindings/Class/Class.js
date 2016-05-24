@@ -83,7 +83,8 @@ var Class = exports.Class = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", { type: "checkbox", b: "check: showBasic", ref: _viewmodelReact2.default.getCheckHook(this, "showBasic")
+                _react2.default.createElement("input", { type: "checkbox", b: "check: showBasic", defaultChecked: _viewmodelReact2.default.getValue(this, "showBasic"),
+                  ref: _viewmodelReact2.default.bindElement(this, "check: showBasic")
                 }),
                 _react2.default.createElement(
                   "label",
@@ -98,7 +99,8 @@ var Class = exports.Class = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", { type: "checkbox", b: "check: showRed", ref: _viewmodelReact2.default.getCheckHook(this, "showRed")
+                _react2.default.createElement("input", { type: "checkbox", b: "check: showRed", defaultChecked: _viewmodelReact2.default.getValue(this, "showRed"),
+                  ref: _viewmodelReact2.default.bindElement(this, "check: showRed")
                 }),
                 _react2.default.createElement(
                   "label",
@@ -109,7 +111,8 @@ var Class = exports.Class = function (_React$Component) {
             ),
             _react2.default.createElement(
               "a",
-              { b: "class: { basic: showBasic, red: showRed }", className: _viewmodelReact2.default.getClass(this, "ui button", "{\"basic\":\"showBasic\",\"red\":\"showRed\"}")
+              { b: "class: { basic: showBasic, red: showRed }", className: _viewmodelReact2.default.getClass(this, "ui button", "{\"basic\":\"showBasic\",\"red\":\"showRed\"}"),
+                ref: _viewmodelReact2.default.bindElement(this, "class: { basic: showBasic, red: showRed }")
               },
               "The Button"
             )
@@ -173,13 +176,13 @@ var Class = exports.Class = function (_React$Component) {
                 "Button Class"
               ),
               _react2.default.createElement("input", { type: "text", b: "value: buttonCss", defaultValue: _viewmodelReact2.default.getValue(this, "buttonCss"),
-                onChange: _viewmodelReact2.default.setInputValue(this, "buttonCss"),
-                ref: _viewmodelReact2.default.getValueRef(this, "buttonCss")
+                ref: _viewmodelReact2.default.bindElement(this, "value: buttonCss")
               })
             ),
             _react2.default.createElement(
               "a",
-              { b: "class: buttonCss", className: _viewmodelReact2.default.getClass(this, "ui button", "buttonCss")
+              { b: "class: buttonCss", className: _viewmodelReact2.default.getClass(this, "ui button", "buttonCss"),
+                ref: _viewmodelReact2.default.bindElement(this, "class: buttonCss")
               },
               "The Button"
             )

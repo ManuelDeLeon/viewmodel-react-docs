@@ -84,7 +84,8 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", { type: "checkbox", b: "check: showRed", ref: _viewmodelReact2.default.getCheckHook(this, "showRed")
+                _react2.default.createElement("input", { type: "checkbox", b: "check: showRed", defaultChecked: _viewmodelReact2.default.getValue(this, "showRed"),
+                  ref: _viewmodelReact2.default.bindElement(this, "check: showRed")
                 }),
                 _react2.default.createElement(
                   "label",
@@ -95,7 +96,8 @@ var Check = exports.Check = function (_React$Component) {
             ),
             _react2.default.createElement(
               "a",
-              { b: "class: { red: showRed }", className: _viewmodelReact2.default.getClass(this, "ui button", "{\"red\":\"showRed\"}")
+              { b: "class: { red: showRed }", className: _viewmodelReact2.default.getClass(this, "ui button", "{\"red\":\"showRed\"}"),
+                ref: _viewmodelReact2.default.bindElement(this, "class: { red: showRed }")
               },
               "The Button"
             )
@@ -152,7 +154,8 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", { type: "checkbox", b: "group: states, check: coloradoChecked", defaultValue: "Colorado", ref: _viewmodelReact2.default.getGroupHook(this, "states", true, "coloradoChecked")
+                _react2.default.createElement("input", { type: "checkbox", b: "group: states, check: coloradoChecked", defaultValue: "Colorado", defaultChecked: _viewmodelReact2.default.getValue(this, "coloradoChecked"),
+                  ref: _viewmodelReact2.default.bindElement(this, "group: states, check: coloradoChecked")
                 }),
                 _react2.default.createElement(
                   "label",
@@ -167,7 +170,7 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", { type: "checkbox", b: "group: states", defaultValue: "New York", ref: _viewmodelReact2.default.getGroupHook(this, "states", false, "")
+                _react2.default.createElement("input", { type: "checkbox", b: "group: states", defaultValue: "New York", ref: _viewmodelReact2.default.bindElement(this, "group: states")
                 }),
                 _react2.default.createElement(
                   "label",
@@ -182,7 +185,7 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", { type: "checkbox", b: "group: states", defaultValue: "Florida", ref: _viewmodelReact2.default.getGroupHook(this, "states", false, "")
+                _react2.default.createElement("input", { type: "checkbox", b: "group: states", defaultValue: "Florida", ref: _viewmodelReact2.default.bindElement(this, "group: states")
                 }),
                 _react2.default.createElement(
                   "label",
@@ -194,7 +197,8 @@ var Check = exports.Check = function (_React$Component) {
             "Selected: ",
             _react2.default.createElement(
               "label",
-              { b: "text: states.join(' - '), class: { red: coloradoChecked }", className: _viewmodelReact2.default.getClass(this, "ui label", "{\"red\":\"coloradoChecked\"}")
+              { b: "text: states.join(' - '), class: { red: coloradoChecked }", className: _viewmodelReact2.default.getClass(this, "ui label", "{\"red\":\"coloradoChecked\"}"),
+                ref: _viewmodelReact2.default.bindElement(this, "text: states.join(' - '), class: { red: coloradoChecked }")
               },
               _viewmodelReact2.default.getValue(this, "states.join(' - ')")
             )
@@ -266,7 +270,7 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui radio" },
-                _react2.default.createElement("input", { type: "radio", defaultValue: "red", name: "color", b: "group: colorSelected", ref: _viewmodelReact2.default.getGroupHook(this, "colorSelected", false, "")
+                _react2.default.createElement("input", { defaultValue: "red", name: "color", b: "group: colorSelected", type: "radio", ref: _viewmodelReact2.default.bindElement(this, "group: colorSelected")
                 }),
                 _react2.default.createElement(
                   "label",
@@ -281,7 +285,8 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui radio" },
-                _react2.default.createElement("input", { type: "radio", defaultValue: "blue", name: "color", b: "group: colorSelected, check: blueSelected", ref: _viewmodelReact2.default.getGroupHook(this, "colorSelected", true, "blueSelected")
+                _react2.default.createElement("input", { defaultValue: "blue", name: "color", b: "group: colorSelected, check: blueSelected", type: "radio", defaultChecked: _viewmodelReact2.default.getValue(this, "blueSelected"),
+                  ref: _viewmodelReact2.default.bindElement(this, "group: colorSelected, check: blueSelected")
                 }),
                 _react2.default.createElement(
                   "label",
@@ -296,14 +301,14 @@ var Check = exports.Check = function (_React$Component) {
               "The color is: ",
               _react2.default.createElement(
                 "span",
-                { b: "text: colorSelected, style: { color: colorSelected }", onStyle: _viewmodelReact2.default.setValue(this, "{\"color\":\"colorSelected\"}")
+                { b: "text: colorSelected, style: { color: colorSelected }", ref: _viewmodelReact2.default.bindElement(this, "text: colorSelected, style: { color: colorSelected }")
                 },
                 _viewmodelReact2.default.getValue(this, "colorSelected")
               )
             ),
             this.blueSelected() ? _react2.default.createElement(
               "label",
-              { b: "if: blueSelected", onIf: _viewmodelReact2.default.setValue(this, "blueSelected")
+              { b: "if: blueSelected", ref: _viewmodelReact2.default.bindElement(this, "if: blueSelected")
               },
               " - Blue Selected"
             ) : null
@@ -318,35 +323,32 @@ var Check = exports.Check = function (_React$Component) {
             "Example(",
             "{",
             '\n',
-            "  coloradoChecked: false,",
+            "  colorSelected: '',",
             '\n',
-            "  states: [],",
+            "  blueSelected: false,",
             '\n',
             "  render() ",
             "{",
             '\n',
             "    <div>",
             '\n',
-            "      <input b=\"group: states, check: coloradoChecked\" value=\"Colorado\" type=\"checkbox\" />",
+            "      <input value=\"red\" b=\"group: colorSelected\" name=\"color\" type=\"radio\" />",
             '\n',
-            "      <label>Colorado</label>",
-            '\n',
-            '\n',
-            "      <input type=\"checkbox\" b=\"group: states\" value=\"New York\" />",
-            '\n',
-            "      <label>New York</label>",
+            "      <label>Red</label>",
             '\n',
             '\n',
-            "      <input type=\"checkbox\" b=\"group: states\" value=\"Florida\" />",
+            "      <input value=\"blue\" b=\"group: colorSelected, check: blueSelected\" name=\"color\" type=\"radio\" />",
             '\n',
-            "      <label>Florida</label>",
+            "      <label>Blue</label>",
             '\n',
             '\n',
-            "      Selected: <label b=\"text: states.join(' - '), class: ",
+            "      <label>The color is: <span b=\"text: colorSelected, style: ",
             "{",
-            " red: coloradoChecked ",
+            " color: colorSelected ",
             "}",
-            "\" />",
+            "\" ></span></label>",
+            '\n',
+            "      <label b=\"if: blueSelected\"> - Blue Selected</label>",
             '\n',
             "    </div>",
             '\n',

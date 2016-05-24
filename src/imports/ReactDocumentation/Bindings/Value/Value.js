@@ -1,4 +1,5 @@
 Value({
+  message: '',
   render(){
     <div class="ui segment">
       <h2 class="ui header">value</h2>
@@ -20,6 +21,7 @@ Value({
       </div>
 
 <pre><code>Example({
+  message: '',
   render() {
     <div>
       <input b="value: message" placeholder="Type something" />
@@ -29,4 +31,4 @@ Value({
 })</code></pre>
     </div>
   }
-})
+});

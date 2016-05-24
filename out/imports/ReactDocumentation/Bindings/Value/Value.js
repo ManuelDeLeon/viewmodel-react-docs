@@ -67,12 +67,12 @@ var Value = exports.Value = function (_React$Component) {
               "div",
               { className: "inline field" },
               _react2.default.createElement("input", { b: "value: message", type: "text", placeholder: "Type something", defaultValue: _viewmodelReact2.default.getValue(this, "message"),
-                onChange: _viewmodelReact2.default.setInputValue(this, "message"),
-                ref: _viewmodelReact2.default.getValueRef(this, "message")
+                ref: _viewmodelReact2.default.bindElement(this, "value: message")
               }),
               _react2.default.createElement(
                 "label",
-                { b: "text: message", className: "ui label" },
+                { b: "text: message", className: "ui label", ref: _viewmodelReact2.default.bindElement(this, "text: message")
+                },
                 _viewmodelReact2.default.getValue(this, "message")
               )
             )
@@ -86,6 +86,8 @@ var Value = exports.Value = function (_React$Component) {
             null,
             "Example(",
             "{",
+            '\n',
+            "  message: '',",
             '\n',
             "  render() ",
             "{",
@@ -114,7 +116,9 @@ var Value = exports.Value = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Value).call(this, props));
 
-    _viewmodelReact2.default.prepareComponent("Value", _this, {});
+    _viewmodelReact2.default.prepareComponent("Value", _this, {
+      message: ''
+    });
 
     return _this;
   }
