@@ -112,10 +112,9 @@ Check({
               </div>
             </div>
             <label>The color is: <span b="text: colorSelected, style: { color: colorSelected }" ></span></label>
-            {this.blueSelected() ?
+
               <label b="if: blueSelected"> - Blue Selected</label>
-              : null
-            }
+
           </form>
 
         </div>

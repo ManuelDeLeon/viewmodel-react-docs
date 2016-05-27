@@ -71,8 +71,7 @@ var Text = exports.Text = function (_React$Component) {
               }),
               _react2.default.createElement(
                 "label",
-                { b: "text: message", className: "ui label", ref: _viewmodelReact2.default.bindElement(this, "text: message")
-                },
+                { b: "text: message", className: "ui label" },
                 _viewmodelReact2.default.getValue(this, "message")
               )
             )

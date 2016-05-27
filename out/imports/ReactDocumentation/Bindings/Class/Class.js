@@ -111,8 +111,7 @@ var Class = exports.Class = function (_React$Component) {
             ),
             _react2.default.createElement(
               "a",
-              { b: "class: { basic: showBasic, red: showRed }", className: _viewmodelReact2.default.getClass(this, "ui button", "{\"basic\":\"showBasic\",\"red\":\"showRed\"}"),
-                ref: _viewmodelReact2.default.bindElement(this, "class: { basic: showBasic, red: showRed }")
+              { b: "class: { basic: showBasic, red: showRed }", className: _viewmodelReact2.default.getClass(this, "ui button", "{\"basic\":\"showBasic\",\"red\":\"showRed\"}")
               },
               "The Button"
             )
@@ -181,8 +180,7 @@ var Class = exports.Class = function (_React$Component) {
             ),
             _react2.default.createElement(
               "a",
-              { b: "class: buttonCss", className: _viewmodelReact2.default.getClass(this, "ui button", "buttonCss"),
-                ref: _viewmodelReact2.default.bindElement(this, "class: buttonCss")
+              { b: "class: buttonCss", className: _viewmodelReact2.default.getClass(this, "ui button", "buttonCss")
               },
               "The Button"
             )

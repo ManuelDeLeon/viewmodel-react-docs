@@ -14,6 +14,7 @@ Bindings({
         <a class="item" href="#BindingsHtml">html</a>
         <a class="item" href="#BindingsClass">class</a>
         <a class="item" href="#BindingsCheck">check</a>
+        <a class="item" href="#BindingsIf">if</a>
       </div>
     </div>
   }

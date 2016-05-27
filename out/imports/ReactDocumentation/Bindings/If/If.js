@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Html = undefined;
+exports.If = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -23,10 +23,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Html = exports.Html = function (_React$Component) {
-  _inherits(Html, _React$Component);
+var If = exports.If = function (_React$Component) {
+  _inherits(If, _React$Component);
 
-  _createClass(Html, [{
+  _createClass(If, [{
     key: "render",
     value: function render() {
       return _react2.default.createElement(
@@ -35,13 +35,13 @@ var Html = exports.Html = function (_React$Component) {
         _react2.default.createElement(
           "h2",
           { className: "ui header" },
-          "html"
+          "if"
         ),
-        _react2.default.createElement("a", { className: "anchor active", id: "BindingsHtml" }),
+        _react2.default.createElement("a", { className: "anchor active", id: "BindingsIf" }),
         _react2.default.createElement(
           "p",
           null,
-          "The text binding causes the html element to display the html returned by the given function/property."
+          "The if binding causes the html element to appear on screen or not, depending on the value of the bound property."
         ),
         _react2.default.createElement(
           "pre",
@@ -49,34 +49,35 @@ var Html = exports.Html = function (_React$Component) {
           _react2.default.createElement(
             "code",
             null,
-            "b=\"html: property\""
+            "b=\"if: property\""
           )
         ),
         _react2.default.createElement(
           "h3",
           null,
-          "text demo"
+          "if demo"
         ),
         _react2.default.createElement(
           "div",
           { className: "ui segment basic" },
+          _react2.default.createElement("input", { b: "check: itsOn", type: "checkbox", defaultChecked: _viewmodelReact2.default.getValue(this, "itsOn"),
+            ref: _viewmodelReact2.default.bindElement(this, "check: itsOn")
+          }),
+          " Is it on?    TODO: wrap element that has if binding with a jsx if/ternary",
           _react2.default.createElement(
-            "form",
-            { className: "ui fluid form" },
-            _react2.default.createElement(
-              "div",
-              { className: "inline field" },
-              _react2.default.createElement("input", { b: "value: message", type: "text", placeholder: "Type something", style: {
-                  width: "250px"
-                }, defaultValue: _viewmodelReact2.default.getValue(this, "message"),
-                ref: _viewmodelReact2.default.bindElement(this, "value: message")
-              }),
-              _react2.default.createElement("label", { b: "html: message", className: "ui label", dangerouslySetInnerHTML: {
-                  __html: _viewmodelReact2.default.getValue(this, "message")
-                }
-              })
-            )
+            "label",
+            { id: "XXX", className: "ui red label XXX" },
+            "It's SO on!"
           )
+        ),
+        _react2.default.createElement(
+          "div",
+          null,
+          _viewmodelReact2.default.getValue(this, "itsOn") ? _react2.default.createElement(
+            "label",
+            null,
+            "B"
+          ) : null
         ),
         _react2.default.createElement(
           "pre",
@@ -87,7 +88,7 @@ var Html = exports.Html = function (_React$Component) {
             "Example(",
             "{",
             '\n',
-            "  message: 'Can it be a <strike>strike</strike>?',",
+            "  itsOn: false,",
             '\n',
             "  render() ",
             "{",
@@ -96,7 +97,7 @@ var Html = exports.Html = function (_React$Component) {
             '\n',
             "      <input b=\"value: message\" placeholder=\"Type something\" />",
             '\n',
-            "      <label b=\"html: message\" />",
+            "      <label b=\"text: message\" />",
             '\n',
             "    </div>",
             '\n',
@@ -111,17 +112,17 @@ var Html = exports.Html = function (_React$Component) {
     }
   }]);
 
-  function Html(props) {
-    _classCallCheck(this, Html);
+  function If(props) {
+    _classCallCheck(this, If);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Html).call(this, props));
+    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(If).call(this, props));
 
-    _viewmodelReact2.default.prepareComponent("Html", _this, {
-      message: 'Can it be a <strike>strike</strike>?'
+    _viewmodelReact2.default.prepareComponent("If", _this, {
+      itsOn: false
     });
 
     return _this;
   }
 
-  return Html;
+  return If;
 }(_react2.default.Component);

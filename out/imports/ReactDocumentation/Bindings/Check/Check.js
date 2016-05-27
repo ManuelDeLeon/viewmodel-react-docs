@@ -96,8 +96,7 @@ var Check = exports.Check = function (_React$Component) {
             ),
             _react2.default.createElement(
               "a",
-              { b: "class: { red: showRed }", className: _viewmodelReact2.default.getClass(this, "ui button", "{\"red\":\"showRed\"}"),
-                ref: _viewmodelReact2.default.bindElement(this, "class: { red: showRed }")
+              { b: "class: { red: showRed }", className: _viewmodelReact2.default.getClass(this, "ui button", "{\"red\":\"showRed\"}")
               },
               "The Button"
             )
@@ -197,8 +196,7 @@ var Check = exports.Check = function (_React$Component) {
             "Selected: ",
             _react2.default.createElement(
               "label",
-              { b: "text: states.join(' - '), class: { red: coloradoChecked }", className: _viewmodelReact2.default.getClass(this, "ui label", "{\"red\":\"coloradoChecked\"}"),
-                ref: _viewmodelReact2.default.bindElement(this, "text: states.join(' - '), class: { red: coloradoChecked }")
+              { b: "text: states.join(' - '), class: { red: coloradoChecked }", className: _viewmodelReact2.default.getClass(this, "ui label", "{\"red\":\"coloradoChecked\"}")
               },
               _viewmodelReact2.default.getValue(this, "states.join(' - ')")
             )
@@ -306,10 +304,9 @@ var Check = exports.Check = function (_React$Component) {
                 _viewmodelReact2.default.getValue(this, "colorSelected")
               )
             ),
-            this.blueSelected() ? _react2.default.createElement(
+            _viewmodelReact2.default.getValue(this, "blueSelected") ? _react2.default.createElement(
               "label",
-              { b: "if: blueSelected", ref: _viewmodelReact2.default.bindElement(this, "if: blueSelected")
-              },
+              null,
               " - Blue Selected"
             ) : null
           )

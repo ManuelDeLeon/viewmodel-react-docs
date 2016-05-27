@@ -9,6 +9,7 @@ Bindings({
       <Html />
       <Class />
       <Check />
+      <If />
     </div>
   }
 });
