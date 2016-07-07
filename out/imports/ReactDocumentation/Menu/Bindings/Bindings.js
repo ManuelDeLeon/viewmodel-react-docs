@@ -78,6 +78,11 @@ var Bindings = exports.Bindings = function (_React$Component) {
           ),
           _react2.default.createElement(
             "a",
+            { className: "item", href: "#BindingsStyle" },
+            "style"
+          ),
+          _react2.default.createElement(
+            "a",
             { className: "item", href: "#BindingsCheck" },
             "check"
           ),
@@ -85,6 +90,31 @@ var Bindings = exports.Bindings = function (_React$Component) {
             "a",
             { className: "item", href: "#BindingsIf" },
             "if"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#BindingsUnless" },
+            "unless"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#BindingsEnter" },
+            "enter"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#BindingsChange" },
+            "change"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#BindingsHover" },
+            "hover"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#BindingsFocus" },
+            "focus"
           )
         )
       );

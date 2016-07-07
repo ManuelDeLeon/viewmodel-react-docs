@@ -3,6 +3,6 @@ npm-debug.log
 .DS_Store
 dist
 semantic
-
+out
 out_pre
 .idea

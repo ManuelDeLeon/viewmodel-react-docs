@@ -66,12 +66,12 @@ var Html = exports.Html = function (_React$Component) {
             _react2.default.createElement(
               "div",
               { className: "inline field" },
-              _react2.default.createElement("input", { b: "value: message", type: "text", placeholder: "Type something", style: {
+              _react2.default.createElement("input", { type: "text", placeholder: "Type something", style: {
                   width: "250px"
                 }, defaultValue: _viewmodelReact2.default.getValue(this, "message"),
                 ref: _viewmodelReact2.default.bindElement(this, "value: message")
               }),
-              _react2.default.createElement("label", { b: "html: message", className: "ui label", dangerouslySetInnerHTML: {
+              _react2.default.createElement("label", { className: "ui label", dangerouslySetInnerHTML: {
                   __html: _viewmodelReact2.default.getValue(this, "message")
                 }
               })

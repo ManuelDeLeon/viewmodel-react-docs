@@ -13,21 +13,15 @@ If({
 
       <div class="ui segment basic">
         <input b="check: itsOn" type="checkbox" /> Is it on? &nbsp;&nbsp;
-
-        TODO: wrap element that has if binding with a jsx if/ternary
-        <label id="XXX" class="ui red label XXX" >It's SO on!</label>
-      </div>
-
-      <div>
-        <label class="A" b="if: itsOn">B</label>
+        <label class="ui red label" b="if: itsOn">It's SO on!</label>
       </div>
 
 <pre><code>Example({
   itsOn: false,
   render() {
     <div>
-      <input b="value: message" placeholder="Type something" />
-      <label b="text: message" />
+      <input b="check: itsOn" type="checkbox" /> Is it on?
+      <label b="if: itsOn" class="ui red label">It's SO on!</label>
     </div>
   }
 })</code></pre>

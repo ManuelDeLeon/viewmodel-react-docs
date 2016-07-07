@@ -67,7 +67,7 @@ Class({
     <div>
       <label>Button Class</label>
       <input type="text" b="value: buttonCss" />
-      <button b="class: { basic: showBasic, red: showRed }" >The Button</button>
+      <button b="class: buttonCss" >The Button</button>
     </div>
   }
 })</code></pre>

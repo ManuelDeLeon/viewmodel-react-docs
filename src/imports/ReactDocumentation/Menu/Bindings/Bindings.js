@@ -13,8 +13,14 @@ Bindings({
         <a class="item" href="#BindingsText">text</a>
         <a class="item" href="#BindingsHtml">html</a>
         <a class="item" href="#BindingsClass">class</a>
+        <a class="item" href="#BindingsStyle">style</a>
         <a class="item" href="#BindingsCheck">check</a>
         <a class="item" href="#BindingsIf">if</a>
+        <a class="item" href="#BindingsUnless">unless</a>
+        <a class="item" href="#BindingsEnter">enter</a>
+        <a class="item" href="#BindingsChange">change</a>
+        <a class="item" href="#BindingsHover">hover</a>
+        <a class="item" href="#BindingsFocus">focus</a>
       </div>
     </div>
   }

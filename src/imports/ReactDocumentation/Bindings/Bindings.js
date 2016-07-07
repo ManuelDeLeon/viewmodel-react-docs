@@ -8,8 +8,14 @@ Bindings({
       <Text />
       <Html />
       <Class />
+      <Style />
       <Check />
       <If />
+      <Unless />
+      <Enter />
+      <Change />
+      <Hover />
+      <Focus />
     </div>
   }
 });
