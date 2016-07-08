@@ -21,6 +21,8 @@ Bindings({
         <a class="item" href="#BindingsChange">change</a>
         <a class="item" href="#BindingsHover">hover</a>
         <a class="item" href="#BindingsFocus">focus</a>
+        <a class="item" href="#BindingsEnableDisable">enable/disable</a>
+        <a class="item" href="#BindingsToggle">toggle</a>
       </div>
     </div>
   }

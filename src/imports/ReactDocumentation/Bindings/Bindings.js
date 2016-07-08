@@ -16,6 +16,8 @@ Bindings({
       <Change />
       <Hover />
       <Focus />
+      <EnableDisable />
+      <Toggle />
     </div>
   }
 });
