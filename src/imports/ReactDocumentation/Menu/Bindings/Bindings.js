@@ -23,6 +23,9 @@ Bindings({
         <a class="item" href="#BindingsFocus">focus</a>
         <a class="item" href="#BindingsEnableDisable">enable/disable</a>
         <a class="item" href="#BindingsToggle">toggle</a>
+        <a class="item" href="#BindingsThrottle">throttle</a>
+        <hr/>
+        <a class="item" href="#BindingsCustomBindings">Custom Bindings</a>
       </div>
     </div>
   }

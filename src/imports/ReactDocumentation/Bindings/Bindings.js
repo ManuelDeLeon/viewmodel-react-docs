@@ -18,6 +18,8 @@ Bindings({
       <Focus />
       <EnableDisable />
       <Toggle />
+      <Throttle />
+      <CustomBindings />
     </div>
   }
 });

@@ -17,6 +17,7 @@ ReactDocumentation({
           </p>
         </div>
         <Bindings />
+        <Misc />
         <Advanced />
       </div>
     </div>
