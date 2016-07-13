@@ -20,6 +20,8 @@ Bindings({
       <Toggle />
       <Throttle />
       <CustomBindings />
+      <BindingObject />
+      <BindingArgument />
     </div>
   }
 });

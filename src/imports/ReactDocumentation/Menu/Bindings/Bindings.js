@@ -26,6 +26,8 @@ Bindings({
         <a class="item" href="#BindingsThrottle">throttle</a>
         <hr/>
         <a class="item" href="#BindingsCustomBindings">Custom Bindings</a>
+        <a class="item" href="#BindingsBindingObject">Binding Object</a>
+        <a class="item" href="#BindingsBindingArgument">Binding Argument</a>
       </div>
     </div>
   }
