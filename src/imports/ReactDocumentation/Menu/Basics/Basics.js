@@ -1,9 +1,9 @@
-Misc({
+Basics({
   render(){
     <div class="item react-menu-item">
       <a class="title">
         <i class="dropdown icon"></i>
-        <b>Misc</b>
+        <b>Basics</b>
       </a>
       <div class="content menu">
         <a class="item" href="#MiscAttributes">attributes</a>

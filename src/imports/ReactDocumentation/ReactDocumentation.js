@@ -16,9 +16,10 @@ ReactDocumentation({
             This page is the preview documentation of the React version of ViewModel. It's not released yet and there's no ETA.
           </p>
         </div>
-        <Bindings />
-        <Misc />
+        
+        <Basics />
         <Advanced />
+        <Bindings />
       </div>
     </div>
   }

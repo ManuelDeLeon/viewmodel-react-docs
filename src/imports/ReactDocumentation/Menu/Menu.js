@@ -15,9 +15,9 @@ Menu({
       </h2>
       <hr />
       <div class="ui vertical following fluid accordion text menu ">
-        <Bindings />
-        <Misc />
+        <Basics />
         <Advanced />
+        <Bindings />
       </div>
     </div>
   }
