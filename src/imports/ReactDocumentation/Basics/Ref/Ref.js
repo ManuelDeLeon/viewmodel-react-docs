@@ -16,7 +16,7 @@ Ref({
   render(){
     <div class="ui segment">
       <h2 class="ui header">ref</h2>
-      <a class="anchor active" id="MiscRef"></a>
+      <a class="anchor active" id="BasicsRef"></a>
       <p>
         The ref attribute gives you a way to interact with an html element without resorting to selectors. This is a built in React feature. When you reference a component you get a hold of the component instance.
       </p>

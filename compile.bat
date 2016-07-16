@@ -1,4 +1,4 @@
-cd node_modules\viewmodel-react-compiler
+cd node_modules\viewmodel-react-plugin
 call babel --presets es2015 --out-dir dist src
 cd  ..\..
 cd node_modules\viewmodel-react

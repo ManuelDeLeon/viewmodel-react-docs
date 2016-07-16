@@ -42,14 +42,14 @@
     "webpack": "1.13.1",
     "webpack-dev-server": "1.14.1",
     "block-loader": "2.1.0",
-    "viewmodel-react-compiler": "0.3.0",
+    "viewmodel-react-plugin": "^0.4.0",
     "extract-text-webpack-plugin": "1.0.1"
   },
   "dependencies": {
     "react": "15.2.0",
     "react-dom": "15.2.0",
     "react-highlight": "0.8.0",
-    "viewmodel-react": "0.3.0",
+    "viewmodel-react": "^0.4.0",
     "semantic-ui-css": "2.2.1"
   }
 }

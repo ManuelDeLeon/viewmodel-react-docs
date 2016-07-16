@@ -7,9 +7,33 @@ exports.Bindings = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _BindingArgument = require("./BindingArgument/BindingArgument");
+
+var _BindingObject = require("./BindingObject/BindingObject");
+
+var _CustomBindings = require("./CustomBindings/CustomBindings");
+
+var _Throttle = require("./Throttle/Throttle");
+
+var _Toggle = require("./Toggle/Toggle");
+
+var _EnableDisable = require("./EnableDisable/EnableDisable");
+
+var _Focus = require("./Focus/Focus");
+
+var _Hover = require("./Hover/Hover");
+
+var _Change = require("./Change/Change");
+
+var _Enter = require("./Enter/Enter");
+
+var _Unless = require("./Unless/Unless");
+
 var _If = require("./If/If");
 
 var _Check = require("./Check/Check");
+
+var _Style = require("./Style/Style");
 
 var _Class = require("./Class/Class");
 
@@ -71,10 +95,46 @@ var Bindings = exports.Bindings = function (_React$Component) {
         _react2.default.createElement(_Class.Class, {
           parent: this
         }),
+        _react2.default.createElement(_Style.Style, {
+          parent: this
+        }),
         _react2.default.createElement(_Check.Check, {
           parent: this
         }),
         _react2.default.createElement(_If.If, {
+          parent: this
+        }),
+        _react2.default.createElement(_Unless.Unless, {
+          parent: this
+        }),
+        _react2.default.createElement(_Enter.Enter, {
+          parent: this
+        }),
+        _react2.default.createElement(_Change.Change, {
+          parent: this
+        }),
+        _react2.default.createElement(_Hover.Hover, {
+          parent: this
+        }),
+        _react2.default.createElement(_Focus.Focus, {
+          parent: this
+        }),
+        _react2.default.createElement(_EnableDisable.EnableDisable, {
+          parent: this
+        }),
+        _react2.default.createElement(_Toggle.Toggle, {
+          parent: this
+        }),
+        _react2.default.createElement(_Throttle.Throttle, {
+          parent: this
+        }),
+        _react2.default.createElement(_CustomBindings.CustomBindings, {
+          parent: this
+        }),
+        _react2.default.createElement(_BindingObject.BindingObject, {
+          parent: this
+        }),
+        _react2.default.createElement(_BindingArgument.BindingArgument, {
           parent: this
         })
       );

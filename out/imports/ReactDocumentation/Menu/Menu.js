@@ -7,9 +7,11 @@ exports.Menu = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _Bindings = require("./Bindings/Bindings");
+
 var _Advanced = require("./Advanced/Advanced");
 
-var _Bindings = require("./Bindings/Bindings");
+var _Basics = require("./Basics/Basics");
 
 var _viewmodelReact = require("viewmodel-react");
 
@@ -61,10 +63,13 @@ var Menu = exports.Menu = function (_React$Component) {
         _react2.default.createElement(
           "div",
           { className: "ui vertical following fluid accordion text menu " },
-          _react2.default.createElement(_Bindings.Bindings, {
+          _react2.default.createElement(_Basics.Basics, {
             parent: this
           }),
           _react2.default.createElement(_Advanced.Advanced, {
+            parent: this
+          }),
+          _react2.default.createElement(_Bindings.Bindings, {
             parent: this
           })
         )

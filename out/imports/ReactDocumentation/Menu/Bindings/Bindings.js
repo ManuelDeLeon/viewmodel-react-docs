@@ -115,6 +115,37 @@ var Bindings = exports.Bindings = function (_React$Component) {
             "a",
             { className: "item", href: "#BindingsFocus" },
             "focus"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#BindingsEnableDisable" },
+            "enable/disable"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#BindingsToggle" },
+            "toggle"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#BindingsThrottle" },
+            "throttle"
+          ),
+          _react2.default.createElement("hr", null),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#BindingsCustomBindings" },
+            "Custom Bindings"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#BindingsBindingObject" },
+            "Binding Object"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#BindingsBindingArgument" },
+            "Binding Argument"
           )
         )
       );

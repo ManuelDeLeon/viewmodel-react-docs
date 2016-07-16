@@ -115,7 +115,8 @@ var Validation = exports.Validation = function (_React$Component) {
                 { className: "ui form" },
                 _react2.default.createElement(
                   "div",
-                  { b: "class: { error: firstName.invalid }", className: _viewmodelReact2.default.getClass(this, "field", "{\"error\":\"firstName.invalid\"}")
+                  {
+                    className: _viewmodelReact2.default.getClass(this, "field", "{error:firstName.invalid}")
                   },
                   _react2.default.createElement(
                     "label",
@@ -124,18 +125,22 @@ var Validation = exports.Validation = function (_React$Component) {
                   ),
                   _react2.default.createElement(
                     "div",
-                    { b: "class: { loading: firstName.validating }", className: _viewmodelReact2.default.getClass(this, "ui icon input ", "{\"loading\":\"firstName.validating\"}")
+                    {
+                      className: _viewmodelReact2.default.getClass(this, "ui icon input ", "{loading:firstName.validating}")
                     },
-                    _react2.default.createElement("input", { type: "text", b: "value: firstName, attr: { title: firstName.message }", defaultValue: _viewmodelReact2.default.getValue(this, "firstName"),
+                    _react2.default.createElement("input", { type: "text", defaultValue: _viewmodelReact2.default.getValue(this, "firstName"),
                       ref: _viewmodelReact2.default.bindElement(this, "value: firstName, attr: { title: firstName.message }")
                     }),
-                    _viewmodelReact2.default.getValue(this, "firstName.validating") ? _react2.default.createElement("i", null) : null,
-                    _viewmodelReact2.default.getValue(this, "!firstName.validating") ? _react2.default.createElement("i", null) : null
+                    _viewmodelReact2.default.getValue(this, "firstName.validating") ? _react2.default.createElement("i", { className: "icon" }) : null,
+                    _viewmodelReact2.default.getValue(this, "!firstName.validating") ? _react2.default.createElement("i", {
+                      className: _viewmodelReact2.default.getClass(this, "thumbs outline icon", "{down:firstName.invalid}")
+                    }) : null
                   )
                 ),
                 _react2.default.createElement(
                   "div",
-                  { b: "class: { error: lastName.invalid }", className: _viewmodelReact2.default.getClass(this, "field", "{\"error\":\"lastName.invalid\"}")
+                  {
+                    className: _viewmodelReact2.default.getClass(this, "field", "{error:lastName.invalid}")
                   },
                   _react2.default.createElement(
                     "label",
@@ -145,15 +150,16 @@ var Validation = exports.Validation = function (_React$Component) {
                   _react2.default.createElement(
                     "div",
                     { className: "ui icon input " },
-                    _react2.default.createElement("input", { type: "text", b: "value: lastName", defaultValue: _viewmodelReact2.default.getValue(this, "lastName"),
+                    _react2.default.createElement("input", { type: "text", defaultValue: _viewmodelReact2.default.getValue(this, "lastName"),
                       ref: _viewmodelReact2.default.bindElement(this, "value: lastName")
                     }),
-                    _viewmodelReact2.default.getValue(this, "lastName.invalid") ? _react2.default.createElement("i", null) : null
+                    _viewmodelReact2.default.getValue(this, "lastName.invalid") ? _react2.default.createElement("i", { className: "thumbs down outline icon" }) : null
                   )
                 ),
                 _react2.default.createElement(
                   "div",
-                  { b: "class: { error: age.invalid }", className: _viewmodelReact2.default.getClass(this, "field", "{\"error\":\"age.invalid\"}")
+                  {
+                    className: _viewmodelReact2.default.getClass(this, "field", "{error:age.invalid}")
                   },
                   _react2.default.createElement(
                     "label",
@@ -163,10 +169,10 @@ var Validation = exports.Validation = function (_React$Component) {
                   _react2.default.createElement(
                     "div",
                     { className: "ui icon input " },
-                    _react2.default.createElement("input", { type: "text", b: "value: age, attr: { title: age.message }", defaultValue: _viewmodelReact2.default.getValue(this, "age"),
+                    _react2.default.createElement("input", { type: "text", defaultValue: _viewmodelReact2.default.getValue(this, "age"),
                       ref: _viewmodelReact2.default.bindElement(this, "value: age, attr: { title: age.message }")
                     }),
-                    _viewmodelReact2.default.getValue(this, "age.invalid") ? _react2.default.createElement("i", null) : null
+                    _viewmodelReact2.default.getValue(this, "age.invalid") ? _react2.default.createElement("i", { className: "thumbs down outline icon" }) : null
                   )
                 ),
                 _react2.default.createElement(
@@ -180,14 +186,15 @@ var Validation = exports.Validation = function (_React$Component) {
                   _react2.default.createElement(
                     "div",
                     { className: "ui icon input " },
-                    _react2.default.createElement("input", { type: "text", b: "value: address", defaultValue: _viewmodelReact2.default.getValue(this, "address"),
+                    _react2.default.createElement("input", { type: "text", defaultValue: _viewmodelReact2.default.getValue(this, "address"),
                       ref: _viewmodelReact2.default.bindElement(this, "value: address")
                     })
                   )
                 ),
                 _react2.default.createElement(
                   "div",
-                  { className: "ui blue button", b: "enable: valid", ref: _viewmodelReact2.default.bindElement(this, "enable: valid")
+                  { className: "ui blue button", disabled: _viewmodelReact2.default.getDisabled(this, true, "valid"),
+                    ref: _viewmodelReact2.default.bindElement(this, "enable: valid")
                   },
                   "Log Name"
                 )

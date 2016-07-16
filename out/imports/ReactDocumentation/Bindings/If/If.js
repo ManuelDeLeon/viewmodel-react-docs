@@ -60,23 +60,14 @@ var If = exports.If = function (_React$Component) {
         _react2.default.createElement(
           "div",
           { className: "ui segment basic" },
-          _react2.default.createElement("input", { b: "check: itsOn", type: "checkbox", defaultChecked: _viewmodelReact2.default.getValue(this, "itsOn"),
+          _react2.default.createElement("input", { type: "checkbox", defaultChecked: _viewmodelReact2.default.getValue(this, "itsOn"),
             ref: _viewmodelReact2.default.bindElement(this, "check: itsOn")
           }),
-          " Is it on?    TODO: wrap element that has if binding with a jsx if/ternary",
-          _react2.default.createElement(
-            "label",
-            { id: "XXX", className: "ui red label XXX" },
-            "It's SO on!"
-          )
-        ),
-        _react2.default.createElement(
-          "div",
-          null,
+          " Is it on?   ",
           _viewmodelReact2.default.getValue(this, "itsOn") ? _react2.default.createElement(
             "label",
-            null,
-            "B"
+            { className: "ui red label" },
+            "It's SO on!"
           ) : null
         ),
         _react2.default.createElement(
@@ -95,9 +86,9 @@ var If = exports.If = function (_React$Component) {
             '\n',
             "    <div>",
             '\n',
-            "      <input b=\"value: message\" placeholder=\"Type something\" />",
+            "      <input b=\"check: itsOn\" type=\"checkbox\" /> Is it on?",
             '\n',
-            "      <label b=\"text: message\" />",
+            "      <label b=\"if: itsOn\" class=\"ui red label\">It's SO on!</label>",
             '\n',
             "    </div>",
             '\n',
