@@ -41,11 +41,11 @@ var Person = exports.Person = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { className: 'content' },
-          _react2.default.createElement('input', { type: 'text', defaultValue: _viewmodelReact2.default.getValue(this, 'name'),
-            ref: _viewmodelReact2.default.bindElement(this, 'value: name')
+          _react2.default.createElement('input', { type: 'text', defaultValue: _viewmodelReact2.default.getValue(this, null, null, 'name'),
+            ref: _viewmodelReact2.default.bindElement(this, null, null, 'value: name')
           }),
-          _react2.default.createElement('input', { type: 'text', defaultValue: _viewmodelReact2.default.getValue(this, 'address'),
-            ref: _viewmodelReact2.default.bindElement(this, 'value: address')
+          _react2.default.createElement('input', { type: 'text', defaultValue: _viewmodelReact2.default.getValue(this, null, null, 'address'),
+            ref: _viewmodelReact2.default.bindElement(this, null, null, 'value: address')
           })
         )
       );

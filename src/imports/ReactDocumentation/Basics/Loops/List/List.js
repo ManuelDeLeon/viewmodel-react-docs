@@ -1,11 +1,12 @@
 List({
-  items: [ 'one', 'two', 'three' ],
-  selected: 'one',
+  colors: [
+    { id: 1, color: "Red" },
+    { id: 2, color: "Green"},
+    { id: 3, color: "Blue"}
+  ],
   render(){
     <ul>
-      {this.items().map( (item, i) =>
-        <ListItem text={item} key={i} />
-      )}
+      <ListItem b="repeat: colors, key: id" />
     </ul>
   }
-});
+})

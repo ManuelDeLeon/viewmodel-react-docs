@@ -13,6 +13,10 @@ var _Advanced = require("./Advanced/Advanced");
 
 var _Basics = require("./Basics/Basics");
 
+var _Introduction = require("./Introduction/Introduction");
+
+var _Logo = require("./Logo/Logo");
+
 var _Menu = require("./Menu/Menu");
 
 var _viewmodelReact = require("viewmodel-react");
@@ -54,20 +58,12 @@ var ReactDocumentation = exports.ReactDocumentation = function (_React$Component
           { className: "twelve wide column", style: {
               width: "740px"
             } },
-          _react2.default.createElement(
-            "div",
-            { className: "ui segment" },
-            _react2.default.createElement(
-              "h1",
-              { className: "ui header red" },
-              "ViewModel for React Preview"
-            ),
-            _react2.default.createElement(
-              "p",
-              null,
-              "This page is the preview documentation of the React version of ViewModel. It's not released yet and there's no ETA."
-            )
-          ),
+          _react2.default.createElement(_Logo.Logo, {
+            parent: this
+          }),
+          _react2.default.createElement(_Introduction.Introduction, {
+            parent: this
+          }),
           _react2.default.createElement(_Basics.Basics, {
             parent: this
           }),

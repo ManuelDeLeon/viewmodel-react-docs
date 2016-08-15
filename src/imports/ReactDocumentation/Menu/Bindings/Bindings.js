@@ -24,6 +24,7 @@ Bindings({
         <a class="item" href="#BindingsEnableDisable">enable/disable</a>
         <a class="item" href="#BindingsToggle">toggle</a>
         <a class="item" href="#BindingsThrottle">throttle</a>
+        <a class="item" href="#BindingsRepeat">repeat</a>
         <hr/>
         <a class="item" href="#BindingsCustomBindings">Custom Bindings</a>
         <a class="item" href="#BindingsBindingObject">Binding Object</a>

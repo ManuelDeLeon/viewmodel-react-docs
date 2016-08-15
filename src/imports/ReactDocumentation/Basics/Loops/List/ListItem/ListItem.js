@@ -1,16 +1,6 @@
 ListItem({
-  text: '',
-  isSelected() {
-    return this.parent().selected() === this.text();
-  },
-  liStyle() {
-    return this.isSelected() ? 'color: red' : '';
-  },
+  color: '',
   render() {
-    <li b="
-      text: text,
-      click: parent.selected(text),
-      class: { selected: isSelected },
-      style: liStyle" />
+    <li b="text: color, style: { color: color }" />
   }
 });

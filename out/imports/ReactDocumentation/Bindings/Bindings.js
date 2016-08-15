@@ -13,6 +13,8 @@ var _BindingObject = require("./BindingObject/BindingObject");
 
 var _CustomBindings = require("./CustomBindings/CustomBindings");
 
+var _Repeat = require("./Repeat/Repeat");
+
 var _Throttle = require("./Throttle/Throttle");
 
 var _Toggle = require("./Toggle/Toggle");
@@ -126,6 +128,9 @@ var Bindings = exports.Bindings = function (_React$Component) {
           parent: this
         }),
         _react2.default.createElement(_Throttle.Throttle, {
+          parent: this
+        }),
+        _react2.default.createElement(_Repeat.Repeat, {
           parent: this
         }),
         _react2.default.createElement(_CustomBindings.CustomBindings, {

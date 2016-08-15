@@ -19,6 +19,7 @@ Bindings({
       <EnableDisable />
       <Toggle />
       <Throttle />
+      <Repeat />
       <CustomBindings />
       <BindingObject />
       <BindingArgument />

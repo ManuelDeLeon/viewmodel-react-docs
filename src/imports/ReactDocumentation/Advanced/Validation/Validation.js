@@ -71,7 +71,7 @@ Validation({
                   <input type="text" b="value: address" />
                 </div>
               </div>
-              <div class="ui blue button" b="enable: valid">Log Name</div>
+              <div class="ui blue button" b="class: { disabled: !valid }">Log Name</div>
             </form>
           </div>
           <div class="ui column">
@@ -97,6 +97,7 @@ Validation({
       </div>
 
 <pre><code>Example({
+
   firstName: ViewModel.property.string.notBlank
     .validMessage('First name looks good')
     .invalidMessage("First message can't be blank or end with an X")
@@ -104,19 +105,24 @@ Validation({
       // Simulate an async call to the server
       Meteor.setTimeout(() => (value.endsWith("X") ? done(false) : done(true)), 1000)
     }),
+
   lastName: ViewModel.property.string
     .validate(function(value) { return this.firstName() === "n/a" ? value : true })
     .invalidMessage("Last name required when First is 'n/a'"),
+
   age: ViewModel.property.integer.min(18)
     .default("") // Override the default value of zero
     .invalidMessage("Must be at least 18 years old")
     .validMessage("Is an adult (at least legally)"),
+
   address: '', // It's a string so it defaults to ViewModel.property.string,
+
   render() {
     <div class="ui padded segment">
       <div class="ui two column grid">
         <div class="ui column">
           <form class="ui form">
+
             <div class="field" b="class: { error: firstName.invalid }">
               <label>First Name</label>
               <div class="ui icon input " b="class: { loading: firstName.validating }">
@@ -125,6 +131,7 @@ Validation({
                 <i class="thumbs outline icon" b="if: !firstName.validating, class: { down: firstName.invalid }"></i>
               </div>
             </div>
+
             <div class="field" b="class: { error: lastName.invalid }">
               <label>Last Name</label>
               <div class="ui icon input " >
@@ -132,6 +139,7 @@ Validation({
                 <i class="thumbs down outline icon" b="if: lastName.invalid"></i>
               </div>
             </div>
+
             <div class="field" b="class: { error: age.invalid }">
               <label>Age</label>
               <div class="ui icon input " >
@@ -139,13 +147,16 @@ Validation({
                 <i class="thumbs down outline icon" b="if: age.invalid"></i>
               </div>
             </div>
+
             <div class="field" >
               <label>Address</label>
               <div class="ui icon input ">
                 <input type="text" b="value: address" />
               </div>
             </div>
-            <div class="ui blue button" b="enable: valid">Log Name</div>
+
+            <div class="ui blue button" b="class: { disabled: !valid }">Log Name</div>
+
           </form>
         </div>
         <div class="ui column">

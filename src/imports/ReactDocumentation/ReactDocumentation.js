@@ -10,13 +10,8 @@ ReactDocumentation({
         <Menu />
       </div>
       <div class="twelve wide column" style="width: 740px">
-        <div class="ui segment">
-          <h1 class="ui header red">ViewModel for React Preview</h1>
-          <p>
-            This page is the preview documentation of the React version of ViewModel. It's not released yet and there's no ETA.
-          </p>
-        </div>
-        
+        <Logo />
+        <Introduction />
         <Basics />
         <Advanced />
         <Bindings />

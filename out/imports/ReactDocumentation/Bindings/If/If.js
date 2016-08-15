@@ -60,11 +60,11 @@ var If = exports.If = function (_React$Component) {
         _react2.default.createElement(
           "div",
           { className: "ui segment basic" },
-          _react2.default.createElement("input", { type: "checkbox", defaultChecked: _viewmodelReact2.default.getValue(this, "itsOn"),
-            ref: _viewmodelReact2.default.bindElement(this, "check: itsOn")
+          _react2.default.createElement("input", { type: "checkbox", defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "itsOn"),
+            ref: _viewmodelReact2.default.bindElement(this, null, null, "check: itsOn")
           }),
           " Is it on?   ",
-          _viewmodelReact2.default.getValue(this, "itsOn") ? _react2.default.createElement(
+          _viewmodelReact2.default.getValue(this, null, null, "itsOn") ? _react2.default.createElement(
             "label",
             { className: "ui red label" },
             "It's SO on!"

@@ -18,9 +18,9 @@ Ref({
       <h2 class="ui header">ref</h2>
       <a class="anchor active" id="BasicsRef"></a>
       <p>
-        The ref attribute gives you a way to interact with an html element without resorting to selectors. This is a built in React feature. When you reference a component you get a hold of the component instance.
+        The ref attribute gives you a way to interact with an html element or sub-component without resorting to selectors. When you reference a component you get a hold of the component instance. This allows you to use sub-components as controls/widgets.
       </p>
-      <pre><code>ref="elementName"</code></pre>
+      <pre><code>ref="propertyName"</code></pre>
       <pre><code>this.refs.elementName</code></pre>
 
       <h3>ref demo</h3>

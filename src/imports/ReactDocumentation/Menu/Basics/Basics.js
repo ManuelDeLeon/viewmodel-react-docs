@@ -6,9 +6,15 @@ Basics({
         <b>Basics</b>
       </a>
       <div class="content menu">
-        <a class="item" href="#BasicsAttributes">attributes</a>
-        <a class="item" href="#BasicsRef">ref</a>
+        <a class="item" href="#BasicsComponents">Components</a>
+        <a class="item" href="#BasicsState">State</a>
+        <a class="item" href="#BasicsEvents">Events</a>
+        <a class="item" href="#BasicsBindings">Bindings</a>
+        <a class="item" href="#BasicsHtml">HTML</a>
+        <a class="item" href="#BasicsAttributes">Attributes</a>
         <a class="item" href="#BasicsLoops">Loops</a>
+        <a class="item" href="#BasicsTesting">Testing</a>
+        <a class="item" href="#BasicsRef">ref</a>
       </div>
     </div>
   }

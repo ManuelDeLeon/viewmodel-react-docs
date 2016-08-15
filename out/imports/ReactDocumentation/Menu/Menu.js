@@ -13,6 +13,8 @@ var _Advanced = require("./Advanced/Advanced");
 
 var _Basics = require("./Basics/Basics");
 
+var _Introduction = require("./Introduction/Introduction");
+
 var _viewmodelReact = require("viewmodel-react");
 
 var _viewmodelReact2 = _interopRequireDefault(_viewmodelReact);
@@ -63,6 +65,9 @@ var Menu = exports.Menu = function (_React$Component) {
         _react2.default.createElement(
           "div",
           { className: "ui vertical following fluid accordion text menu " },
+          _react2.default.createElement(_Introduction.Introduction, {
+            parent: this
+          }),
           _react2.default.createElement(_Basics.Basics, {
             parent: this
           }),

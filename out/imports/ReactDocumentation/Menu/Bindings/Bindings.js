@@ -131,6 +131,11 @@ var Bindings = exports.Bindings = function (_React$Component) {
             { className: "item", href: "#BindingsThrottle" },
             "throttle"
           ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#BindingsRepeat" },
+            "repeat"
+          ),
           _react2.default.createElement("hr", null),
           _react2.default.createElement(
             "a",

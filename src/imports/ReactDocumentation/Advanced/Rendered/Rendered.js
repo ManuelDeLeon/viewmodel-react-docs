@@ -38,10 +38,10 @@ Rendered({
       <h3>rendered - example</h3>
 <pre><code>Example({
   rendered(){
-    $(this.nameInput).makeFancy()
+    $(this.refs.nameInput).makeFancy()
   },
   render() {
-    <input b="value: name, ref: nameInput" />
+    <input b="value: name" ref="nameInput" />
   }
 })</code></pre>
 
