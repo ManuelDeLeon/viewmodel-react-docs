@@ -2,6 +2,7 @@ ComponentInteraction({
   render(){
     <div class="ui segment">
       <h2 class="ui header">Component Interaction</h2>
+      <a class="anchor active" id="IntroductionComponentInteraction"></a>
       <p>
         Here's where I'm coming from with ViewModel:
       </p>
@@ -18,7 +19,7 @@ ComponentInteraction({
         Sharing a property allows you to isolate the parts where the components aren't fully in charge of their own state. The concept is similar to isolating the parts of your code which have side effects in functional programming. It may not be obvious but it also isolates components themselves. That's because as far as each component is concerned, they own the property. So you can modify or remove any component that shares a property and the others are non the wiser.
       </p>
       <p>
-        The final situation is when you're outside your normal app and you want to communicate with your normal components. For example if you have a widget that wasn't created by a view model, you can pierce boundaries and get a hold of specific components so the widget can work with the rest of your app. This is dangerous and should be avoided but again, developers shouldn't be penalized when they encounter situations like this. So ViewModel has an easy way to interact with components anywhere on the app.
+        The final situation is when you're outside your normal app and you want to communicate with your normal components. For example if you have a widget that wasn't created by a view model, you can pierce boundaries and get a hold of specific components so the widget can work with the rest of your app. This is dangerous and should be avoided but again, developers shouldn't be penalized when they encounter situations like this. So ViewModel has an easy way to interact with any component anywhere in the app.
       </p>
     </div>
   }

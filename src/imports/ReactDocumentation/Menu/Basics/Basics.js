@@ -6,6 +6,8 @@ Basics({
         <b>Basics</b>
       </a>
       <div class="content menu">
+        <a class="item" href="#BasicsInstalling">Installing</a>
+        <a class="item" href="#BasicsStarterProject">Starter Project</a>
         <a class="item" href="#BasicsComponents">Components</a>
         <a class="item" href="#BasicsState">State</a>
         <a class="item" href="#BasicsEvents">Events</a>
@@ -13,8 +15,10 @@ Basics({
         <a class="item" href="#BasicsHtml">HTML</a>
         <a class="item" href="#BasicsAttributes">Attributes</a>
         <a class="item" href="#BasicsLoops">Loops</a>
+        <a class="item" href="#BasicsMixins">Mixins</a>
+        <a class="item" href="#BasicsSharedState">Shared State</a>
+        <a class="item" href="#BasicsControls">Controls</a>
         <a class="item" href="#BasicsTesting">Testing</a>
-        <a class="item" href="#BasicsRef">ref</a>
       </div>
     </div>
   }

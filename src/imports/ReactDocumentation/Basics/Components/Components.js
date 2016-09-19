@@ -8,11 +8,11 @@ Components({
       </p>
 <pre><code>Person({
   render() {
-    <label>Hello Manuel</label>
+    <label>Hello World</label>
   }
 })</code></pre>
       <p>
-        When you use the Person component it displays "Hello Manuel". As with any other component, the render method must have one (and only one) root element. They're normal React components so you can use them in your existing React applications.
+        When you use the Person component it displays "Hello World". As with any other component, the render method must have one (and only one) root element. They're normal React components so you can use them in your existing React applications.
       </p>
 
       <p>
@@ -30,7 +30,7 @@ Components({
 <pre><code>src/Person/Person.js</code></pre>
 <pre><code>Person({
   render() {
-    <label>Hello Manuel</label>
+    <label>Hello World</label>
   }
 })</code></pre>
 

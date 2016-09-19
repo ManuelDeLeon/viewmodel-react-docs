@@ -4,7 +4,7 @@ State({
       <h2 class="ui header">State</h2>
       <a class="anchor active" id="BasicsState"></a>
       <p>
-        A component is displayed on the page depending on its state. The state of a component is store in its properties. Let's add some state to Person:
+        A component is displayed on the page depending on its state. The state of a component is stored in its properties. Let's add some state to Person:
       </p>
 <pre><code>Person({
   firstName: 'Alan',

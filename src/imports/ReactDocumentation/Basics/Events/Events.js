@@ -11,20 +11,20 @@ Events({
   firstName: '',
   lastName: '',
   fullName() {
-  return this.firstName() + ' ' + this.lastName();
-},
+    return this.firstName() + ' ' + this.lastName();
+  },
   resetFields() {
-  this.firstName('');
-  this.lastName('');
-},
+    this.firstName('');
+    this.lastName('');
+  },
   render() {
-  <div>
-  First Name: <input b="value: firstName" />
-  Last Name: <input b="value: lastName" />
-  <label b="text: 'Hello ' + fullName" />
-  <button b="click: resetFields">Reset Fields</button>
-  </div>
-}
+    <div>
+      First Name: <input b="value: firstName" />
+      Last Name: <input b="value: lastName" />
+      <label b="text: 'Hello ' + fullName" />
+      <button b="click: resetFields">Reset Fields</button>
+    </div>
+  }
 })</code></pre>
 
       <p>

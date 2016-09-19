@@ -1,5 +1,5 @@
 Person({
   render() {
-    <label>Hello Manuel</label>
+    <label>Hello World</label>
   }
 })

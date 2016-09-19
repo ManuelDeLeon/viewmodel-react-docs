@@ -53,7 +53,7 @@ Repeat({
 
       <p>What happens here is that the Color component receives all the properties of the array objects. In this case they are "id" and "name". The key React should use is the  property "id".</p>
 
-      <h3>reapeatObject and repeatIndex</h3>
+      <h3>repeatObject and repeatIndex</h3>
       <p>Sometimes the sub-component's properties don't match the objects you're iterating upon. Other times you need access to the position/index of the object. For those cases the repeat binding gives you access to the repeatObject and repeatIndex variables. So if your color object looks like this:</p>
 
 <pre><code>ColorPosition({

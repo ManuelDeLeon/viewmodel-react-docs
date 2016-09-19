@@ -16,7 +16,7 @@ Ref({
   render(){
     <div class="ui segment">
       <h2 class="ui header">ref</h2>
-      <a class="anchor active" id="BasicsRef"></a>
+      <a class="anchor active" id="AdvancedRef"></a>
       <p>
         The ref attribute gives you a way to interact with an html element or sub-component without resorting to selectors. When you reference a component you get a hold of the component instance. This allows you to use sub-components as controls/widgets.
       </p>

@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import TestUtils from 'react-addons-test-utils';
+import { shallow } from 'enzyme';
 import { Person } from './Person';
 
 describe('Person', () => {
@@ -11,42 +10,32 @@ describe('Person', () => {
     });
 
     describe('firstName', () => {
-      let firstName;
-      beforeEach(() => {
-        firstName = person.firstName;
-      });
-
       it('defaults to empty', () => {
-        expect(firstName()).toBe('');
+        expect(person.firstName()).toBe('');
       });
 
       it("is invalid with ''", () => {
-        expect(firstName.valid()).toBe(false);
+        expect(person.firstName.valid()).toBe(false);
       });
 
       it("is valid with 'A'", () => {
-        firstName('A');
-        expect(firstName.valid()).toBe(true);
+        person.firstName('A');
+        expect(person.firstName.valid()).toBe(true);
       });
     });
 
     describe('lastName', () => {
-      let lastName;
-      beforeEach(() => {
-        lastName = person.lastName;
-      });
-
       it('defaults to empty', () => {
-        expect(lastName()).toBe('');
+        expect(person.lastName()).toBe('');
       });
 
       it("is invalid with ''", () => {
-        expect(lastName.valid()).toBe(false);
+        expect(person.lastName.valid()).toBe(false);
       });
 
       it("is valid with 'A'", () => {
-        lastName('A');
-        expect(lastName.valid()).toBe(true);
+        person.lastName('A');
+        expect(person.lastName.valid()).toBe(true);
       });
     });
 
@@ -58,43 +47,24 @@ describe('Person', () => {
       });
     });
 
-  })
+  });
 
   describe('bindings', ()=>{
-    const intoDom = TestUtils.renderIntoDocument(
-      <Person  />
-    );
-    const rendered = ReactDOM.findDOMNode(intoDom);
+    const rendered = shallow(<Person />);
 
     it('binds first name', ()=>{
-      // One method is to find the input with the bind that we want to test:
-
-      const elements = rendered.querySelectorAll('input');
-      const filtered = [].filter.call(elements, (element) => element.vmBinding.value === 'firstName');
-      expect(filtered.length).toBe(1);
-      // We already know it has 'value: firstName' so check that it's the only one
-      expect(Object.keys(filtered[0].vmBinding).length).toBe(1);
-    })
+      const elements = rendered.find('input[data-bind="value: firstName"]');
+      expect(elements.length).toBe(1);
+    });
 
     it('binds last name', ()=>{
-      // Another method is to rely on the fact that our component will have 2 inputs and
-      // firstName will be before lastName, so we can pick the second input:
-
-      const element = rendered.querySelectorAll('input')[1];
-      const binding = element.vmBinding;
-      expect(binding.value).toBe('lastName');
-      // Make sure binding only has 1 entry ('value: lastName')
-      expect(Object.keys(binding).length).toBe(1);
-    })
+      const elements = rendered.find('input[data-bind="value: lastName"]');
+      expect(elements.length).toBe(1);
+    });
 
     it('binds reset button', ()=>{
-      // There's only one button so grab it
-      const element = rendered.querySelectorAll('button')[0];
-      const binding = element.vmBinding;
-      expect(binding.click).toBe('reset');
-      expect(binding.enable).toBe('valid');
-      // Make sure binding only has click and enable
-      expect(Object.keys(binding).length).toBe(2);
+      const elements = rendered.find('button[data-bind="click: reset, enable: valid"]');
+      expect(elements.length).toBe(1);
     })
   })
 

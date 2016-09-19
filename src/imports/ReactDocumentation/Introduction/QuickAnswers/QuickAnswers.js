@@ -9,9 +9,20 @@ QuickAnswers({
         ViewModel for React is a thin layer on top of React to work with as little boilerplate and ceremonies as possible.
       </p>
 
+      <h3 class="ui header">What's the big idea?</h3>
+      <p>
+        Actually it's pretty simple, you have an object and the view is rendered based on the properties of that object. Want to modify the state of the view? Just modify the object. Want to save the state of the view at any given time? Just save the object somewhere. Want to return the state of the view to what it was? Just load the saved object. Using the buzzword of the day, it's "easy to reason about".
+      </p>
+      <p>By the way, this isn't anything new or ground breaking. This way of writing applications has been around for a long time (long before React).</p>
+
+      <h3 class="ui header">Isn't that how React started?</h3>
+      <p>
+        Yep, those were simpler times, before Flux, Reflux, Redux, or Delux. A time when you didn't have to know about dispatchers, reducers, transducers, or confusers.
+      </p>
+
       <h3 class="ui header">Who's this for?</h3>
       <p>
-        This is for people who like the view model way of developing UIs (think Angular, Knockout, Aurelia, etc.) but don't like the boilerplate and ceremonies that usually go with those libraries and frameworks.
+        This is for people who like the view model way of developing UIs (think React at the beginning, Angular, Knockout, Aurelia, etc.) but don't like the boilerplate and ceremonies that usually go with those libraries and frameworks.
       </p>
 
       <h3 class="ui header">Who isn't this for?</h3>
@@ -36,7 +47,7 @@ QuickAnswers({
 
       <h3 class="ui header">I've read bindings are evil, why are you using them?</h3>
       <p>
-        A binding is only a shortcut for a ceremonious task. There's nothing evil, magical, or mystical about them. Let's take a simple example from JavaScript. You could write the following:
+        I don't know what definition you're using but here a binding is only a shortcut for a ceremonious task. There's nothing evil, magical, or mystical about them. Let's take a simple example from JavaScript. You could write the following:
       </p>
       <pre><code>i = i + 2;</code></pre>
       <p>
@@ -44,7 +55,7 @@ QuickAnswers({
       </p>
       <pre><code>i += 2;</code></pre>
       <p>
-        The += assignment operator is analogous to a binding in ViewModel. It's a shortcut and you don't have to use it if you don't want to. Is it wrong to use the += operator? Is it too much "magic"? Should JavaScript had implemented it in the first place? There are plenty of people who think JS would be better off without it (JS already provides a way to add numbers with +).
+        The += assignment operator is analogous to a binding in ViewModel. It's a shortcut and you don't have to use it if you don't want to. Is it wrong to use the += operator? Is it too much "magic"? Should JavaScript had implemented it in the first place?
       </p>
       <p>
         Back to ViewModel. Even though bindings are completely optional (you don't have to use a single one if you don't want to), if you object to them then you'll probably hate ViewModel anyway. That's because ViewModel built entirely around the idea of removing needless ceremonies and eliminating boilerplate.
@@ -59,7 +70,7 @@ QuickAnswers({
 
       <h3 class="ui header">Aren't you missing a few things in there?</h3>
       <p>
-        Nope. That's all you need to create a Hello component that displays "Hello World!". Notice there's only one thing which isn't "your code" and that's the render keyword. I could have removed that one too for components that don't have state, but in my tests I found it annoying to go back and wrap everything in a render method if the component required a state later on.
+        Nope. That's all you need to create a Hello component that displays "Hello World!". Notice there's only one thing which isn't "your code" and that's the render keyword.
       </p>
 
       <h3 class="ui header">How does that work?</h3>
@@ -82,7 +93,7 @@ export class Hello extends React.Component {
   render() {
     <div>
       <input b="value: message" />
-      <label b="text: message"></label>
+      <label b="text: message" />
     </div>
   }
 });</code></pre>
@@ -101,25 +112,26 @@ export class Hello extends React.Component {
       <p>
         Syntactic sugar is nice but it's far from being what reduces your code the most. It's all the ceremonies, complex patterns, and runarounds you don't have to deal with anymore. To give an example, one of the UI boogeymen is state that is shared between two or more components. The two most common ways of dealing with this situation are:
       </p>
-      <p>1) Let components reference one another so they can get the state they need. The problem here is that you want to share a banana but you end up sharing the gorilla holding the banana, and keeping track of the entire gorilla tribe, just in case that gorilla passes the banana to someone else.</p>
+      <p>1) Let components reference one another so they can get the state they need. The problem here is that you want to share a banana but you end up sharing the gorilla holding the banana, and keeping track of the entire gorilla tribe.</p>
       <p>2) Store the entire state of the application in a central place. You no longer need to keep track of the gorillas, but now you need a jeep, a machete, and know your way through the entire jungle just to share a banana.</p>
 
       <p>ViewModel takes the simple approach of only sharing the state that needs to be shared. Components don't reference one another, you keep the shared state to a minimum, and components are explicit about which state can be modified by someone else. It works like this:</p>
 
-      <p>First define a container (house) for the state that needs to be shared (address)</p>
+      <p>First define a container for the state that needs to be shared</p>
 <pre><code>ViewModel.share({
   house: {
     address: ''
   }
 })</code></pre>
 
-      <p>Declare that a component will share the house properties with other components:</p>
+      <p>In this case the container is 'house' and the state to share is 'address'.</p>
+      <p>Now you can declare that a component will share the house properties with other components:</p>
 <pre><code>ComponentA({
   share: 'house',
   render() {
     <input b="value: address" />
   }
-})/code></pre>
+})</code></pre>
 
 <pre><code>ComponentB({
   share: 'house',

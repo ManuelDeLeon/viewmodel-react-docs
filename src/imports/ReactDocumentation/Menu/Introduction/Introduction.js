@@ -7,7 +7,7 @@ Introduction({
       </a>
       <div class="content menu">
         <a class="item" href="#IntroductionQuickAnswers">Quick Answers</a>
-        <a class="item" href="#IntroductionMotivation">Motivation</a>
+        <a class="item" href="#IntroductionComponentInteraction">Component Interaction</a>
       </div>
     </div>
   }

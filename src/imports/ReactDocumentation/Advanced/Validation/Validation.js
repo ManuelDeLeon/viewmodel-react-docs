@@ -34,7 +34,7 @@ Validation({
 
 <pre><code>viewmodel.name.valid()</code></pre>
 
-      <p>See <a href="#ViewModelsProperties">view model properties</a> for more information.</p>
+      <p>See <a href="#AdvancedProperties">view model properties</a> for more information.</p>
       <h3>Validation demo</h3>
       <p>
         In this example first name can't be blank or end in an 'X' (checked asynchronously), last name required when First is 'n/a', age must be an integer greater or equal to 18, address has to be a string.
