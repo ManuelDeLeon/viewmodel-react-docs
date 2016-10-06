@@ -69,11 +69,14 @@ var Html = exports.Html = function (_React$Component) {
               _react2.default.createElement("input", { type: "text", placeholder: "Type something", style: {
                   width: "250px"
                 }, defaultValue: _viewmodelReact2.default.getValue(this, null, null, "message"),
-                ref: _viewmodelReact2.default.bindElement(this, null, null, "value: message")
+                ref: _viewmodelReact2.default.bindElement(this, null, null, "value: message"),
+                "data-bind": "value: message"
               }),
               _react2.default.createElement("label", { className: "ui label", dangerouslySetInnerHTML: {
                   __html: _viewmodelReact2.default.getValue(this, null, null, "message")
-                }
+                },
+                ref: _viewmodelReact2.default.bindElement(this, null, null, "html: message"),
+                "data-bind": "html: message"
               })
             )
           )
@@ -114,7 +117,7 @@ var Html = exports.Html = function (_React$Component) {
   function Html(props) {
     _classCallCheck(this, Html);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Html).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Html.__proto__ || Object.getPrototypeOf(Html)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("Html", _this, {
       message: 'Can it be a <strike>strike</strike>?'

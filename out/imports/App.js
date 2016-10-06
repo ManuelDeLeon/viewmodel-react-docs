@@ -38,7 +38,7 @@ var App = exports.App = function (_React$Component) {
           "div",
           null,
           _react2.default.createElement(_ReactDocumentation.ReactDocumentation, {
-            parent: this
+            "data-vm-parent": this
           })
         )
       );
@@ -48,7 +48,7 @@ var App = exports.App = function (_React$Component) {
   function App(props) {
     _classCallCheck(this, App);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(App).call(this, props));
+    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("App", _this, {});
 

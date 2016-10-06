@@ -35,11 +35,6 @@ var Menu = exports.Menu = function (_React$Component) {
   _inherits(Menu, _React$Component);
 
   _createClass(Menu, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      $(".accordion").accordion();
-    }
-  }, {
     key: "render",
     value: function render() {
       return _react2.default.createElement(
@@ -66,16 +61,16 @@ var Menu = exports.Menu = function (_React$Component) {
           "div",
           { className: "ui vertical following fluid accordion text menu " },
           _react2.default.createElement(_Introduction.Introduction, {
-            parent: this
+            "data-vm-parent": this
           }),
           _react2.default.createElement(_Basics.Basics, {
-            parent: this
+            "data-vm-parent": this
           }),
           _react2.default.createElement(_Advanced.Advanced, {
-            parent: this
+            "data-vm-parent": this
           }),
           _react2.default.createElement(_Bindings.Bindings, {
-            parent: this
+            "data-vm-parent": this
           })
         )
       );
@@ -85,9 +80,13 @@ var Menu = exports.Menu = function (_React$Component) {
   function Menu(props) {
     _classCallCheck(this, Menu);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Menu).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Menu.__proto__ || Object.getPrototypeOf(Menu)).call(this, props));
 
-    _viewmodelReact2.default.prepareComponent("Menu", _this, {});
+    _viewmodelReact2.default.prepareComponent("Menu", _this, {
+      rendered: function rendered() {
+        $(".accordion").accordion();
+      }
+    });
 
     return _this;
   }

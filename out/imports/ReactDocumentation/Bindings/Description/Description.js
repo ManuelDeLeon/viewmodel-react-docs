@@ -118,7 +118,7 @@ var Description = exports.Description = function (_React$Component) {
   function Description(props) {
     _classCallCheck(this, Description);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Description).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Description.__proto__ || Object.getPrototypeOf(Description)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("Description", _this, {});
 

@@ -263,7 +263,7 @@ var Share = exports.Share = function (_React$Component) {
           { className: "ui list" },
           this.people().map(function (p, i) {
             return _react2.default.createElement(_Person.Person, _extends({
-              parent: _this2
+              "data-vm-parent": _this2
             }, p, { key: i }));
           })
         ),
@@ -388,7 +388,7 @@ var Share = exports.Share = function (_React$Component) {
   function Share(props) {
     _classCallCheck(this, Share);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Share).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Share.__proto__ || Object.getPrototypeOf(Share)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("Share", _this, {
       people: [{ name: "Alan" }, { name: "Brito" }, { name: "Cordon" }]

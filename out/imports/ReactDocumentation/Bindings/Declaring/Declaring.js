@@ -78,7 +78,7 @@ var Declaring = exports.Declaring = function (_React$Component) {
   function Declaring(props) {
     _classCallCheck(this, Declaring);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Declaring).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Declaring.__proto__ || Object.getPrototypeOf(Declaring)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("Declaring", _this, {});
 

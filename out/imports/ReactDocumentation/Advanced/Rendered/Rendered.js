@@ -166,7 +166,7 @@ var Rendered = exports.Rendered = function (_React$Component) {
   function Rendered(props) {
     _classCallCheck(this, Rendered);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Rendered).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Rendered.__proto__ || Object.getPrototypeOf(Rendered)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("Rendered", _this, {});
 

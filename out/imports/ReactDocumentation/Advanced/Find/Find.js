@@ -106,7 +106,7 @@ var Find = exports.Find = function (_React$Component) {
       function Find(props) {
             _classCallCheck(this, Find);
 
-            var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Find).call(this, props));
+            var _this = _possibleConstructorReturn(this, (Find.__proto__ || Object.getPrototypeOf(Find)).call(this, props));
 
             _viewmodelReact2.default.prepareComponent("Find", _this, {});
 

@@ -61,7 +61,8 @@ var If = exports.If = function (_React$Component) {
           "div",
           { className: "ui segment basic" },
           _react2.default.createElement("input", { type: "checkbox", defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "itsOn"),
-            ref: _viewmodelReact2.default.bindElement(this, null, null, "check: itsOn")
+            ref: _viewmodelReact2.default.bindElement(this, null, null, "check: itsOn"),
+            "data-bind": "check: itsOn"
           }),
           " Is it on?   ",
           _viewmodelReact2.default.getValue(this, null, null, "itsOn") ? _react2.default.createElement(
@@ -106,7 +107,7 @@ var If = exports.If = function (_React$Component) {
   function If(props) {
     _classCallCheck(this, If);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(If).call(this, props));
+    var _this = _possibleConstructorReturn(this, (If.__proto__ || Object.getPrototypeOf(If)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("If", _this, {
       itsOn: false

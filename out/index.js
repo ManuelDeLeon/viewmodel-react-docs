@@ -19,5 +19,5 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 window.ViewModel = _viewmodelReact2.default;
 
 _reactDom2.default.render(_react2.default.createElement(_App.App, {
-  parent: undefined
+  'data-vm-parent': undefined
 }), document.getElementById('root'));

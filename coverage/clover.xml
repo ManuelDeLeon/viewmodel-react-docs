@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1471385711438" clover="3.2.0">
+	<project timestamp="1471385711438"  name="All Files" >
+		<metrics statements="4"  coveredstatements="4"  conditionals="62"  coveredconditionals="38"  methods="21"  coveredmethods="21"  elements="87"  coveredelements="63"  complexity="0"  packages="2"  files="2"  classes="2"  loc="25"  ncloc="25" />
+		<package name="Person" >
+			<metrics statements="2"  coveredstatements="2"  conditionals="31"  coveredconditionals="19"  methods="11"  coveredmethods="11" />
+			<file name="Person.js"  path="C:\MyFiles\React\viewmodel-react-docs\src\imports\ReactDocumentation\Basics\Testing\Person\Person.js" >
+				<metrics statements="2"  coveredstatements="2"  conditionals="31"  coveredconditionals="19"  methods="11"  coveredmethods="11" />
+				<line num="1"  count="8"  type="stmt" />
+				<line num="20"  count="8"  type="stmt" />
+			</file>
+		</package>
+		<package name="World" >
+			<metrics statements="2"  coveredstatements="2"  conditionals="31"  coveredconditionals="19"  methods="10"  coveredmethods="10" />
+			<file name="World.js"  path="C:\MyFiles\React\viewmodel-react-docs\src\imports\ReactDocumentation\Basics\Testing\World\World.js" >
+				<metrics statements="2"  coveredstatements="2"  conditionals="31"  coveredconditionals="19"  methods="10"  coveredmethods="10" />
+				<line num="1"  count="3"  type="stmt" />
+				<line num="5"  count="3"  type="stmt" />
+			</file>
+		</package>
+	</project>
+</coverage>

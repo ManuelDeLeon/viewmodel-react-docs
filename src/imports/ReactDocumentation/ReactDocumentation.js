@@ -1,7 +1,12 @@
+
 ReactDocumentation({
   rendered() {
     $('pre code').each(function(i, block) {
-      hljs.highlightBlock(block);
+      $(block).addClass('language-javascript');
+      Prism.highlightElement(block);
+
+      // $(block).addClass('jsx');
+      // hljs.highlightBlock(block);
     });
     const hash = window.location.hash;
     window.location.hash = hash + "X";
@@ -9,6 +14,7 @@ ReactDocumentation({
   },
   render(){
     <div class="ui two column centered grid" style="width: 1024px">
+      <ViewModelExplorer />
       <div id="react-menu" class="four wide column" >
         <Menu />
       </div>

@@ -131,7 +131,7 @@ var Created = exports.Created = function (_React$Component) {
   function Created(props) {
     _classCallCheck(this, Created);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Created).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Created.__proto__ || Object.getPrototypeOf(Created)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("Created", _this, {});
 

@@ -1,5 +1,5 @@
 Menu({
-  componentDidMount() {
+  rendered() {
     $(".accordion").accordion();
   },
   render() {

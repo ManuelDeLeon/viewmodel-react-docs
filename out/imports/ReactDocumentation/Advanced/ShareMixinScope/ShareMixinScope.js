@@ -228,7 +228,7 @@ var ShareMixinScope = exports.ShareMixinScope = function (_React$Component) {
   function ShareMixinScope(props) {
     _classCallCheck(this, ShareMixinScope);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ShareMixinScope).call(this, props));
+    var _this = _possibleConstructorReturn(this, (ShareMixinScope.__proto__ || Object.getPrototypeOf(ShareMixinScope)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("ShareMixinScope", _this, {});
 

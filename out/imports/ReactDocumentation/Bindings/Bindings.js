@@ -80,67 +80,67 @@ var Bindings = exports.Bindings = function (_React$Component) {
           "Bindings"
         ),
         _react2.default.createElement(_Description.Description, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Declaring.Declaring, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Value.Value, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Text.Text, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Html.Html, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Class.Class, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Style.Style, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Check.Check, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_If.If, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Unless.Unless, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Enter.Enter, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Change.Change, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Hover.Hover, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Focus.Focus, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_EnableDisable.EnableDisable, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Toggle.Toggle, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Throttle.Throttle, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Repeat.Repeat, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_CustomBindings.CustomBindings, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_BindingObject.BindingObject, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_BindingArgument.BindingArgument, {
-          parent: this
+          "data-vm-parent": this
         })
       );
     }
@@ -149,7 +149,7 @@ var Bindings = exports.Bindings = function (_React$Component) {
   function Bindings(props) {
     _classCallCheck(this, Bindings);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Bindings).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Bindings.__proto__ || Object.getPrototypeOf(Bindings)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("Bindings", _this, {});
 

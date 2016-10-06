@@ -131,7 +131,7 @@ var Destroyed = exports.Destroyed = function (_React$Component) {
   function Destroyed(props) {
     _classCallCheck(this, Destroyed);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Destroyed).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Destroyed.__proto__ || Object.getPrototypeOf(Destroyed)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("Destroyed", _this, {});
 

@@ -67,11 +67,14 @@ var Text = exports.Text = function (_React$Component) {
               "div",
               { className: "inline field" },
               _react2.default.createElement("input", { type: "text", placeholder: "Type something", defaultValue: _viewmodelReact2.default.getValue(this, null, null, "message"),
-                ref: _viewmodelReact2.default.bindElement(this, null, null, "value: message")
+                ref: _viewmodelReact2.default.bindElement(this, null, null, "value: message"),
+                "data-bind": "value: message"
               }),
               _react2.default.createElement(
                 "label",
-                { className: "ui label" },
+                { className: "ui label", ref: _viewmodelReact2.default.bindElement(this, null, null, "text: message"),
+                  "data-bind": "text: message"
+                },
                 _viewmodelReact2.default.getValue(this, null, null, "message")
               )
             )
@@ -113,7 +116,7 @@ var Text = exports.Text = function (_React$Component) {
   function Text(props) {
     _classCallCheck(this, Text);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Text).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Text.__proto__ || Object.getPrototypeOf(Text)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("Text", _this, {
       message: 'Can it be <b>bold</b>?'

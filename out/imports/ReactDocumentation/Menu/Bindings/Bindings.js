@@ -160,7 +160,7 @@ var Bindings = exports.Bindings = function (_React$Component) {
   function Bindings(props) {
     _classCallCheck(this, Bindings);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Bindings).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Bindings.__proto__ || Object.getPrototypeOf(Bindings)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("Bindings", _this, {});
 

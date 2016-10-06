@@ -42,10 +42,12 @@ var Person = exports.Person = function (_React$Component) {
           'div',
           { className: 'content' },
           _react2.default.createElement('input', { type: 'text', defaultValue: _viewmodelReact2.default.getValue(this, null, null, 'name'),
-            ref: _viewmodelReact2.default.bindElement(this, null, null, 'value: name')
+            ref: _viewmodelReact2.default.bindElement(this, null, null, 'value: name'),
+            'data-bind': 'value: name'
           }),
           _react2.default.createElement('input', { type: 'text', defaultValue: _viewmodelReact2.default.getValue(this, null, null, 'address'),
-            ref: _viewmodelReact2.default.bindElement(this, null, null, 'value: address')
+            ref: _viewmodelReact2.default.bindElement(this, null, null, 'value: address'),
+            'data-bind': 'value: address'
           })
         )
       );
@@ -55,7 +57,7 @@ var Person = exports.Person = function (_React$Component) {
   function Person(props) {
     _classCallCheck(this, Person);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Person).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Person.__proto__ || Object.getPrototypeOf(Person)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent('Person', _this, {
       share: 'house'

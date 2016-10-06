@@ -261,7 +261,7 @@ var Mixin = exports.Mixin = function (_React$Component) {
           { className: "ui list" },
           this.people().map(function (p, i) {
             return _react2.default.createElement(_Person.Person, _extends({
-              parent: _this2
+              "data-vm-parent": _this2
             }, p, { key: i }));
           })
         ),
@@ -386,7 +386,7 @@ var Mixin = exports.Mixin = function (_React$Component) {
   function Mixin(props) {
     _classCallCheck(this, Mixin);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Mixin).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Mixin.__proto__ || Object.getPrototypeOf(Mixin)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("Mixin", _this, {
       people: [{ name: "Alan" }, { name: "Brito" }, { name: "Cordon" }]

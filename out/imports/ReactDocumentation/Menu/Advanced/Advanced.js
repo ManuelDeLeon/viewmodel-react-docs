@@ -47,6 +47,17 @@ var Advanced = exports.Advanced = function (_React$Component) {
           { className: "content menu" },
           _react2.default.createElement(
             "a",
+            { className: "item", href: "#AdvancedParent" },
+            ".parent"
+          ),
+          _react2.default.createElement("hr", null),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#AdvancedProperties" },
+            "Properties"
+          ),
+          _react2.default.createElement(
+            "a",
             { className: "item", href: "#AdvancedShare" },
             "share"
           ),
@@ -59,6 +70,21 @@ var Advanced = exports.Advanced = function (_React$Component) {
             "a",
             { className: "item", href: "#AdvancedShareMixinScope" },
             "share/mixin scope"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#AdvancedTesting" },
+            "Testing"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#AdvancedRef" },
+            "ref"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#AdvancedStateOnURL" },
+            "State on URL"
           ),
           _react2.default.createElement(
             "a",
@@ -87,6 +113,11 @@ var Advanced = exports.Advanced = function (_React$Component) {
           ),
           _react2.default.createElement(
             "a",
+            { className: "item", href: "#AdvancedSignal" },
+            "signal"
+          ),
+          _react2.default.createElement(
+            "a",
             { className: "item", href: "#AdvancedGlobal" },
             "global"
           )
@@ -98,7 +129,7 @@ var Advanced = exports.Advanced = function (_React$Component) {
   function Advanced(props) {
     _classCallCheck(this, Advanced);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Advanced).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Advanced.__proto__ || Object.getPrototypeOf(Advanced)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("Advanced", _this, {});
 

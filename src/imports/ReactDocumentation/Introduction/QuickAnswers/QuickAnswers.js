@@ -55,10 +55,7 @@ QuickAnswers({
       </p>
       <pre><code>i += 2;</code></pre>
       <p>
-        The += assignment operator is analogous to a binding in ViewModel. It's a shortcut and you don't have to use it if you don't want to. Is it wrong to use the += operator? Is it too much "magic"? Should JavaScript had implemented it in the first place?
-      </p>
-      <p>
-        Back to ViewModel. Even though bindings are completely optional (you don't have to use a single one if you don't want to), if you object to them then you'll probably hate ViewModel anyway. That's because ViewModel built entirely around the idea of removing needless ceremonies and eliminating boilerplate.
+        The += assignment operator is analogous to a binding in ViewModel. It's a shortcut and you don't have to use it if you don't want to. Is it wrong to use the += operator? Is it too much "magic"? I don't think so.
       </p>
 
       <h3 class="ui header">What does the code look like?</h3>
@@ -141,6 +138,12 @@ export class Hello extends React.Component {
 })</code></pre>
 
       <p>Now components A and B have access to the same address and nothing else. You use them as normal and treat address as just another property of the components.</p>
+
+      <h3 class="ui header">Can I just try it with one component?</h3>
+      <p>
+        Of course. The preferred way is to try it with something medium size (a small component might not be worth it, a large one might be too daunting). I think it’s better if you experience it yourself. Take a relatively small part of one of your website (a medium size component) and re-write it using ViewModel.
+      </p>
+
     </div>
   }
 });

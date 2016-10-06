@@ -9,6 +9,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _Global = require("./Global/Global");
 
+var _Signal = require("./Signal/Signal");
+
 var _Validation = require("./Validation/Validation");
 
 var _Find = require("./Find/Find");
@@ -19,11 +21,21 @@ var _Rendered = require("./Rendered/Rendered");
 
 var _Created = require("./Created/Created");
 
+var _StateOnURL = require("./StateOnURL/StateOnURL");
+
+var _Ref = require("./Ref/Ref");
+
+var _Testing = require("./Testing/Testing");
+
 var _ShareMixinScope = require("./ShareMixinScope/ShareMixinScope");
 
 var _Mixin = require("./Mixin/Mixin");
 
 var _Share = require("./Share/Share");
+
+var _Properties = require("./Properties/Properties");
+
+var _Parent = require("./Parent/Parent");
 
 var _viewmodelReact = require("viewmodel-react");
 
@@ -55,32 +67,50 @@ var Advanced = exports.Advanced = function (_React$Component) {
           { className: "ui dividing header" },
           "Advanced"
         ),
+        _react2.default.createElement(_Parent.Parent, {
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_Properties.Properties, {
+          "data-vm-parent": this
+        }),
         _react2.default.createElement(_Share.Share, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Mixin.Mixin, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_ShareMixinScope.ShareMixinScope, {
-          parent: this
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_Testing.Testing, {
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_Ref.Ref, {
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_StateOnURL.StateOnURL, {
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Created.Created, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Rendered.Rendered, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Destroyed.Destroyed, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Find.Find, {
-          parent: this
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Validation.Validation, {
-          parent: this
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_Signal.Signal, {
+          "data-vm-parent": this
         }),
         _react2.default.createElement(_Global.Global, {
-          parent: this
+          "data-vm-parent": this
         })
       );
     }
@@ -89,7 +119,7 @@ var Advanced = exports.Advanced = function (_React$Component) {
   function Advanced(props) {
     _classCallCheck(this, Advanced);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Advanced).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Advanced.__proto__ || Object.getPrototypeOf(Advanced)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("Advanced", _this, {});
 

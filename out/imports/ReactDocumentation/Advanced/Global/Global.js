@@ -82,7 +82,7 @@ var Global = exports.Global = function (_React$Component) {
   function Global(props) {
     _classCallCheck(this, Global);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Global).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Global.__proto__ || Object.getPrototypeOf(Global)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("Global", _this, {});
 
