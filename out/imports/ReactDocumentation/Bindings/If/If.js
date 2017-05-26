@@ -64,7 +64,7 @@ var If = exports.If = function (_React$Component) {
             ref: _viewmodelReact2.default.bindElement(this, null, null, "check: itsOn"),
             "data-bind": "check: itsOn"
           }),
-          " Is it on?   ",
+          " Is it on? \xA0\xA0",
           _viewmodelReact2.default.getValue(this, null, null, "itsOn") ? _react2.default.createElement(
             "label",
             { className: "ui red label" },

@@ -1,12 +1,9 @@
-
+import { ViewModelExplorer } from 'viewmodel-react-explorer';
 ReactDocumentation({
   rendered() {
     $('pre code').each(function(i, block) {
       $(block).addClass('language-javascript');
       Prism.highlightElement(block);
-
-      // $(block).addClass('jsx');
-      // hljs.highlightBlock(block);
     });
     const hash = window.location.hash;
     window.location.hash = hash + "X";

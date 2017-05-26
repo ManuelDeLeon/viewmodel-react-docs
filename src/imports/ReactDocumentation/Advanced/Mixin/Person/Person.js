@@ -6,6 +6,7 @@ ViewModel.mixin({
 
 Person({
   mixin: 'house',
+  name: '',
   render() {
     <div class="item">
       <div class="content">

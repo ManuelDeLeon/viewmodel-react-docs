@@ -41,7 +41,7 @@ var Value = exports.Value = function (_React$Component) {
         _react2.default.createElement(
           "p",
           null,
-          "The value binding links the associated DOM element’s value with a property on your view model. This is typically useful with form elements such as input, select and textarea."
+          "The value binding links the associated DOM element\u2019s value with a property on your view model. This is typically useful with form elements such as input, select and textarea."
         ),
         _react2.default.createElement(
           "pre",

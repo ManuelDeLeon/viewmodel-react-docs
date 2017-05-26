@@ -5,7 +5,7 @@ Repeat({
     'blue'
   ],
   colors:[
-    { id: 'red' , name: 'Red', notUsed: '' },
+    { id: 'red' , name: 'Red' },
     { id: 'green' , name: 'Green' },
     { id: 'blue' , name: 'Blue' }
   ],
@@ -83,13 +83,36 @@ Repeat({
 
       <h3>primitives</h3>
       <p>You can use repeatObject when looping through an array of primitive types, like strings:</p>
-<pre><code>  basicColors:[
+<pre><code>basicColors:[
   'red',
   'green',
   'blue'
-  ]</code></pre>
+]</code></pre>
       <pre><code><Color b="repeat: basicColors" name={repeatObject} id={repeatObject} /></code></pre>
       <Color b="repeat: basicColors" name={repeatObject} id={repeatObject} />
+
+      <h3>Inner blocks</h3>
+      <p>You can include jsx blocks inside the repeat item:</p>
+      <ul>
+        <li b="repeat: basicColors">
+          <div b="text: repeatObject" />
+        </li>
+      </ul>
+
+<pre><code>Example({
+  colors: [
+    'red',
+    'green',
+    'blue'
+  ],
+  render() {
+    <ul>
+      <li b="repeat: colors">
+        <div b="text: repeatObject" />
+      </li>
+    </ul>
+  }
+});</code></pre>
 
     </div>
   }

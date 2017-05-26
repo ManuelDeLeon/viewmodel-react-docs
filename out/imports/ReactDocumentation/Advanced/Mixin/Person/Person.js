@@ -60,7 +60,8 @@ var Person = exports.Person = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Person.__proto__ || Object.getPrototypeOf(Person)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent('Person', _this, {
-      mixin: 'house'
+      mixin: 'house',
+      name: ''
     });
 
     return _this;

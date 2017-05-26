@@ -1,5 +1,4 @@
 Loops({
-  title: 'Hover over me',
   people: [
     { id: 1, firstName: 'A', lastName: 'B' },
     { id: 2, firstName: 'C', lastName: 'D' }

@@ -1,5 +1,4 @@
 Html({
-  title: 'Hover over me',
   render(){
     <div class="ui segment">
       <h2 class="ui header">HTML</h2>

@@ -50,11 +50,21 @@ var Advanced = exports.Advanced = function (_React$Component) {
             { className: "item", href: "#AdvancedParent" },
             ".parent"
           ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#AdvancedReset" },
+            ".reset"
+          ),
           _react2.default.createElement("hr", null),
           _react2.default.createElement(
             "a",
             { className: "item", href: "#AdvancedProperties" },
             "Properties"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#AdvancedSharingProperties" },
+            "Sharing Properties"
           ),
           _react2.default.createElement(
             "a",
@@ -85,6 +95,11 @@ var Advanced = exports.Advanced = function (_React$Component) {
             "a",
             { className: "item", href: "#AdvancedStateOnURL" },
             "State on URL"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#AdvancedAutorun" },
+            "autorun"
           ),
           _react2.default.createElement(
             "a",

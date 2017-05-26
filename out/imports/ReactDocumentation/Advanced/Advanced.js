@@ -21,6 +21,8 @@ var _Rendered = require("./Rendered/Rendered");
 
 var _Created = require("./Created/Created");
 
+var _Autorun = require("./Autorun/Autorun");
+
 var _StateOnURL = require("./StateOnURL/StateOnURL");
 
 var _Ref = require("./Ref/Ref");
@@ -33,7 +35,11 @@ var _Mixin = require("./Mixin/Mixin");
 
 var _Share = require("./Share/Share");
 
+var _SharingProperties = require("./SharingProperties/SharingProperties");
+
 var _Properties = require("./Properties/Properties");
+
+var _Reset = require("./Reset/Reset");
 
 var _Parent = require("./Parent/Parent");
 
@@ -70,7 +76,13 @@ var Advanced = exports.Advanced = function (_React$Component) {
         _react2.default.createElement(_Parent.Parent, {
           "data-vm-parent": this
         }),
+        _react2.default.createElement(_Reset.Reset, {
+          "data-vm-parent": this
+        }),
         _react2.default.createElement(_Properties.Properties, {
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_SharingProperties.SharingProperties, {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_Share.Share, {
@@ -89,6 +101,9 @@ var Advanced = exports.Advanced = function (_React$Component) {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_StateOnURL.StateOnURL, {
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_Autorun.Autorun, {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_Created.Created, {

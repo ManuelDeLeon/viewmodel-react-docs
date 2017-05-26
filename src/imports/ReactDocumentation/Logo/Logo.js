@@ -1,7 +1,7 @@
 Logo({
   render(){
     <div >
-      <img src="paper-plane.png"
+      <img src="viewmodel-logo.png"
            style="
             max-height: 100px;
             display: block;

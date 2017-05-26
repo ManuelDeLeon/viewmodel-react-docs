@@ -1,5 +1,4 @@
 App({
-
   render(){
     <div>
       <div>

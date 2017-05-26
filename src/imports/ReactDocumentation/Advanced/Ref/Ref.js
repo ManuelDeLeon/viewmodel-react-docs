@@ -71,6 +71,47 @@ BlueLabel({
     </label>
   }
 });</code></pre>
+
+      <p>You can also use ref to format controls with Javascript. Here's a dropdown using Semantic UI.</p>
+      <hr/>
+      <CreditCard />
+      <hr/>
+<pre><code>CreditCard({
+  creditCard: '',
+  rendered(){
+    $(this.refs.creditCardDropdown).dropdown();
+  },
+  render(){
+    <form>
+      <div class="field">
+        <label b="text: 'Selected: ' + creditCard" />
+      </div>
+      <div class="field">
+        <label>Card Type</label>
+        <div class="ui selection dropdown" ref="creditCardDropdown">
+          <input b="value: creditCard" type="hidden" name="card[type]" />
+          <div class="default text">Type</div>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item" data-value="visa">
+              <i class="visa icon"></i>
+              Visa
+            </div>
+            <div class="item" data-value="amex">
+              <i class="amex icon"></i>
+              American Express
+            </div>
+            <div class="item" data-value="discover">
+              <i class="discover icon"></i>
+              Discover
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  }
+})</code></pre>
+
     </div>
   }
 });

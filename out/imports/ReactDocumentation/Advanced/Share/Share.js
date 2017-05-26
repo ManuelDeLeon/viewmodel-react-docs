@@ -11,6 +11,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _Person = require("./Person/Person");
 
+var _ShareTest = require("./ShareTest/ShareTest");
+
 var _viewmodelReact = require("viewmodel-react");
 
 var _viewmodelReact2 = _interopRequireDefault(_viewmodelReact);
@@ -43,6 +45,9 @@ var Share = exports.Share = function (_React$Component) {
           { className: "ui header" },
           "share"
         ),
+        _react2.default.createElement(_ShareTest.ShareTest, {
+          "data-vm-parent": this
+        }),
         _react2.default.createElement("a", { className: "anchor active", id: "AdvancedShare" }),
         _react2.default.createElement(
           "p",

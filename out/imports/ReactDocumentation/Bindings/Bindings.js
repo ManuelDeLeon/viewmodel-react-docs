@@ -13,6 +13,8 @@ var _BindingObject = require("./BindingObject/BindingObject");
 
 var _CustomBindings = require("./CustomBindings/CustomBindings");
 
+var _DeferUntil = require("./DeferUntil/DeferUntil");
+
 var _Repeat = require("./Repeat/Repeat");
 
 var _Throttle = require("./Throttle/Throttle");
@@ -131,6 +133,9 @@ var Bindings = exports.Bindings = function (_React$Component) {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_Repeat.Repeat, {
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_DeferUntil.DeferUntil, {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_CustomBindings.CustomBindings, {

@@ -19,8 +19,6 @@ var _Logo = require('./Logo/Logo');
 
 var _Menu = require('./Menu/Menu');
 
-var _ViewModelExplorer = require('./ViewModelExplorer/ViewModelExplorer');
-
 var _viewmodelReact = require('viewmodel-react');
 
 var _viewmodelReact2 = _interopRequireDefault(_viewmodelReact);
@@ -28,6 +26,8 @@ var _viewmodelReact2 = _interopRequireDefault(_viewmodelReact);
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
+
+var _viewmodelReactExplorer = require('viewmodel-react-explorer');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -48,7 +48,7 @@ var ReactDocumentation = exports.ReactDocumentation = function (_React$Component
         { className: 'ui two column centered grid', style: {
             width: '1024px'
           } },
-        _react2.default.createElement(_ViewModelExplorer.ViewModelExplorer, {
+        _react2.default.createElement(_viewmodelReactExplorer.ViewModelExplorer, {
           'data-vm-parent': this
         }),
         _react2.default.createElement(
@@ -93,9 +93,6 @@ var ReactDocumentation = exports.ReactDocumentation = function (_React$Component
         $('pre code').each(function (i, block) {
           $(block).addClass('language-javascript');
           Prism.highlightElement(block);
-
-          // $(block).addClass('jsx');
-          // hljs.highlightBlock(block);
         });
         var hash = window.location.hash;
         window.location.hash = hash + "X";

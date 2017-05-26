@@ -1,3 +1,7 @@
+cd ..\viewmodel-react-explorer
+call npm run prepublish
+xcopy dist c:\myfiles\react\viewmodel-react-docs\node_modules\viewmodel-react-explorer\dist /q/e/i/y
+cd ..\viewmodel-react-docs
 cd node_modules\viewmodel-react-plugin
 call babel --presets es2015 --out-dir dist src
 cd  ..\..
