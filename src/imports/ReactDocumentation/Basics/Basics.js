@@ -15,7 +15,7 @@ Basics({
       <SharedState />
       <Controls />
       <Testing />
-
+      <SourceCode />
     </div>
   }
 });
