@@ -3,7 +3,8 @@
 ,
   "plugins": [
     ["viewmodel-react-plugin", {
-      "attributes": [ "title", "placeholder" ]
+      "attributes": [ "title", "placeholder" ],
+      "deferWithRequire": true
     }]
   ]
 }

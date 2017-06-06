@@ -93,6 +93,11 @@ var Advanced = exports.Advanced = function (_React$Component) {
           ),
           _react2.default.createElement(
             "a",
+            { className: "item", href: "#AdvancedDynamicLoading" },
+            "Dynamic/Lazy/Deferred Loading"
+          ),
+          _react2.default.createElement(
+            "a",
             { className: "item", href: "#AdvancedStateOnURL" },
             "State on URL"
           ),
@@ -125,6 +130,11 @@ var Advanced = exports.Advanced = function (_React$Component) {
             "a",
             { className: "item", href: "#AdvancedValidation" },
             "Validation"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#AdvancedValidatingControls" },
+            "Validating Controls"
           ),
           _react2.default.createElement(
             "a",

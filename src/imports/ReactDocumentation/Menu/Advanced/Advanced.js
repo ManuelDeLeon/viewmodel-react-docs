@@ -16,6 +16,7 @@ Advanced({
         <a class="item" href="#AdvancedShareMixinScope">share/mixin scope</a>
         <a class="item" href="#AdvancedTesting">Testing</a>
         <a class="item" href="#AdvancedRef">ref</a>
+        <a class="item" href="#AdvancedDynamicLoading">Dynamic/Lazy/Deferred Loading</a>
         <a class="item" href="#AdvancedStateOnURL">State on URL</a>
         <a class="item" href="#AdvancedAutorun">autorun</a>
         <a class="item" href="#AdvancedCreated">created</a>
@@ -23,6 +24,7 @@ Advanced({
         <a class="item" href="#AdvancedDestroyed">destroyed</a>
         <a class="item" href="#AdvancedFind">find/findOne</a>
         <a class="item" href="#AdvancedValidation">Validation</a>
+        <a class="item" href="#AdvancedValidatingControls">Validating Controls</a>
         <a class="item" href="#AdvancedSignal">signal</a>
         <a class="item" href="#AdvancedGlobal">global</a>
       </div>

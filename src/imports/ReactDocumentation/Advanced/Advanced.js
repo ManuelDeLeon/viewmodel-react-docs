@@ -12,6 +12,7 @@ Advanced({
       <ShareMixinScope />
       <Testing />
       <Ref />
+      <DynamicLoading />
       <StateOnURL />
       <Autorun />
       <Created />
@@ -19,6 +20,7 @@ Advanced({
       <Destroyed />
       <Find />
       <Validation />
+      <ValidatingControls />
       <Signal />
       <Global />
     </div>

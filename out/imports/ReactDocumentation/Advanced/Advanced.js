@@ -11,6 +11,8 @@ var _Global = require("./Global/Global");
 
 var _Signal = require("./Signal/Signal");
 
+var _ValidatingControls = require("./ValidatingControls/ValidatingControls");
+
 var _Validation = require("./Validation/Validation");
 
 var _Find = require("./Find/Find");
@@ -24,6 +26,8 @@ var _Created = require("./Created/Created");
 var _Autorun = require("./Autorun/Autorun");
 
 var _StateOnURL = require("./StateOnURL/StateOnURL");
+
+var _DynamicLoading = require("./DynamicLoading/DynamicLoading");
 
 var _Ref = require("./Ref/Ref");
 
@@ -100,6 +104,9 @@ var Advanced = exports.Advanced = function (_React$Component) {
         _react2.default.createElement(_Ref.Ref, {
           "data-vm-parent": this
         }),
+        _react2.default.createElement(_DynamicLoading.DynamicLoading, {
+          "data-vm-parent": this
+        }),
         _react2.default.createElement(_StateOnURL.StateOnURL, {
           "data-vm-parent": this
         }),
@@ -119,6 +126,9 @@ var Advanced = exports.Advanced = function (_React$Component) {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_Validation.Validation, {
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_ValidatingControls.ValidatingControls, {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_Signal.Signal, {
