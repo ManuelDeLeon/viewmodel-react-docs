@@ -4,7 +4,7 @@ Validation({
     .invalidMessage("First message can't be blank or end with an X")
     .validateAsync((value, done) => {
       // Simulate an async call to the server
-      setTimeout(() => (value.endsWith("X") ? done(false) : done(true)), 1000)
+      setTimeout(() => (value.endsWith("X") ? done(false) : done(true)), 500)
     }),
   lastName: ViewModel.property.string
     .validate(function(value) { return this.firstName() === "n/a" ? value : true })
@@ -19,7 +19,7 @@ Validation({
       <h2 class="ui header">Validation</h2>
       <a class="anchor active" id="AdvancedValidation"></a>
       <p>
-        Validations in ViewModel are achieved by declaring the properties with 'ViewModel.property'. In the following example the name property is a string and it must not be blank (null, undefined, empty, spaces).
+        Validating properties (typically form data) in ViewModel is achieved by declaring the properties with 'ViewModel.property'. In the following example the name property is a string and it must not be blank (null, undefined, empty, spaces).
       </p>
 <pre><code>Example({
   name: ViewModel.property.string.notBlank,
@@ -103,7 +103,7 @@ Validation({
     .invalidMessage("First message can't be blank or end with an X")
     .validateAsync((value, done) => {
       // Simulate an async call to the server
-      Meteor.setTimeout(() => (value.endsWith("X") ? done(false) : done(true)), 1000)
+      setTimeout(() => (value.endsWith("X") ? done(false) : done(true)), 500)
     }),
 
   lastName: ViewModel.property.string

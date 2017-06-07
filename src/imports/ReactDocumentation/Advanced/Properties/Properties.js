@@ -243,7 +243,7 @@ Properties({
     .checkAsync((value, done) => {
       // Simulate an async call to the server
       // Reject a value that ends with 'X'
-      Meteor.setTimeout(() => (value.endsWith("X") ? done(false) : done(true)), 50)
+      setTimeout(() => (value.endsWith("X") ? done(false) : done(true)), 50)
     }),
   render() {
     <i class="ui icon spinner" b="if: password.validating" />
