@@ -8,6 +8,7 @@ Bindings({
       <div class="content menu">
         <a class="item" href="#BindingsDescription">Description</a>
         <a class="item" href="#BindingsDeclaring">Declaring</a>
+        <a class="item" href="#BindingsEvents">Events</a>
         <hr />
         <a class="item" href="#BindingsValue">value</a>
         <a class="item" href="#BindingsText">text</a>

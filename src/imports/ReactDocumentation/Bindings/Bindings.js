@@ -4,6 +4,7 @@ Bindings({
       <h1 class="ui dividing header">Bindings</h1>
       <Description />
       <Declaring />
+      <Events />
       <Value />
       <Text />
       <Html />

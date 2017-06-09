@@ -41,7 +41,7 @@ var Validation = exports.Validation = function (_React$Component) {
         _react2.default.createElement(
           "p",
           null,
-          "Validations in ViewModel are achieved by declaring the properties with 'ViewModel.property'. In the following example the name property is a string and it must not be blank (null, undefined, empty, spaces)."
+          "Validating properties (typically form data) in ViewModel is achieved by declaring the properties with 'ViewModel.property'. In the following example the name property is a string and it must not be blank (null, undefined, empty, spaces)."
         ),
         _react2.default.createElement(
           "pre",
@@ -276,7 +276,7 @@ var Validation = exports.Validation = function (_React$Component) {
             '\n',
             "      // Simulate an async call to the server",
             '\n',
-            "      Meteor.setTimeout(() => (value.endsWith(\"X\") ? done(false) : done(true)), 1000)",
+            "      setTimeout(() => (value.endsWith(\"X\") ? done(false) : done(true)), 500)",
             '\n',
             "    ",
             "}",
@@ -1016,7 +1016,7 @@ var Validation = exports.Validation = function (_React$Component) {
         // Simulate an async call to the server
         setTimeout(function () {
           return value.endsWith("X") ? done(false) : done(true);
-        }, 1000);
+        }, 500);
       }),
       lastName: _viewmodelReact2.default.property.string.validate(function (value) {
         return this.firstName() === "n/a" ? value : true;
