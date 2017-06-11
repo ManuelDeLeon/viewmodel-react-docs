@@ -11,7 +11,6 @@ Advanced({
       <Mixin />
       <ShareMixinScope />
       <Testing />
-      <Ref />
       <DynamicLoading />
       <StateOnURL />
       <Autorun />

@@ -1,7 +1,7 @@
 CreditCard({
   creditCard: '',
   rendered(){
-    $(this.refs.creditCardDropdown).dropdown();
+    $(this.creditCardDropdown).dropdown();
   },
   render(){
     <form>
@@ -10,8 +10,8 @@ CreditCard({
       </div>
       <div class="field">
         <label>Card Type</label>
-        <div class="ui selection dropdown" ref="creditCardDropdown">
-          <input b="value: creditCard" type="hidden" name="card[type]" ref="creditCardInput" />
+        <div class="ui selection dropdown" b="ref: creditCardDropdown">
+          <input b="value: creditCard" type="hidden" name="card[type]" b="ref: creditCardInput" />
           <div class="default text">Type</div>
           <i class="dropdown icon"></i>
           <div class="menu">

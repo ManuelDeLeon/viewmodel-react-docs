@@ -4,24 +4,24 @@ Ref({
     const show = this.show();
 
     // Set a property on a child component (a control so to speak)
-    this.refs.blueLabel.show(show);
+    this.blueLabel.show(show);
 
     // Manipulate an html element directly
     if ( show ) {
-      this.refs.redLabel.style.display = 'block';
+      this.redLabel.style.display = 'block';
     } else {
-      this.refs.redLabel.style.display = 'none';
+      this.redLabel.style.display = 'none';
     }
   },
   render(){
     <div class="ui segment">
       <h2 class="ui header">ref</h2>
-      <a class="anchor active" id="AdvancedRef"></a>
+      <a class="anchor active" id="BindingsRef"></a>
       <p>
-        The ref attribute gives you a way to interact with an html element or sub-component without resorting to selectors. When you reference a component you get a hold of the component instance. This allows you to use sub-components as controls/widgets.
+        The ref binding gives you a way to interact with an html element or sub-component without resorting to selectors. When you reference a component you get a hold of the component instance. This allows you to use sub-components as controls/widgets.
       </p>
-      <pre><code>ref="propertyName"</code></pre>
-      <pre><code>this.refs.elementName</code></pre>
+      <pre><code>b="ref: elementName"</code></pre>
+      <pre><code>this.elementName</code></pre>
 
       <h3>ref demo</h3>
 
@@ -31,10 +31,10 @@ Ref({
             <a b="toggle: show" class="ui button"> Toggle Label</a>
           </div>
           <div class="four wide column">
-            <label ref="redLabel" class="ui red label" >Referencing an element</label>
+            <label b="ref: redLabel" class="ui red label" >Referencing an element</label>
           </div>
           <div class="four wide column">
-            <BlueLabel ref="blueLabel" />
+            <BlueLabel b="ref: blueLabel" />
           </div>
         </div>
       </div>
@@ -45,20 +45,20 @@ Ref({
     const show = this.show();
 
     // Set a property on a child component (a control so to speak)
-    this.refs.blueLabel.show(show);
+    this.blueLabel.show(show);
 
     // Manipulate an html element directly
     if ( show ) {
-      this.refs.redLabel.style.display = 'block';
+      this.redLabel.style.display = 'block';
     } else {
-      this.refs.redLabel.style.display = 'none';
+      this.redLabel.style.display = 'none';
     }
   },
   render() {
     <div>
       <a b="toggle: show" class="ui button"> Toggle Label</a>
-      <label ref="redLabel" class="ui red label" >Referencing an element</label>
-      <BlueLabel ref="blueLabel" />
+      <label b="ref: redLabel" class="ui red label" >Referencing an element</label>
+      <BlueLabel b="ref: blueLabel" />
     </div>
   }
 });
@@ -79,7 +79,7 @@ BlueLabel({
 <pre><code>CreditCard({
   creditCard: '',
   rendered(){
-    $(this.refs.creditCardDropdown).dropdown();
+    $(this.creditCardDropdown).dropdown();
   },
   render(){
     <form>
@@ -88,7 +88,7 @@ BlueLabel({
       </div>
       <div class="field">
         <label>Card Type</label>
-        <div class="ui selection dropdown" ref="creditCardDropdown">
+        <div class="ui selection dropdown" b="ref: creditCardDropdown">
           <input b="value: creditCard" type="hidden" name="card[type]" />
           <div class="default text">Type</div>
           <i class="dropdown icon"></i>

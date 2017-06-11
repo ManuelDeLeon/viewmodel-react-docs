@@ -105,11 +105,11 @@ Style({
 
 <pre><code>Example({
   styles: {
-      label: {
+    label: {
       color: 'red',
       'font-weight': 'bold'
     },
-      button: {
+    button: {
       color: 'blue'
     }
   },

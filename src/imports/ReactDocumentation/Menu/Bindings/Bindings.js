@@ -26,7 +26,8 @@ Bindings({
         <a class="item" href="#BindingsToggle">toggle</a>
         <a class="item" href="#BindingsThrottle">throttle</a>
         <a class="item" href="#BindingsRepeat">repeat</a>
-        <a class="item" href="#BindingsDeferUntil">deferUntil</a>
+        <a class="item" href="#BindingsRef">ref</a>
+        <a class="item" href="#BindingsDefer">defer</a>
         <hr/>
         <a class="item" href="#BindingsCustomBindings">Custom Bindings</a>
         <a class="item" href="#BindingsBindingObject">Binding Object</a>

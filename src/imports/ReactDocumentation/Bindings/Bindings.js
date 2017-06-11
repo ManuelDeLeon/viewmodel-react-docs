@@ -21,7 +21,8 @@ Bindings({
       <Toggle />
       <Throttle />
       <Repeat />
-      <DeferUntil />
+      <Ref />
+      <Defer />
       <CustomBindings />
       <BindingObject />
       <BindingArgument />

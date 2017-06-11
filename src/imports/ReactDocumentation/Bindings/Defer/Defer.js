@@ -1,0 +1,36 @@
+Defer({
+  show: false,
+  render(){
+    <div class="ui segment">
+      <h2 class="ui header">if</h2>
+      <a class="anchor active" id="BindingsDefer"></a>
+      <p>
+        If you're using WebPack, Meteor, or any other build that supports dynamic imports, you can use the defer binding to postpone loading a component on the client until a certain condition is true. This is a very convenient way to split a large application by major components.
+      </p>
+      <pre><code>b="defer: property"</code></pre>
+
+      <p>In the following example the component Hello won't be loaded on the client until the user ticks the checkbox (making "show" to be true).</p>
+
+<pre><code>Hello({
+  render(){
+    <h1>Hello</h1>
+  }
+})
+
+Example({
+  show: false,
+  render() {
+    <div>
+      <input b="check: show" type="checkbox" /> Show Greeting
+      <Hello b="defer: show" />
+    </div>
+  }
+})</code></pre>
+
+    <hr />
+    <p>
+        For more information see <a href="#AdvancedDynamicLoading">Dynamic Loading</a>.
+    </p>
+    </div>
+  }
+})

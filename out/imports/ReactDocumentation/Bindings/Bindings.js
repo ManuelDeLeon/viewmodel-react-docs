@@ -47,6 +47,8 @@ var _Text = require("./Text/Text");
 
 var _Value = require("./Value/Value");
 
+var _Events = require("./Events/Events");
+
 var _Declaring = require("./Declaring/Declaring");
 
 var _Description = require("./Description/Description");
@@ -85,6 +87,9 @@ var Bindings = exports.Bindings = function (_React$Component) {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_Declaring.Declaring, {
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_Events.Events, {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_Value.Value, {

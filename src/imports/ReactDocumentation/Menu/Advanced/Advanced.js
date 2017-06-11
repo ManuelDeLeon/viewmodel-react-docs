@@ -15,7 +15,6 @@ Advanced({
         <a class="item" href="#AdvancedMixin">mixin</a>
         <a class="item" href="#AdvancedShareMixinScope">share/mixin scope</a>
         <a class="item" href="#AdvancedTesting">Testing</a>
-        <a class="item" href="#AdvancedRef">ref</a>
         <a class="item" href="#AdvancedDynamicLoading">Dynamic/Lazy/Deferred Loading</a>
         <a class="item" href="#AdvancedStateOnURL">State on URL</a>
         <a class="item" href="#AdvancedAutorun">autorun</a>
