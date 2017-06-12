@@ -56,7 +56,7 @@
     "react-dom": "15.3.2",
     "react-highlight": "^0.9.0",
     "semantic-ui-css": "2.2.4",
-    "viewmodel-react": "^1.0.4",
+    "viewmodel-react": "^2.0.1",
     "viewmodel-react-explorer": "^1.0.7"
   },
   "jest": {
