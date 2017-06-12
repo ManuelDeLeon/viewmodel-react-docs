@@ -31,7 +31,7 @@ Properties({
   }
 })</code></pre>
 
-      <p>At this point you might be wondering why go through this and not just use ES5 properties. "function properties" have a vew advantages:</p>
+      <p>At this point you might be wondering why go through this and not just use ES5 properties. "function properties" have a few advantages:</p>
 
       <ul>
         <li>You can pass properties as references to other functions.</li>
@@ -60,7 +60,7 @@ Properties({
     var valA = this.a.value; // Don't depend on a
     var valB = this.b(); // Depend on the value of b
 
-    this.a( valA + valB ); Update value of a
+    this.a( valA + valB ); // Update value of a
   },
   render() {
     <div />

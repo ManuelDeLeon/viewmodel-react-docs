@@ -13,7 +13,9 @@ var _BindingObject = require("./BindingObject/BindingObject");
 
 var _CustomBindings = require("./CustomBindings/CustomBindings");
 
-var _DeferUntil = require("./DeferUntil/DeferUntil");
+var _Defer = require("./Defer/Defer");
+
+var _Ref = require("./Ref/Ref");
 
 var _Repeat = require("./Repeat/Repeat");
 
@@ -140,7 +142,10 @@ var Bindings = exports.Bindings = function (_React$Component) {
         _react2.default.createElement(_Repeat.Repeat, {
           "data-vm-parent": this
         }),
-        _react2.default.createElement(_DeferUntil.DeferUntil, {
+        _react2.default.createElement(_Ref.Ref, {
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_Defer.Defer, {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_CustomBindings.CustomBindings, {

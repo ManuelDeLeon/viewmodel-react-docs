@@ -16,7 +16,7 @@ Events({
 })</code></pre>
       
       <p>
-        In fact, there is no `click` binding. When you use `click: doSomething`, ViewModel looks for the a binding named 'click', it doesn't find it, and thus wires up the click event on the element.
+        In fact, there is no `click` binding. When you use `click: doSomething`, ViewModel looks for a binding named 'click', it doesn't find it, and thus wires up the click event on the element.
       </p>
     </div>
   }

@@ -41,7 +41,7 @@ Share({
 
       <h3>Lifecycle hooks</h3>
       <p>
-        You can supply multiple <a href="#AdvancedAutorun">autorun</a>, <a href="#AdvancedCreated">created</a>, <a href="#AdvancedRendered">rendered</a>, and <a href="#AdvancedDestroyed">destroyed</a> functions with <a href="#AdvancedShare">share</a>, <a href="#AdvancedShare">share</a>, <a href="#AdvancedLoad">load</a>, or in the <a href="#AdvancedDefining">definition</a>.
+        You can supply multiple <a href="#AdvancedAutorun">autorun</a>, <a href="#AdvancedCreated">created</a>, <a href="#AdvancedRendered">rendered</a>, and <a href="#AdvancedDestroyed">destroyed</a> functions with <a href="#AdvancedShare">share</a>, <a href="#AdvancedMixin">mixin</a>, <a href="#AdvancedLoad">load</a>, or in the component itself.
       </p>
       <p>
         For example if you want a share to execute a function after the template is created (one that uses the share of course), you can do:

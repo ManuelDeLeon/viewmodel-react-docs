@@ -418,7 +418,7 @@ Validation({
           <div class="content">
             <div class="header">convertOut( function(value) {'{'} return modifiedValue; } )</div>
             <p>
-              Specify a function to run when you access a property. This is a chance to modify the value when a prperty is read.
+              Specify a function to run when you access a property. This is a chance to modify the value when a property is read.
             </p>
           </div>
         </div>

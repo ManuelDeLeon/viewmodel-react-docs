@@ -8,13 +8,13 @@ ValidatingControls({
       </p>
 
 			<h4>Validation logic is on the control</h4>
-			<p>In this case you use the ref keyword to check if the control is in a valid state or not:</p>
+			<p>In this case you use the ref binding to check if the control is in a valid state or not:</p>
 <pre><code>Parent({
 	nameIsValid() {
-		return this.refs.name.valid();
+		return this.name.valid();
 	},
 	render(){
-		<TextBox ref="name" />
+		<TextBox b="ref: name" />
 	}
 })
 

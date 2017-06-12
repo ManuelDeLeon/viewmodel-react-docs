@@ -41,7 +41,7 @@ var ShareMixinScope = exports.ShareMixinScope = function (_React$Component) {
         _react2.default.createElement(
           "p",
           null,
-          "By default share and mixin will add all properties and methods they have to the component. This is fine is most situations but sometimes names collide. You can add the share/mixin to a specific property of the component. You can even add the same mixin multiple times to the same component. This is similar to how services work in other frameworks."
+          "By default share and mixin will add all properties and methods they have to the component. This is fine in most situations but sometimes names collide. You can add the share/mixin to a specific property of the component. You can even add the same mixin multiple times to the same component. This is similar to how services work in other frameworks."
         ),
         _react2.default.createElement(
           "p",

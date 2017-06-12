@@ -955,7 +955,7 @@ var Validation = exports.Validation = function (_React$Component) {
               _react2.default.createElement(
                 "p",
                 null,
-                "Specify a function to run when you access a property. This is a chance to modify the value when a prperty is read."
+                "Specify a function to run when you access a property. This is a chance to modify the value when a property is read."
               )
             )
           ),

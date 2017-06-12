@@ -143,8 +143,13 @@ var Bindings = exports.Bindings = function (_React$Component) {
           ),
           _react2.default.createElement(
             "a",
-            { className: "item", href: "#BindingsDeferUntil" },
-            "deferUntil"
+            { className: "item", href: "#BindingsRef" },
+            "ref"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "item", href: "#BindingsDefer" },
+            "defer"
           ),
           _react2.default.createElement("hr", null),
           _react2.default.createElement(

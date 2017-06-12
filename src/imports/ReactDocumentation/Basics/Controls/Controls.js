@@ -20,17 +20,17 @@ Controls({
   }
 });</code></pre>
 
-      <p>You can then treat it as a control of another component and access its properties and methods via the refs collection:</p>
+      <p>You can then treat it as a control and access its properties and methods via the <a href="#BindingsRef">ref binding</a>. It adds a property to the component which references the component or HTML element.</p>
 
 <pre><code>Form({
   logName() {
-    console.log( this.refs.name.text() );
+    console.log( this.name.text() );
   },
   render(){
     <form class="ui form" style="width: 40%">
-      <DefaultInput ref="name" label="Name:" placeholder="Your name" />
+      <DefaultInput b="ref: name" label="Name:" placeholder="Your name" />
       <button type="button" b="click: logName">Log Name</button>
-      <label b="text: refs.name.text" />
+      <label b="text: name.text" />
     </form>
   }
 });</code></pre>

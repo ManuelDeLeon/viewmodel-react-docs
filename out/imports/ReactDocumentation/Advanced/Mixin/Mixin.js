@@ -184,13 +184,7 @@ var Mixin = exports.Mixin = function (_React$Component) {
             { href: "#AdvancedLoad" },
             "load"
           ),
-          ", or in the ",
-          _react2.default.createElement(
-            "a",
-            { href: "#AdvancedDefining" },
-            "definition"
-          ),
-          "."
+          ", or in the component itself."
         ),
         _react2.default.createElement(
           "p",

@@ -177,8 +177,8 @@ var Share = exports.Share = function (_React$Component) {
           ", ",
           _react2.default.createElement(
             "a",
-            { href: "#AdvancedShare" },
-            "share"
+            { href: "#AdvancedMixin" },
+            "mixin"
           ),
           ", ",
           _react2.default.createElement(
@@ -186,13 +186,7 @@ var Share = exports.Share = function (_React$Component) {
             { href: "#AdvancedLoad" },
             "load"
           ),
-          ", or in the ",
-          _react2.default.createElement(
-            "a",
-            { href: "#AdvancedDefining" },
-            "definition"
-          ),
-          "."
+          ", or in the component itself."
         ),
         _react2.default.createElement(
           "p",

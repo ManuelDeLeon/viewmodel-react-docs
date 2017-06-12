@@ -29,8 +29,6 @@ var _StateOnURL = require("./StateOnURL/StateOnURL");
 
 var _DynamicLoading = require("./DynamicLoading/DynamicLoading");
 
-var _Ref = require("./Ref/Ref");
-
 var _Testing = require("./Testing/Testing");
 
 var _ShareMixinScope = require("./ShareMixinScope/ShareMixinScope");
@@ -99,9 +97,6 @@ var Advanced = exports.Advanced = function (_React$Component) {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_Testing.Testing, {
-          "data-vm-parent": this
-        }),
-        _react2.default.createElement(_Ref.Ref, {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_DynamicLoading.DynamicLoading, {
