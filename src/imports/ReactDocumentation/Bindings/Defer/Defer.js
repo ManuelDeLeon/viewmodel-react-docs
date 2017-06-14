@@ -2,7 +2,7 @@ Defer({
   show: false,
   render(){
     <div class="ui segment">
-      <h2 class="ui header">if</h2>
+      <h2 class="ui header">defer</h2>
       <a class="anchor active" id="BindingsDefer"></a>
       <p>
         If you're using WebPack, Meteor, or any other build that supports dynamic imports, you can use the defer binding to postpone loading a component on the client until a certain condition is true. This is a very convenient way to split a large application by major components.

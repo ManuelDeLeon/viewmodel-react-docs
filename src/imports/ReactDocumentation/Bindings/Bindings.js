@@ -14,6 +14,7 @@ Bindings({
       <If />
       <Unless />
       <Enter />
+      <Esc />
       <Change />
       <Hover />
       <Focus />
