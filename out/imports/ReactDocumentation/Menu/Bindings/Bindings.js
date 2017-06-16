@@ -108,6 +108,11 @@ var Bindings = exports.Bindings = function (_React$Component) {
           ),
           _react2.default.createElement(
             "a",
+            { className: "item", href: "#BindingsEsc" },
+            "esc"
+          ),
+          _react2.default.createElement(
+            "a",
             { className: "item", href: "#BindingsChange" },
             "change"
           ),

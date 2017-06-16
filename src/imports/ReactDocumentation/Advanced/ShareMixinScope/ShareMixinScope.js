@@ -4,7 +4,10 @@ ShareMixinScope({
       <h2 class="ui header">share/mixin scope</h2>
       <a class="anchor active" id="AdvancedShareMixinScope"></a>
       <p>
-        By default share and mixin will add all properties and methods they have to the component. This is fine in most situations but sometimes names collide. You can add the share/mixin to a specific property of the component. You can even add the same mixin multiple times to the same component. This is similar to how services work in other frameworks.
+        By default share and mixin will add all properties and methods they have to the component. This is fine for simple components where you just use one mixin or share. But when the component is complex or you require two or more mixins/share then it's much better to scope the mixin/share.
+      </p>
+      <p>  
+        For this you can add the share/mixin to a specific property of the component (effectively scoping them). You can even add the same mixin multiple times to the same component. This is similar to how services work in other frameworks.
       </p>
       <p>
         To do so, instead of using a string or array of strings to declare the mixin/share, you use an object. The keys are the names of the component properties and the values are strings to the names of the mixins/shares.

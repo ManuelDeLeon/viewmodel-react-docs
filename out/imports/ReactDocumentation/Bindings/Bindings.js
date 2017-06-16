@@ -31,6 +31,8 @@ var _Hover = require("./Hover/Hover");
 
 var _Change = require("./Change/Change");
 
+var _Esc = require("./Esc/Esc");
+
 var _Enter = require("./Enter/Enter");
 
 var _Unless = require("./Unless/Unless");
@@ -119,6 +121,9 @@ var Bindings = exports.Bindings = function (_React$Component) {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_Enter.Enter, {
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_Esc.Esc, {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_Change.Change, {
