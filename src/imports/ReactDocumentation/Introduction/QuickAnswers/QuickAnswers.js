@@ -9,6 +9,11 @@ QuickAnswers({
         ViewModel for React is a thin layer on top of React to work with as little boilerplate and ceremonies as possible.
       </p>
 
+      <h3 class="ui header">Will I still be able to use everything from the React ecosystem?</h3>
+      <p>
+        Of course, ViewModel sits on top of React, so the only thing out the window are the needless ceremonies. You can keep using your stack of choice (Express, .Net Core, Meteor, Feathers, etc.) The same applies to bundlers, plugins, custom components, optimizations, etc.
+      </p>
+
       <h3 class="ui header">What's the big idea?</h3>
       <p>
         Actually it's pretty simple, you have an object and the view is rendered based on the properties of that object. Want to modify the state of the view? Just modify the object. Want to save the state of the view at any given time? Just save the object somewhere. Want to return the state of the view to what it was? Just load the saved object. Using the buzzword of the day, it's "easy to reason about".
@@ -45,41 +50,28 @@ QuickAnswers({
         I feel like view layers are needlessly bloated and complex. More often than not you're doing things, not because your application requires it, but because the framework does. I like to read and write code relevant to my applications, not a framework. ViewModel is an attempt to eliminate anything that isn't "your code".
       </p>
 
-      <h3 class="ui header">I've read bindings are evil, why are you using them?</h3>
-      <p>
-        I don't know what definition you're using but here a binding is only a shortcut for a ceremonious task. There's nothing evil, magical, or mystical about them. Let's take a simple example from JavaScript. You could write the following:
-      </p>
-      <pre><code>i = i + 2;</code></pre>
-      <p>
-        Or you could write:
-      </p>
-      <pre><code>i += 2;</code></pre>
-      <p>
-        The += assignment operator is analogous to a binding in ViewModel. It's a shortcut and you don't have to use it if you don't want to. Is it wrong to use the += operator? Is it too much "magic"? I don't think so.
-      </p>
-
       <h3 class="ui header">What does the code look like?</h3>
 <pre><code>Hello({
   render() {
-    <h1>Hello World!</h1>
+    <label class="label" style="color: blue">
+      Hello World!
+    </label>
   }
 })</code></pre>
-
-      <h3 class="ui header">Aren't you missing a few things in there?</h3>
-      <p>
-        Nope. That's all you need to create a Hello component that displays "Hello World!". Notice there's only one thing which isn't "your code" and that's the render keyword.
-      </p>
+      <label class="label" style="color: blue">Hello World!</label>
 
       <h3 class="ui header">How does that work?</h3>
       <p>
-        The viewmodel-react-plugin for Babel adds the crust React requires. So our Hello component file gets transpiled into:
+        ViewModel adds the crust React requires. So our Hello component file gets transpiled into:
       </p>
 <pre><code>import React from 'react';
 
 export class Hello extends React.Component {
   render() {
     return (
-      <h1>Hello World!</h1>
+      <label className="label" style={{ color: "blue" }}>
+        Hello World!
+      </label>
     );
   }
 }</code></pre>
@@ -89,11 +81,30 @@ export class Hello extends React.Component {
   message: '',
   render() {
     <div>
-      <input b="value: message" />
+      <input b="value: message" placeholder="Type something..." />
       <label b="text: message" />
     </div>
   }
 });</code></pre>
+<div class="ui input">
+        <input type="text" b="value: message" placeholder="Type something..." />
+</div>
+<div class="ui label">
+  <label b="text: message" />
+</div>
+
+      <h3 class="ui header">I've heard bindings are evil, why are you using them?</h3>
+      <p>
+        I don't know what definition you've heard but here a binding is only a shortcut for a ceremonious task. There's nothing evil, magical, or mystical about them. Let's take a simple example from JavaScript. You could write the following:
+            </p>
+      <pre><code>i = i + 2;</code></pre>
+      <p>
+        Or you could write:
+            </p>
+      <pre><code>i += 2;</code></pre>
+      <p>
+        The += assignment operator is analogous to a binding in ViewModel. It's a shortcut and you don't have to use it if you don't want to. Is it wrong to use the += operator? Is it too much "magic"? I don't think so.
+      </p>
 
       <h3 class="ui header">Does it work with SSR?</h3>
       <p>
@@ -101,7 +112,7 @@ export class Hello extends React.Component {
       </p>
 <pre><code><p b="if: show">Hi</p></code></pre>
       <p>
-        The Babel plugin transpiles it into:
+        It transpiles into:
       </p>
 <pre><code>{ this.state.show ? <p>Hi</p> : null }</code></pre>
 

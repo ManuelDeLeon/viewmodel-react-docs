@@ -21,7 +21,7 @@ npm install</code></pre>
       <pre><code>npm start</code></pre>
 
       <h3>Meteor</h3>
-      <p>If you're using Meteor then check out the <a href="https://github.com/ManuelDeLeon/viewmodel-react-starter-meteor">viewmodel-react-starter-meteor</a> project.</p>
+      <p>If you're using Meteor then check out the <a target="_blank" href="https://github.com/ManuelDeLeon/viewmodel-react-starter-meteor">viewmodel-react-starter-meteor</a> project.</p>
     </div>
   }
 });
