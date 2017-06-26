@@ -51,7 +51,7 @@ Testing({
       <p>Let's use <a href="https://facebook.github.io/jest/">Jest</a> and <a href="http://airbnb.io/enzyme/">Enzyme</a> to test that component.</p>
 
       <p>First let's install Jest and Enzyme:</p>
-      <pre><code>npm install --save-dev jest-cli babel-jest babel-polyfill react-addons-test-utils enzyme</code></pre>
+      <pre><code>npm install --save-dev jest-cli babel-jest babel-polyfill react-addons-test-utils react-test-renderer enzyme</code></pre>
 
       <p>For convenience let's add jest as a test script in package.json:</p>
 <pre><code>  "scripts": {

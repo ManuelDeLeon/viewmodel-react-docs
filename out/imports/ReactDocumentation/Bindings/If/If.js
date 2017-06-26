@@ -17,6 +17,8 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -60,14 +62,15 @@ var If = exports.If = function (_React$Component) {
         _react2.default.createElement(
           "div",
           { className: "ui segment basic" },
-          _react2.default.createElement("input", { type: "checkbox", defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "itsOn"),
-            ref: _viewmodelReact2.default.bindElement(this, null, null, "check: itsOn"),
-            "data-bind": "check: itsOn"
-          }),
+          _react2.default.createElement("input", _defineProperty({ type: "checkbox", "data-bind": "check: itsOn",
+            defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "itsOn"),
+            ref: _viewmodelReact2.default.bindElement(this, null, null, "check: itsOn")
+          }, "data-bind", "check: itsOn")),
           " Is it on? \xA0\xA0",
           _viewmodelReact2.default.getValue(this, null, null, "itsOn") ? _react2.default.createElement(
             "label",
-            { className: "ui red label" },
+            { className: "ui red label", "data-bind": "if: itsOn"
+            },
             "It's SO on!"
           ) : null
         ),
