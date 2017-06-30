@@ -52,6 +52,11 @@ var Advanced = exports.Advanced = function (_React$Component) {
           ),
           _react2.default.createElement(
             "a",
+            { className: "item", href: "#AdvancedChildren" },
+            ".children"
+          ),
+          _react2.default.createElement(
+            "a",
             { className: "item", href: "#AdvancedReset" },
             ".reset"
           ),

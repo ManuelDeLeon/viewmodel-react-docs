@@ -43,6 +43,8 @@ var _Properties = require("./Properties/Properties");
 
 var _Reset = require("./Reset/Reset");
 
+var _Children = require("./Children/Children");
+
 var _Parent = require("./Parent/Parent");
 
 var _viewmodelReact = require("viewmodel-react");
@@ -76,6 +78,9 @@ var Advanced = exports.Advanced = function (_React$Component) {
           "Advanced"
         ),
         _react2.default.createElement(_Parent.Parent, {
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_Children.Children, {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_Reset.Reset, {

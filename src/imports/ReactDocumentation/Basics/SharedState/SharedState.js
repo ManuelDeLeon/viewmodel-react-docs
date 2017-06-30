@@ -26,7 +26,7 @@ SharedState({
   colors: [ 'red', 'green', 'blue' ],
   render(){
     <ul>
-      <li b="repeat: colors, text: repeatObject, click: selectedColor(repeatObject)" />
+      <li b="repeat: colors, text: repeatObject, click: selectedColor(repeatObject), style: { color: repeatObject }" />
     </ul>
   }
 })</code></pre>
@@ -46,6 +46,34 @@ SharedState({
       <h3>Result:</h3>
       <Colors />
       <ColorDetail />
+      <hr />
+      <h3>Sharing a property</h3>
+      <p>Sometimes the shared state is only used between parent and child components. In that case you can just pass the property to the child by reference.</p>
+      <pre><code>Colors({
+	colors: ['red', 'green', 'blue'],
+	selectedColor: '',
+	render() {
+		<div>
+			<ul>
+				<Color b="repeat: colors" color={repeatObject} selectedColor={this.selectedColor} />
+			</ul>
+			Color: <span b="text: selectedColor, style: { color: selectedColor }" />
+		</div>
+	}
+})</code></pre>
+      <pre><code>Color({
+	color: '',
+	selectedColor: '',
+	weight() {
+		return this.color() === this.selectedColor() ? "bold" : "normal";
+	},
+	render() {
+		<li b="text: color, click: selectedColor(color), style: { color: color, font-weight: weight }" />
+	}
+})</code></pre>
+      <hr/>
+      <h3>Result:</h3>
+      <ColorsNoShare />
     </div>
   }
 });

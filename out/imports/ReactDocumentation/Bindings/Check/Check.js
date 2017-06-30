@@ -17,8 +17,6 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -86,10 +84,10 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", _defineProperty({ type: "checkbox", "data-bind": "check: showRed",
-                  defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "showRed"),
-                  ref: _viewmodelReact2.default.bindElement(this, null, null, "check: showRed")
-                }, "data-bind", "check: showRed")),
+                _react2.default.createElement("input", { type: "checkbox", defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "showRed"),
+                  ref: _viewmodelReact2.default.bindElement(this, null, null, "check: showRed"),
+                  "data-bind": "check: showRed"
+                }),
                 _react2.default.createElement(
                   "label",
                   null,
@@ -99,11 +97,11 @@ var Check = exports.Check = function (_React$Component) {
             ),
             _react2.default.createElement(
               "a",
-              _defineProperty({
-                "data-bind": "class: { red: showRed }",
+              {
                 className: _viewmodelReact2.default.getClass(this, null, null, "ui button", "{red:showRed}"),
-                ref: _viewmodelReact2.default.bindElement(this, null, null, "class: { red: showRed }")
-              }, "data-bind", "class: { red: showRed }"),
+                ref: _viewmodelReact2.default.bindElement(this, null, null, "class: { red: showRed }"),
+                "data-bind": "class: { red: showRed }"
+              },
               "The Button"
             )
           )
@@ -159,10 +157,10 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", _defineProperty({ type: "checkbox", value: "Colorado", "data-bind": "group: states, check: coloradoChecked",
-                  defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "coloradoChecked"),
-                  ref: _viewmodelReact2.default.bindElement(this, null, null, "group: states, check: coloradoChecked")
-                }, "data-bind", "group: states, check: coloradoChecked")),
+                _react2.default.createElement("input", { type: "checkbox", value: "Colorado", defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "coloradoChecked"),
+                  ref: _viewmodelReact2.default.bindElement(this, null, null, "group: states, check: coloradoChecked"),
+                  "data-bind": "group: states, check: coloradoChecked"
+                }),
                 _react2.default.createElement(
                   "label",
                   null,
@@ -176,9 +174,9 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", _defineProperty({ type: "checkbox", value: "New York", "data-bind": "group: states",
-                  ref: _viewmodelReact2.default.bindElement(this, null, null, "group: states")
-                }, "data-bind", "group: states")),
+                _react2.default.createElement("input", { type: "checkbox", value: "New York", ref: _viewmodelReact2.default.bindElement(this, null, null, "group: states"),
+                  "data-bind": "group: states"
+                }),
                 _react2.default.createElement(
                   "label",
                   null,
@@ -192,9 +190,9 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", _defineProperty({ type: "checkbox", value: "Florida", "data-bind": "group: states",
-                  ref: _viewmodelReact2.default.bindElement(this, null, null, "group: states")
-                }, "data-bind", "group: states")),
+                _react2.default.createElement("input", { type: "checkbox", value: "Florida", ref: _viewmodelReact2.default.bindElement(this, null, null, "group: states"),
+                  "data-bind": "group: states"
+                }),
                 _react2.default.createElement(
                   "label",
                   null,
@@ -205,11 +203,11 @@ var Check = exports.Check = function (_React$Component) {
             "Selected: ",
             _react2.default.createElement(
               "label",
-              _defineProperty({
-                "data-bind": "text: states.join(' - '), class: { red: coloradoChecked }",
+              {
                 className: _viewmodelReact2.default.getClass(this, null, null, "ui label", "{red:coloradoChecked}"),
-                ref: _viewmodelReact2.default.bindElement(this, null, null, "text: states.join(' - '), class: { red: coloradoChecked }")
-              }, "data-bind", "text: states.join(' - '), class: { red: coloradoChecked }"),
+                ref: _viewmodelReact2.default.bindElement(this, null, null, "text: states.join(' - '), class: { red: coloradoChecked }"),
+                "data-bind": "text: states.join(' - '), class: { red: coloradoChecked }"
+              },
               _viewmodelReact2.default.getValue(this, null, null, "states.join(' - ')")
             )
           )
@@ -280,9 +278,9 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui radio" },
-                _react2.default.createElement("input", _defineProperty({ defaultValue: "red", name: "color", type: "radio", "data-bind": "group: colorSelected",
-                  ref: _viewmodelReact2.default.bindElement(this, null, null, "group: colorSelected")
-                }, "data-bind", "group: colorSelected")),
+                _react2.default.createElement("input", { defaultValue: "red", name: "color", type: "radio", ref: _viewmodelReact2.default.bindElement(this, null, null, "group: colorSelected"),
+                  "data-bind": "group: colorSelected"
+                }),
                 _react2.default.createElement(
                   "label",
                   null,
@@ -296,10 +294,10 @@ var Check = exports.Check = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui radio" },
-                _react2.default.createElement("input", _defineProperty({ defaultValue: "blue", name: "color", type: "radio", "data-bind": "group: colorSelected, check: blueSelected",
-                  defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "blueSelected"),
-                  ref: _viewmodelReact2.default.bindElement(this, null, null, "group: colorSelected, check: blueSelected")
-                }, "data-bind", "group: colorSelected, check: blueSelected")),
+                _react2.default.createElement("input", { defaultValue: "blue", name: "color", type: "radio", defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "blueSelected"),
+                  ref: _viewmodelReact2.default.bindElement(this, null, null, "group: colorSelected, check: blueSelected"),
+                  "data-bind": "group: colorSelected, check: blueSelected"
+                }),
                 _react2.default.createElement(
                   "label",
                   null,
@@ -313,19 +311,17 @@ var Check = exports.Check = function (_React$Component) {
               "The color is: ",
               _react2.default.createElement(
                 "span",
-                _defineProperty({
-                  "data-bind": "text: colorSelected, style: { color: colorSelected }",
+                {
                   style: _viewmodelReact2.default.getStyle(this, null, null, "", "{color:colorSelected}"),
-                  ref: _viewmodelReact2.default.bindElement(this, null, null, "text: colorSelected, style: { color: colorSelected }")
-                }, "data-bind", "text: colorSelected, style: { color: colorSelected }"),
+                  ref: _viewmodelReact2.default.bindElement(this, null, null, "text: colorSelected, style: { color: colorSelected }"),
+                  "data-bind": "text: colorSelected, style: { color: colorSelected }"
+                },
                 _viewmodelReact2.default.getValue(this, null, null, "colorSelected")
               )
             ),
             _viewmodelReact2.default.getValue(this, null, null, "blueSelected") ? _react2.default.createElement(
               "label",
-              {
-                "data-bind": "if: blueSelected"
-              },
+              null,
               " - Blue Selected"
             ) : null
           )
