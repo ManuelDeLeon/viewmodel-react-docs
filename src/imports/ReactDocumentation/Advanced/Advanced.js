@@ -3,6 +3,7 @@ Advanced({
     <div>
       <h1 class="ui dividing header">Advanced</h1>
       <Parent />
+      <Children />
       <Reset />
 
       <Properties />

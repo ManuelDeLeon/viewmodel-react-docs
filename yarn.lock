@@ -4128,7 +4128,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.4, prop-types@^15.5.7, prop-types@~15.5.7:
+prop-types@^15.5.4:
   version "15.5.10"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
   dependencies:
@@ -4205,25 +4205,13 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-addons-test-utils@^15.5.1:
-  version "15.5.1"
-  resolved "https://registry.yarnpkg.com/react-addons-test-utils/-/react-addons-test-utils-15.5.1.tgz#e0d258cda2a122ad0dff69f838260d0c3958f5f7"
-  dependencies:
-    fbjs "^0.8.4"
-    object-assign "^4.1.0"
+react-addons-test-utils@15.3.2:
+  version "15.3.2"
+  resolved "https://registry.yarnpkg.com/react-addons-test-utils/-/react-addons-test-utils-15.3.2.tgz#c09a44f583425a4a9c1b38444d7a6c3e6f0f41f6"
 
-react-dom@15.3.2:
+react-dom@15.3.2, "react-dom@^0.14.0 || ^15.0.0":
   version "15.3.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.3.2.tgz#c46b0aa5380d7b838e7a59c4a7beff2ed315531f"
-
-"react-dom@^0.14.0 || ^15.0.0":
-  version "15.5.4"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.5.4.tgz#ba0c28786fd52ed7e4f2135fe0288d462aef93da"
-  dependencies:
-    fbjs "^0.8.9"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.0"
-    prop-types "~15.5.7"
 
 react-highlight@^0.9.0:
   version "0.9.0"
@@ -4244,22 +4232,13 @@ react-hot-loader@1.3.0:
     react-hot-api "^0.4.5"
     source-map "^0.4.4"
 
-react@15.3.2:
+react@15.3.2, "react@^0.14.0 || ^15.0.0":
   version "15.3.2"
   resolved "https://registry.yarnpkg.com/react/-/react-15.3.2.tgz#a7bccd2fee8af126b0317e222c28d1d54528d09e"
   dependencies:
     fbjs "^0.8.4"
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
-
-"react@^0.14.0 || ^15.0.0":
-  version "15.5.4"
-  resolved "https://registry.yarnpkg.com/react/-/react-15.5.4.tgz#fa83eb01506ab237cdc1c8c3b1cea8de012bf047"
-  dependencies:
-    fbjs "^0.8.9"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.0"
-    prop-types "^15.5.7"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
@@ -5061,9 +5040,9 @@ viewmodel-react-plugin@^3.0.0:
     babel-preset-es2015 "^6.24.1"
     babel-runtime "^6.9.1"
 
-viewmodel-react@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/viewmodel-react/-/viewmodel-react-1.0.4.tgz#b6e6a9e5819f309fb9a341154219a28cf467de43"
+viewmodel-react@^2.0.1:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/viewmodel-react/-/viewmodel-react-2.1.2.tgz#5a37d4ad44463440b82fde30c2ae9b44ef540e47"
 
 vm-browserify@0.0.4:
   version "0.0.4"

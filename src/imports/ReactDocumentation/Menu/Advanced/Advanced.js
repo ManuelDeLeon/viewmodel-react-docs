@@ -7,6 +7,7 @@ Advanced({
       </a>
       <div class="content menu">
         <a class="item" href="#AdvancedParent">.parent</a>
+        <a class="item" href="#AdvancedChildren">.children</a>
         <a class="item" href="#AdvancedReset">.reset</a>
         <hr/>
         <a class="item" href="#AdvancedProperties">Properties</a>
