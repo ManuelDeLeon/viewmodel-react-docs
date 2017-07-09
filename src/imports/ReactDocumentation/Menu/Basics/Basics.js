@@ -19,6 +19,8 @@ Basics({
         <a class="item" href="#BasicsSharedState">Shared State</a>
         <a class="item" href="#BasicsControls">Controls</a>
         <a class="item" href="#BasicsTesting">Testing</a>
+        <a class="item" href="#BasicsExampleProject">Example Project</a>
+        <a class="item" href="#BasicsVSCodeExtension">VSCode Extension</a>
         <a class="item" href="#BasicsSourceCode">Source Code</a>
       </div>
     </div>

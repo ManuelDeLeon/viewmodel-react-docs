@@ -23,6 +23,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var VmLazyL;
+
 var Class = exports.Class = function (_React$Component) {
   _inherits(Class, _React$Component);
 
@@ -83,9 +85,9 @@ var Class = exports.Class = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", { type: "checkbox", defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "showBasic"),
-                  ref: _viewmodelReact2.default.bindElement(this, null, null, "check: showBasic"),
-                  "data-bind": "check: showBasic"
+                _react2.default.createElement("input", { type: "checkbox", "data-bind": "check: showBasic",
+                  defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "showBasic"),
+                  ref: _viewmodelReact2.default.bindElement(this, null, null, "check: showBasic")
                 }),
                 _react2.default.createElement(
                   "label",
@@ -100,9 +102,9 @@ var Class = exports.Class = function (_React$Component) {
               _react2.default.createElement(
                 "div",
                 { className: "ui checkbox" },
-                _react2.default.createElement("input", { type: "checkbox", defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "showRed"),
-                  ref: _viewmodelReact2.default.bindElement(this, null, null, "check: showRed"),
-                  "data-bind": "check: showRed"
+                _react2.default.createElement("input", { type: "checkbox", "data-bind": "check: showRed",
+                  defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "showRed"),
+                  ref: _viewmodelReact2.default.bindElement(this, null, null, "check: showRed")
                 }),
                 _react2.default.createElement(
                   "label",
@@ -114,9 +116,9 @@ var Class = exports.Class = function (_React$Component) {
             _react2.default.createElement(
               "a",
               {
+                "data-bind": "class: { basic: showBasic, red: showRed }",
                 className: _viewmodelReact2.default.getClass(this, null, null, "ui button", "{basic:showBasic,red:showRed}"),
-                ref: _viewmodelReact2.default.bindElement(this, null, null, "class: { basic: showBasic, red: showRed }"),
-                "data-bind": "class: { basic: showBasic, red: showRed }"
+                ref: _viewmodelReact2.default.bindElement(this, null, null, "class: { basic: showBasic, red: showRed }")
               },
               "The Button"
             )
@@ -179,17 +181,17 @@ var Class = exports.Class = function (_React$Component) {
                 null,
                 "Button Class"
               ),
-              _react2.default.createElement("input", { type: "text", defaultValue: _viewmodelReact2.default.getValue(this, null, null, "buttonCss"),
-                ref: _viewmodelReact2.default.bindElement(this, null, null, "value: buttonCss"),
-                "data-bind": "value: buttonCss"
+              _react2.default.createElement("input", { type: "text", "data-bind": "value: buttonCss",
+                defaultValue: _viewmodelReact2.default.getValue(this, null, null, "buttonCss"),
+                ref: _viewmodelReact2.default.bindElement(this, null, null, "value: buttonCss")
               })
             ),
             _react2.default.createElement(
               "a",
               {
+                "data-bind": "class: buttonCss",
                 className: _viewmodelReact2.default.getClass(this, null, null, "ui button", "buttonCss"),
-                ref: _viewmodelReact2.default.bindElement(this, null, null, "class: buttonCss"),
-                "data-bind": "class: buttonCss"
+                ref: _viewmodelReact2.default.bindElement(this, null, null, "class: buttonCss")
               },
               "The Button"
             )

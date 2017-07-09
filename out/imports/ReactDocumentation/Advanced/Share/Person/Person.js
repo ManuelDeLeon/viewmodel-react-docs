@@ -23,6 +23,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var VmLazyL;
 _viewmodelReact2.default.share({
   house: {
     address: '123 Main St.'
@@ -41,13 +42,13 @@ var Person = exports.Person = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { className: 'content' },
-          _react2.default.createElement('input', { type: 'text', defaultValue: _viewmodelReact2.default.getValue(this, null, null, 'name'),
-            ref: _viewmodelReact2.default.bindElement(this, null, null, 'value: name'),
-            'data-bind': 'value: name'
+          _react2.default.createElement('input', { type: 'text', 'data-bind': 'value: name',
+            defaultValue: _viewmodelReact2.default.getValue(this, null, null, 'name'),
+            ref: _viewmodelReact2.default.bindElement(this, null, null, 'value: name')
           }),
-          _react2.default.createElement('input', { type: 'text', defaultValue: _viewmodelReact2.default.getValue(this, null, null, 'address'),
-            ref: _viewmodelReact2.default.bindElement(this, null, null, 'value: address'),
-            'data-bind': 'value: address'
+          _react2.default.createElement('input', { type: 'text', 'data-bind': 'value: address',
+            defaultValue: _viewmodelReact2.default.getValue(this, null, null, 'address'),
+            ref: _viewmodelReact2.default.bindElement(this, null, null, 'value: address')
           })
         )
       );

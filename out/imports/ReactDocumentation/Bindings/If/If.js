@@ -23,6 +23,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var VmLazyL;
+
 var If = exports.If = function (_React$Component) {
   _inherits(If, _React$Component);
 
@@ -60,14 +62,15 @@ var If = exports.If = function (_React$Component) {
         _react2.default.createElement(
           "div",
           { className: "ui segment basic" },
-          _react2.default.createElement("input", { type: "checkbox", defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "itsOn"),
-            ref: _viewmodelReact2.default.bindElement(this, null, null, "check: itsOn"),
-            "data-bind": "check: itsOn"
+          _react2.default.createElement("input", { type: "checkbox", "data-bind": "check: itsOn",
+            defaultChecked: _viewmodelReact2.default.getValue(this, null, null, "itsOn"),
+            ref: _viewmodelReact2.default.bindElement(this, null, null, "check: itsOn")
           }),
           " Is it on? \xA0\xA0",
           _viewmodelReact2.default.getValue(this, null, null, "itsOn") ? _react2.default.createElement(
             "label",
-            { className: "ui red label" },
+            { className: "ui red label", "data-bind": "if: itsOn"
+            },
             "It's SO on!"
           ) : null
         ),

@@ -23,6 +23,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var VmLazyL;
+
 var Text = exports.Text = function (_React$Component) {
   _inherits(Text, _React$Component);
 
@@ -66,14 +68,14 @@ var Text = exports.Text = function (_React$Component) {
             _react2.default.createElement(
               "div",
               { className: "inline field" },
-              _react2.default.createElement("input", { type: "text", placeholder: "Type something", defaultValue: _viewmodelReact2.default.getValue(this, null, null, "message"),
-                ref: _viewmodelReact2.default.bindElement(this, null, null, "value: message"),
-                "data-bind": "value: message"
+              _react2.default.createElement("input", { type: "text", placeholder: "Type something", "data-bind": "value: message",
+                defaultValue: _viewmodelReact2.default.getValue(this, null, null, "message"),
+                ref: _viewmodelReact2.default.bindElement(this, null, null, "value: message")
               }),
               _react2.default.createElement(
                 "label",
-                { className: "ui label", ref: _viewmodelReact2.default.bindElement(this, null, null, "text: message"),
-                  "data-bind": "text: message"
+                { className: "ui label", "data-bind": "text: message",
+                  ref: _viewmodelReact2.default.bindElement(this, null, null, "text: message")
                 },
                 _viewmodelReact2.default.getValue(this, null, null, "message")
               )

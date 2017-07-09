@@ -23,6 +23,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var VmLazyL;
+
 var Html = exports.Html = function (_React$Component) {
   _inherits(Html, _React$Component);
 
@@ -68,15 +70,15 @@ var Html = exports.Html = function (_React$Component) {
               { className: "inline field" },
               _react2.default.createElement("input", { type: "text", placeholder: "Type something", style: {
                   width: "250px"
-                }, defaultValue: _viewmodelReact2.default.getValue(this, null, null, "message"),
-                ref: _viewmodelReact2.default.bindElement(this, null, null, "value: message"),
-                "data-bind": "value: message"
+                }, "data-bind": "value: message",
+                defaultValue: _viewmodelReact2.default.getValue(this, null, null, "message"),
+                ref: _viewmodelReact2.default.bindElement(this, null, null, "value: message")
               }),
-              _react2.default.createElement("label", { className: "ui label", dangerouslySetInnerHTML: {
+              _react2.default.createElement("label", { className: "ui label", "data-bind": "html: message",
+                dangerouslySetInnerHTML: {
                   __html: _viewmodelReact2.default.getValue(this, null, null, "message")
                 },
-                ref: _viewmodelReact2.default.bindElement(this, null, null, "html: message"),
-                "data-bind": "html: message"
+                ref: _viewmodelReact2.default.bindElement(this, null, null, "html: message")
               })
             )
           )

@@ -15,6 +15,8 @@ Basics({
       <SharedState />
       <Controls />
       <Testing />
+      <ExampleProject />
+      <VSCodeExtension />
       <SourceCode />
     </div>
   }
