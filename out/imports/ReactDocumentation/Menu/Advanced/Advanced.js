@@ -96,7 +96,7 @@ var Advanced = exports.Advanced = function (_React$Component) {
           _react2.default.createElement(
             "a",
             { className: "item", href: "#AdvancedDynamicLoading" },
-            "Dynamic/Lazy/Deferred Loading"
+            "Dynamic/Lazy Loading"
           ),
           _react2.default.createElement(
             "a",

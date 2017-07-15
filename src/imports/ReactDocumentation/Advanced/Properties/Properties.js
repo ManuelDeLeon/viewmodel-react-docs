@@ -240,13 +240,31 @@ Properties({
             <p>Returns true if the property has a pending async validation.</p>
 <pre><code>Example({
   password: ViewModel.property.string
-    .checkAsync((value, done) => {
+    .validateAsync((value, done) => {
       // Simulate an async call to the server
       // Reject a value that ends with 'X'
       setTimeout(() => (value.endsWith("X") ? done(false) : done(true)), 50)
     }),
   render() {
     <i class="ui icon spinner" b="if: password.validating" />
+  }
+})</code></pre>
+          </div>
+        </div>
+
+        <div className="item">
+          <i className="pointing right icon"></i>
+          <div className="content">
+            <div className="header">validatingMessage()</div>
+            <p>The message used while the property is being validated asynchronously.</p>
+<pre><code>Example({
+  username: ViewModel.property.string
+    .validatingMessage('Checking username is available')
+    .validateAsync((value, done) => {
+      // Check that username is available
+    }),
+  render() {
+    <span b="text: username.validatingMessage" />
   }
 })</code></pre>
           </div>

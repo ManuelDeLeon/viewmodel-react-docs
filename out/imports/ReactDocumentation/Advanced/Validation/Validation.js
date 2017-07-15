@@ -276,6 +276,8 @@ var Validation = exports.Validation = function (_React$Component) {
             '\n',
             "    .invalidMessage(\"First message can't be blank or end with an X\")",
             '\n',
+            "    .validatingMessage(\"Checking first name doesn't end with an X\")",
+            '\n',
             "    .validateAsync((value, done) => ",
             "{",
             '\n',
@@ -566,6 +568,77 @@ var Validation = exports.Validation = function (_React$Component) {
                 "p",
                 null,
                 "Provides a default value for the property."
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "h3",
+          null,
+          "Should know"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "When doing validations you typically have to display sucess/fail messages to the user. You can specify which messages to use when the property is valid, invalid, or validating (asynchronously)."
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "ui relaxed list" },
+          _react2.default.createElement(
+            "div",
+            { className: "item" },
+            _react2.default.createElement("i", { className: "pointing right icon" }),
+            _react2.default.createElement(
+              "div",
+              { className: "content" },
+              _react2.default.createElement(
+                "div",
+                { className: "header" },
+                "validMessage('Message when value is valid')"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "The message to use when the value of the property is valid."
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "item" },
+            _react2.default.createElement("i", { className: "pointing right icon" }),
+            _react2.default.createElement(
+              "div",
+              { className: "content" },
+              _react2.default.createElement(
+                "div",
+                { className: "header" },
+                "invalidMessage('Message when value is invalid')"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "The message to use when the value of the property is invalid."
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "item" },
+            _react2.default.createElement("i", { className: "pointing right icon" }),
+            _react2.default.createElement(
+              "div",
+              { className: "content" },
+              _react2.default.createElement(
+                "div",
+                { className: "header" },
+                "validatingMessage('Message when value is validating')"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "The message to use when the value of the property is still in the process of being invalidated."
               )
             )
           )
@@ -1017,7 +1090,7 @@ var Validation = exports.Validation = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Validation.__proto__ || Object.getPrototypeOf(Validation)).call(this, props));
 
     _viewmodelReact2.default.prepareComponent("Validation", _this, {
-      firstName: _viewmodelReact2.default.property.string.notBlank.validMessage('First name looks good').invalidMessage("First message can't be blank or end with an X").validateAsync(function (value, done) {
+      firstName: _viewmodelReact2.default.property.string.notBlank.validMessage('First name looks good').invalidMessage("First message can't be blank or end with an X").validatingMessage("Checking first name doesn't end with an X").validateAsync(function (value, done) {
         // Simulate an async call to the server
         setTimeout(function () {
           return value.endsWith("X") ? done(false) : done(true);

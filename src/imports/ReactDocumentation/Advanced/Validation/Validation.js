@@ -2,6 +2,7 @@ Validation({
   firstName: ViewModel.property.string.notBlank
     .validMessage('First name looks good')
     .invalidMessage("First message can't be blank or end with an X")
+    .validatingMessage("Checking first name doesn't end with an X")
     .validateAsync((value, done) => {
       // Simulate an async call to the server
       setTimeout(() => (value.endsWith("X") ? done(false) : done(true)), 500)
@@ -101,6 +102,7 @@ Validation({
   firstName: ViewModel.property.string.notBlank
     .validMessage('First name looks good')
     .invalidMessage("First message can't be blank or end with an X")
+    .validatingMessage("Checking first name doesn't end with an X")
     .validateAsync((value, done) => {
       // Simulate an async call to the server
       setTimeout(() => (value.endsWith("X") ? done(false) : done(true)), 500)
@@ -217,6 +219,43 @@ Validation({
             </p>
           </div>
         </div>
+      </div>
+
+      <h3>Should know</h3>
+      <p>
+        When doing validations you typically have to display sucess/fail messages to the user. You can specify which messages to use when the property is valid, invalid, or validating (asynchronously).
+      </p>
+      <div class="ui relaxed list">
+        <div class="item">
+          <i class="pointing right icon"></i>
+          <div class="content">
+            <div class="header">validMessage('Message when value is valid')</div>
+            <p>
+              The message to use when the value of the property is valid.
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <i class="pointing right icon"></i>
+          <div class="content">
+            <div class="header">invalidMessage('Message when value is invalid')</div>
+            <p>
+              The message to use when the value of the property is invalid.
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <i class="pointing right icon"></i>
+          <div class="content">
+            <div class="header">validatingMessage('Message when value is validating')</div>
+            <p>
+              The message to use when the value of the property is still in the process of being invalidated.
+            </p>
+          </div>
+        </div>
+
       </div>
 
       <h3>Nice to know:</h3>

@@ -9,11 +9,6 @@ QuickAnswers({
         ViewModel for React is a thin layer on top of React to work with as little boilerplate and ceremonies as possible.
       </p>
 
-      <h3 class="ui header">Will I still be able to use everything from the React ecosystem?</h3>
-      <p>
-        Of course, ViewModel sits on top of React, so the only thing out the window are the needless ceremonies. You can keep using your stack of choice (Express, .Net Core, Meteor, Feathers, etc.) The same applies to bundlers, plugins, custom components, optimizations, etc.
-      </p>
-
       <h3 class="ui header">What's the big idea?</h3>
       <p>
         Actually it's pretty simple, you have an object and the view is rendered based on the properties of that object. Want to modify the state of the view? Just modify the object. Want to save the state of the view at any given time? Just save the object somewhere. Want to return the state of the view to what it was? Just load the saved object. Using the buzzword of the day, it's "easy to reason about".
@@ -150,6 +145,11 @@ export class Hello extends React.Component {
 
       <p>Now components A and B have access to the same address and nothing else. You use them as normal and treat address as just another property of the components.</p>
 
+      <h3 class="ui header">Will I still be able to use everything from the React ecosystem?</h3>
+      <p>
+        Of course, ViewModel sits on top of React, so the only thing out the window are the needless ceremonies. You can keep using your stack of choice (Express, .Net Core, Meteor, Feathers, etc.) The same applies to bundlers, plugins, custom components, optimizations, etc.
+      </p>
+      
       <h3 class="ui header">Can I just try it with one component?</h3>
       <p>
         Of course. The preferred way is to try it with something medium size (a small component might not be worth it, a large one might be too daunting). I think it’s better if you experience it yourself. Take a relatively small part of one of your website (a medium size component) and re-write it using ViewModel.

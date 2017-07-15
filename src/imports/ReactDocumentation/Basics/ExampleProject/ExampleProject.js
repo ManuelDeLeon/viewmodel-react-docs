@@ -4,7 +4,7 @@ ExampleProject({
       <h2 class="ui header">Example Project</h2>
       <a class="anchor active" id="BasicsExampleProject"></a>
       <p> 
-        The TodoMvc app is an example of how to use ViewModel, structure your apps, use shared containers effectively, and 100% code coverate with unit tests and end to end test.
+        Here's an example (TodoMvc) of how to use ViewModel, structure your apps, use shared containers effectively, write unit and end to end tests, get code coverage, etc.
       </p>
       <ul>
         <li><a target="_blank" href="http://todomvcreact.azurewebsites.net/">Live example</a></li>
