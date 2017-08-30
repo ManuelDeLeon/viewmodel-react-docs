@@ -1099,7 +1099,7 @@ var Validation = exports.Validation = function (_React$Component) {
       lastName: _viewmodelReact2.default.property.string.validate(function (value) {
         return this.firstName() === "n/a" ? value : true;
       }).invalidMessage("Last name required when First is 'n/a'"),
-      age: _viewmodelReact2.default.property.integer.min(18).default("") // Override the default value of zero
+      age: _viewmodelReact2.default.property.integer.equal(18).default("") // Override the default value of zero
       .invalidMessage("Must be at least 18 years old").validMessage("Is an adult (at least legally)"),
       address: '' });
 

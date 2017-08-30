@@ -10,6 +10,8 @@ Advanced({
         <a class="item" href="#AdvancedChildren">.children</a>
         <a class="item" href="#AdvancedChild">.child</a>
         <a class="item" href="#AdvancedReset">.reset</a>
+        <a class="item" href="#AdvancedData">.data</a>
+        <a class="item" href="#AdvancedLoad">.load</a>
         <hr/>
         <a class="item" href="#AdvancedProperties">Properties</a>
         <a class="item" href="#AdvancedSharingProperties">Sharing Properties</a>

@@ -1,18 +1,16 @@
-import { ViewModelExplorer } from 'viewmodel-react-explorer';
 ReactDocumentation({
   rendered() {
-    $('pre code').each(function(i, block) {
-      $(block).addClass('language-javascript');
+    $("pre code").each(function(i, block) {
+      $(block).addClass("language-javascript");
       Prism.highlightElement(block);
     });
     const hash = window.location.hash;
     window.location.hash = hash + "X";
     window.location.hash = hash;
   },
-  render(){
+  render() {
     <div class="ui two column centered grid" style="width: 1024px">
-      <ViewModelExplorer />
-      <div id="react-menu" class="four wide column" >
+      <div id="react-menu" class="four wide column">
         <Menu />
       </div>
       <div class="twelve wide column" style="width: 740px">
@@ -22,6 +20,6 @@ ReactDocumentation({
         <Advanced />
         <Bindings />
       </div>
-    </div>
+    </div>;
   }
 });

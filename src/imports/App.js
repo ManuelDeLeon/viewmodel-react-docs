@@ -1,9 +1,12 @@
 App({
-  render(){
+  render() {
     <div>
-      <div>
-        <ReactDocumentation />
+      <Header />
+      <div class="ui one column centered grid">
+        <div id="body-main" class="column">
+          <ReactDocumentation />
+        </div>
       </div>
-    </div>
+    </div>;
   }
 });

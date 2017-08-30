@@ -9,6 +9,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _ReactDocumentation = require("./ReactDocumentation/ReactDocumentation");
 
+var _Header = require("./Header/Header");
+
 var _viewmodelReact = require("viewmodel-react");
 
 var _viewmodelReact2 = _interopRequireDefault(_viewmodelReact);
@@ -16,6 +18,8 @@ var _viewmodelReact2 = _interopRequireDefault(_viewmodelReact);
 var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
+
+var _viewmodelReactExplorer = require("viewmodel-react-explorer");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36,12 +40,22 @@ var App = exports.App = function (_React$Component) {
       return _react2.default.createElement(
         "div",
         null,
+        _react2.default.createElement(_viewmodelReactExplorer.ViewModelExplorer, {
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_Header.Header, {
+          "data-vm-parent": this
+        }),
         _react2.default.createElement(
           "div",
-          null,
-          _react2.default.createElement(_ReactDocumentation.ReactDocumentation, {
-            "data-vm-parent": this
-          })
+          { className: "ui one column centered grid" },
+          _react2.default.createElement(
+            "div",
+            { id: "body-main", className: "column" },
+            _react2.default.createElement(_ReactDocumentation.ReactDocumentation, {
+              "data-vm-parent": this
+            })
+          )
         )
       );
     }

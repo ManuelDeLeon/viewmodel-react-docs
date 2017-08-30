@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -7,27 +7,25 @@ exports.ReactDocumentation = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _Bindings = require('./Bindings/Bindings');
+var _Bindings = require("./Bindings/Bindings");
 
-var _Advanced = require('./Advanced/Advanced');
+var _Advanced = require("./Advanced/Advanced");
 
-var _Basics = require('./Basics/Basics');
+var _Basics = require("./Basics/Basics");
 
-var _Introduction = require('./Introduction/Introduction');
+var _Introduction = require("./Introduction/Introduction");
 
-var _Logo = require('./Logo/Logo');
+var _Logo = require("./Logo/Logo");
 
-var _Menu = require('./Menu/Menu');
+var _Menu = require("./Menu/Menu");
 
-var _viewmodelReact = require('viewmodel-react');
+var _viewmodelReact = require("viewmodel-react");
 
 var _viewmodelReact2 = _interopRequireDefault(_viewmodelReact);
 
-var _react = require('react');
+var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
-
-var _viewmodelReactExplorer = require('viewmodel-react-explorer');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -43,42 +41,39 @@ var ReactDocumentation = exports.ReactDocumentation = function (_React$Component
   _inherits(ReactDocumentation, _React$Component);
 
   _createClass(ReactDocumentation, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return _react2.default.createElement(
-        'div',
-        { className: 'ui two column centered grid', style: {
-            width: '1024px'
+        "div",
+        { className: "ui two column centered grid", style: {
+            width: "1024px"
           } },
-        _react2.default.createElement(_viewmodelReactExplorer.ViewModelExplorer, {
-          'data-vm-parent': this
-        }),
         _react2.default.createElement(
-          'div',
-          { id: 'react-menu', className: 'four wide column' },
+          "div",
+          { id: "react-menu", className: "four wide column" },
           _react2.default.createElement(_Menu.Menu, {
-            'data-vm-parent': this
+            "data-vm-parent": this
           })
         ),
         _react2.default.createElement(
-          'div',
-          { className: 'twelve wide column', style: {
-              width: '740px'
+          "div",
+          { className: "twelve wide column", style: {
+              width: "740px"
             } },
           _react2.default.createElement(_Logo.Logo, {
-            'data-vm-parent': this
+            "data-vm-parent": this
           }),
           _react2.default.createElement(_Introduction.Introduction, {
-            'data-vm-parent': this
+            "data-vm-parent": this
           }),
           _react2.default.createElement(_Basics.Basics, {
-            'data-vm-parent': this
+            "data-vm-parent": this
           }),
           _react2.default.createElement(_Advanced.Advanced, {
-            'data-vm-parent': this
+            "data-vm-parent": this
           }),
           _react2.default.createElement(_Bindings.Bindings, {
-            'data-vm-parent': this
+            "data-vm-parent": this
           })
         )
       );
@@ -90,10 +85,10 @@ var ReactDocumentation = exports.ReactDocumentation = function (_React$Component
 
     var _this = _possibleConstructorReturn(this, (ReactDocumentation.__proto__ || Object.getPrototypeOf(ReactDocumentation)).call(this, props));
 
-    _viewmodelReact2.default.prepareComponent('ReactDocumentation', _this, {
+    _viewmodelReact2.default.prepareComponent("ReactDocumentation", _this, {
       rendered: function rendered() {
-        $('pre code').each(function (i, block) {
-          $(block).addClass('language-javascript');
+        $("pre code").each(function (i, block) {
+          $(block).addClass("language-javascript");
           Prism.highlightElement(block);
         });
         var hash = window.location.hash;

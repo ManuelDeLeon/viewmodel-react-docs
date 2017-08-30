@@ -6,6 +6,8 @@ Advanced({
       <Children />
       <Child />
       <Reset />
+      <Data />
+      <Load />
 
       <Properties />
       <SharingProperties />

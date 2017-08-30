@@ -13,7 +13,6 @@ Installing({
   "presets": ["es2015", "react"],
   "plugins": [ "viewmodel-react-plugin" ]
 }</code></pre>
-
     </div>
   }
 });

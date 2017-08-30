@@ -3,6 +3,7 @@ Basics({
     <div>
       <h1 class="ui dividing header">Basics</h1>
       <Installing />
+      <Inferno />
       <StarterProject />
       <Components />
       <State />
@@ -18,6 +19,6 @@ Basics({
       <ExampleProject />
       <VSCodeExtension />
       <SourceCode />
-    </div>
+    </div>;
   }
 });

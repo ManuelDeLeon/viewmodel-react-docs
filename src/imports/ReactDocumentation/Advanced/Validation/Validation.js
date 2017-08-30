@@ -10,7 +10,7 @@ Validation({
   lastName: ViewModel.property.string
     .validate(function(value) { return this.firstName() === "n/a" ? value : true })
     .invalidMessage("Last name required when First is 'n/a'"),
-  age: ViewModel.property.integer.min(18)
+  age: ViewModel.property.integer.equal(18)
     .default("") // Override the default value of zero
     .invalidMessage("Must be at least 18 years old")
     .validMessage("Is an adult (at least legally)"),

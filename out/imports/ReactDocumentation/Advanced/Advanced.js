@@ -41,7 +41,13 @@ var _SharingProperties = require("./SharingProperties/SharingProperties");
 
 var _Properties = require("./Properties/Properties");
 
+var _Load = require("./Load/Load");
+
+var _Data = require("./Data/Data");
+
 var _Reset = require("./Reset/Reset");
+
+var _Child = require("./Child/Child");
 
 var _Children = require("./Children/Children");
 
@@ -85,7 +91,16 @@ var Advanced = exports.Advanced = function (_React$Component) {
         _react2.default.createElement(_Children.Children, {
           "data-vm-parent": this
         }),
+        _react2.default.createElement(_Child.Child, {
+          "data-vm-parent": this
+        }),
         _react2.default.createElement(_Reset.Reset, {
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_Data.Data, {
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_Load.Load, {
           "data-vm-parent": this
         }),
         _react2.default.createElement(_Properties.Properties, {

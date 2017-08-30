@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.BlueLabel = undefined;
+exports.Example = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -15,6 +15,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _xyz = require("xyz");
+
+var _xyz2 = _interopRequireDefault(_xyz);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23,32 +27,34 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var BlueLabel = exports.BlueLabel = function (_React$Component) {
-  _inherits(BlueLabel, _React$Component);
+var VmLazyL;
 
-  _createClass(BlueLabel, [{
+var Example = exports.Example = function (_React$Component) {
+  _inherits(Example, _React$Component);
+
+  _createClass(Example, [{
     key: "render",
     value: function render() {
-      return _viewmodelReact2.default.getValue(this, null, null, "show") ? _react2.default.createElement(
-        "label",
-        { className: "ui blue label", "data-bind": "if: show"
-        },
-        "Referencing a sub component"
-      ) : null;
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(_xyz2.default, {
+          "data-vm-parent": this
+        }),
+        _react2.default.createElement(_xyz2.default.One, null)
+      );
     }
   }]);
 
-  function BlueLabel(props) {
-    _classCallCheck(this, BlueLabel);
+  function Example(props) {
+    _classCallCheck(this, Example);
 
-    var _this = _possibleConstructorReturn(this, (BlueLabel.__proto__ || Object.getPrototypeOf(BlueLabel)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Example.__proto__ || Object.getPrototypeOf(Example)).call(this, props));
 
-    _viewmodelReact2.default.prepareComponent("BlueLabel", _this, {
-      show: false
-    });
+    _viewmodelReact2.default.prepareComponent("Example", _this, {});
 
     return _this;
   }
 
-  return BlueLabel;
+  return Example;
 }(_react2.default.Component);

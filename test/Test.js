@@ -1,8 +1,9 @@
-BlueLabel({
-  show: false,
+import Form from "xyz";
+Example({
   render() {
-    <label b="if: show" class="ui blue label">
-      Referencing a sub component
-    </label>
+    <div>
+      <Form />
+      <Form.One />
+    </div>;
   }
 });
